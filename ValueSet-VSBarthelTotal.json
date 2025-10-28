@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSBarthelTotal",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSBarthelTotal</b></p><a name=\"VSBarthelTotal\"> </a><a name=\"hcVSBarthelTotal\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelFeeding.html\">進食-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelGrooming.html\">個人衛生-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelToiletUse.html\">上廁所-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelBathing.html\">洗澡-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelDressing.html\">穿脫衣服-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelBowels.html\">大便控制-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelBladder.html\">小便控制-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelMobility.html\">平地行走-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelStairs.html\">上下樓梯-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelTransfer.html\">移位-選項</a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/VSBarthelTotal",
+  "version" : "0.1.0",
+  "name" : "VSBarthelTotal",
+  "title" : "Barthel Index 總值集",
+  "status" : "draft",
+  "date" : "2025-10-28T11:34:57+08:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "整合 Barthel Index 各題之所有選項值集",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelFeeding"]
+    },
+    {
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelGrooming"]
+    },
+    {
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelToiletUse"]
+    },
+    {
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelBathing"]
+    },
+    {
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelDressing"]
+    },
+    {
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelBowels"]
+    },
+    {
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelBladder"]
+    },
+    {
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelMobility"]
+    },
+    {
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelStairs"]
+    },
+    {
+      "valueSet" : ["http://example.org/ValueSet/VSBarthelTransfer"]
+    }]
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="PatientEverythingOperation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition PatientEverythingOperation</b></p><a name="PatientEverythingOperation"> </a><a name="hcPatientEverythingOperation"> </a><p>URL: [base]/Patient/[id]/$everything</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>包含所有相關資源的Bundle</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/OperationDefinition/Patient-everything"/>
+  <version value="0.1.0"/>
+  <name value="PatientEverythingOperation"/>
+  <title value="Patient Everything Operation"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2025-10-28T11:34:57+08:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="取得該病人完整相關資源快照，回傳一個包含所有相關資源的Bundle"/>
+  <code value="everything"/>
+  <resource value="Patient"/>
+  <system value="false"/>
+  <type value="false"/>
+  <instance value="true"/>
+  <parameter>
+    <name value="return"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="包含所有相關資源的Bundle"/>
+    <type value="Bundle"/>
+  </parameter>
+</OperationDefinition>

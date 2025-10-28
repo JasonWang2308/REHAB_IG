@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="MedicationAdministrationMedication"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter MedicationAdministrationMedication</b></p><a name="MedicationAdministrationMedication"> </a><a name="hcMedicationAdministrationMedication"> </a><h2>MedicationAdministrationMedication</h2><p>Parameter <code>medication</code>:<code>reference</code></p><div><p>Return administrations of this medication resource</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></td></tr><tr><td>Expression</td><td><code>(MedicationAdministration.​medication as Reference)</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/SearchParameter/MedicationAdministration-medication"/>
+  <version value="0.1.0"/>
+  <name value="MedicationAdministrationMedication"/>
+  <status value="active"/>
+  <date value="2025-10-28T11:34:57+08:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Return administrations of this medication resource"/>
+  <code value="medication"/>
+  <base value="MedicationAdministration"/>
+  <type value="reference"/>
+  <expression value="(MedicationAdministration.​medication as Reference)"/>
+</SearchParameter>

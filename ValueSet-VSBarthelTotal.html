@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Barthel Index 總值集 -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"6.116"}
+    h3,h4,h5,h6{--heading-prefix:"6.116"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">應用說明</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">規範文件
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="capability.html">能力聲明</a>
+      </li>
+      <li>
+        <a href="parameter.html">查詢參數及操作定義</a>
+      </li>
+      <li>
+        <a href="logic.html">邏輯模型</a>
+      </li>
+      <li>
+        <a href="extension.html">FHIR Profiles及Extensions</a>
+      </li>
+      <li>
+        <a href="terminology.html">專門術語</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="example.html">範例</a>
+  </li>
+  <li>
+    <a href="download.html">結構定義與範例檔下載</a>
+  </li>
+  <li>
+    <a href="security.html">安全性</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Barthel Index 總值集</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">ExampleIG - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://example.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-VSBarthelTotal.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-VSBarthelTotal.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-VSBarthelTotal.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Barthel Index 總值集
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://example.org/ValueSet/VSBarthelTotal<button data-clipboard-text="http://example.org/ValueSet/VSBarthelTotal" title="Click to copy URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button data-clipboard-text="http://example.org/ValueSet/VSBarthelTotal|0.1.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-10-28
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">VSBarthelTotal</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>整合 Barthel Index 各題之所有選項值集</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+  <!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div><p class="res-header-id"></p><a name="VSBarthelTotal"> </a><a name="hcVSBarthelTotal"> </a><p>This value set includes codes based on the following rules:</p>
+<ul><li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelFeeding.html">進食-選項</a></li>
+<li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelGrooming.html">個人衛生-選項</a></li>
+<li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelToiletUse.html">上廁所-選項</a></li>
+<li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelBathing.html">洗澡-選項</a></li>
+<li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelDressing.html">穿脫衣服-選項</a></li>
+<li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelBowels.html">大便控制-選項</a></li>
+<li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelBladder.html">小便控制-選項</a></li>
+<li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelMobility.html">平地行走-選項</a></li>
+<li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelStairs.html">上下樓梯-選項</a></li>
+<li>Import all the codes that are contained in the intersection of <a href="ValueSet-VSBarthelTransfer.html">移位-選項</a></li></ul></div>
+
+  <p>&nbsp;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div><p class="res-header-id"></p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion from tx.fhir.org based on:</p><ul><li>Loinc v2.81<span class="copy-text-inline"><button data-clipboard-text="http://loinc.org|2.81" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelBathing.html">valueset 洗澡-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelBathing|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelBladder.html">valueset 小便控制-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelBladder|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelBowels.html">valueset 大便控制-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelBowels|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelDressing.html">valueset 穿脫衣服-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelDressing|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelFeeding.html">valueset 進食-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelFeeding|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelGrooming.html">valueset 個人衛生-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelGrooming|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelMobility.html">valueset 平地行走-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelMobility|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelStairs.html">valueset 上下樓梯-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelStairs|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelToiletUse.html">valueset 上廁所-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelToiletUse|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-VSBarthelTransfer.html">valueset 移位-選項 v0.1.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://example.org/ValueSet/VSBarthelTransfer|0.1.0" title="Click to Copy URL" class="btn-copy"> </button></span></li></ul></div><p>This value set contains 23 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://loinc.org-LA12302-8"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA12302-8/">LA12302-8</a></td><td>Independent</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12302-8&quot;, &quot;display&quot;: &quot;Independent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12302-8&quot;&gt;&lt;display value=&quot;Independent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31630-9"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31630-9/">LA31630-9</a></td><td>Needs help cutting, spreading butter, etc., or requires modified diet</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31630-9&quot;, &quot;display&quot;: &quot;Needs help cutting, spreading butter, etc., or requires modified diet&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31630-9&quot;&gt;&lt;display value=&quot;Needs help cutting, spreading butter, etc., or requires modified diet&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA24937-7"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA24937-7/">LA24937-7</a></td><td>Unable</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA24937-7&quot;, &quot;display&quot;: &quot;Unable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA24937-7&quot;&gt;&lt;display value=&quot;Unable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31644-0"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31644-0/">LA31644-0</a></td><td>Independent face/hair/teeth/shaving (implements provided)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31644-0&quot;, &quot;display&quot;: &quot;Independent face/hair/teeth/shaving (implements provided)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31644-0&quot;&gt;&lt;display value=&quot;Independent face/hair/teeth/shaving (implements provided)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31643-2"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31643-2/">LA31643-2</a></td><td>Needs help with personal care</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31643-2&quot;, &quot;display&quot;: &quot;Needs help with personal care&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31643-2&quot;&gt;&lt;display value=&quot;Needs help with personal care&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31632-5"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31632-5/">LA31632-5</a></td><td>Independent (on and off, dressing, wiping)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31632-5&quot;, &quot;display&quot;: &quot;Independent (on and off, dressing, wiping)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31632-5&quot;&gt;&lt;display value=&quot;Independent (on and off, dressing, wiping)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31631-7"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31631-7/">LA31631-7</a></td><td>Needs some help, but can do something alone</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31631-7&quot;, &quot;display&quot;: &quot;Needs some help, but can do something alone&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31631-7&quot;&gt;&lt;display value=&quot;Needs some help, but can do something alone&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA12304-4"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA12304-4/">LA12304-4</a></td><td>Dependent</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12304-4&quot;, &quot;display&quot;: &quot;Dependent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12304-4&quot;&gt;&lt;display value=&quot;Dependent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31636-6"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31636-6/">LA31636-6</a></td><td>Independent (or in shower)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31636-6&quot;, &quot;display&quot;: &quot;Independent (or in shower)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31636-6&quot;&gt;&lt;display value=&quot;Independent (or in shower)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31638-2"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31638-2/">LA31638-2</a></td><td>Independent (including buttons, zips, laces, etc.)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31638-2&quot;, &quot;display&quot;: &quot;Independent (including buttons, zips, laces, etc.)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31638-2&quot;&gt;&lt;display value=&quot;Independent (including buttons, zips, laces, etc.)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31637-4"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31637-4/">LA31637-4</a></td><td>Needs help but can do about half unaided</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31637-4&quot;, &quot;display&quot;: &quot;Needs help but can do about half unaided&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31637-4&quot;&gt;&lt;display value=&quot;Needs help but can do about half unaided&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31625-9"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31625-9/">LA31625-9</a></td><td>Continent</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31625-9&quot;, &quot;display&quot;: &quot;Continent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31625-9&quot;&gt;&lt;display value=&quot;Continent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31626-7"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31626-7/">LA31626-7</a></td><td>Occasional accident</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31626-7&quot;, &quot;display&quot;: &quot;Occasional accident&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31626-7&quot;&gt;&lt;display value=&quot;Occasional accident&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31627-5"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31627-5/">LA31627-5</a></td><td>Incontinent (or needs to be given enemas)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31627-5&quot;, &quot;display&quot;: &quot;Incontinent (or needs to be given enemas)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31627-5&quot;&gt;&lt;display value=&quot;Incontinent (or needs to be given enemas)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31628-3"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31628-3/">LA31628-3</a></td><td>Incontinent, or catheterized and unable to manage alone</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31628-3&quot;, &quot;display&quot;: &quot;Incontinent, or catheterized and unable to manage alone&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31628-3&quot;&gt;&lt;display value=&quot;Incontinent, or catheterized and unable to manage alone&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31642-4"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31642-4/">LA31642-4</a></td><td>Independent (but may use any aid; for example, stick) &gt;50 yards</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31642-4&quot;, &quot;display&quot;: &quot;Independent (but may use any aid; for example, stick) &gt;50 yards&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31642-4&quot;&gt;&lt;display value=&quot;Independent (but may use any aid; for example, stick) &amp;gt;50 yards&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31641-6"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31641-6/">LA31641-6</a></td><td>Walks with help of one person (verbal or physical) &gt;50 yards</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31641-6&quot;, &quot;display&quot;: &quot;Walks with help of one person (verbal or physical) &gt;50 yards&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31641-6&quot;&gt;&lt;display value=&quot;Walks with help of one person (verbal or physical) &amp;gt;50 yards&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31640-8"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31640-8/">LA31640-8</a></td><td>Wheelchair independent, including corners, &gt;50 yards</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31640-8&quot;, &quot;display&quot;: &quot;Wheelchair independent, including corners, &gt;50 yards&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31640-8&quot;&gt;&lt;display value=&quot;Wheelchair independent, including corners, &amp;gt;50 yards&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31639-0"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31639-0/">LA31639-0</a></td><td>Immobile or &lt;50 yards</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31639-0&quot;, &quot;display&quot;: &quot;Immobile or &lt;50 yards&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31639-0&quot;&gt;&lt;display value=&quot;Immobile or &amp;lt;50 yards&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31629-1"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31629-1/">LA31629-1</a></td><td>Needs help (verbal, physical, carrying aid)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31629-1&quot;, &quot;display&quot;: &quot;Needs help (verbal, physical, carrying aid)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31629-1&quot;&gt;&lt;display value=&quot;Needs help (verbal, physical, carrying aid)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31635-8"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31635-8/">LA31635-8</a></td><td>Minor help (verbal or physical)</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31635-8&quot;, &quot;display&quot;: &quot;Minor help (verbal or physical)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31635-8&quot;&gt;&lt;display value=&quot;Minor help (verbal or physical)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31634-1"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31634-1/">LA31634-1</a></td><td>Major help (one or two people, physical), can sit</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31634-1&quot;, &quot;display&quot;: &quot;Major help (one or two people, physical), can sit&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31634-1&quot;&gt;&lt;display value=&quot;Major help (one or two people, physical), can sit&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://loinc.org-LA31633-3"> </a><code>http://loinc.org</code></td><td style="white-space:nowrap">&nbsp;&nbsp;<a href="https://loinc.org/LA31633-3/">LA31633-3</a></td><td>Unable, no sitting balance</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31633-3&quot;, &quot;display&quot;: &quot;Unable, no sitting balance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31633-3&quot;&gt;&lt;display value=&quot;Unable, no sitting balance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+    <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l1096">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 28, 2025 11:36+0800">2025-10-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

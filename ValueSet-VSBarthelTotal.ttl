@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ValueSet/VSBarthelTotal> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VSBarthelTotal"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSBarthelTotal</b></p><a name=\"VSBarthelTotal\"> </a><a name=\"hcVSBarthelTotal\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelFeeding.html\">進食-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelGrooming.html\">個人衛生-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelToiletUse.html\">上廁所-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelBathing.html\">洗澡-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelDressing.html\">穿脫衣服-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelBowels.html\">大便控制-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelBladder.html\">小便控制-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelMobility.html\">平地行走-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelStairs.html\">上下樓梯-選項</a></li><li>Import all the codes that are contained in the intersection of <a href=\"ValueSet-VSBarthelTransfer.html\">移位-選項</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ValueSet/VSBarthelTotal"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VSBarthelTotal"] ; # 
+  fhir:title [ fhir:v "Barthel Index 總值集"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T11:34:57+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "整合 Barthel Index 各題之所有選項值集"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelFeeding"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelFeeding>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelGrooming"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelGrooming>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelToiletUse"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelToiletUse>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelBathing"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelBathing>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelDressing"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelDressing>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelBowels"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelBowels>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelBladder"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelBladder>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelMobility"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelMobility>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelStairs"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelStairs>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://example.org/ValueSet/VSBarthelTransfer"^^xsd:anyURI ;
+         fhir:link <http://example.org/ValueSet/VSBarthelTransfer>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VSBarthelDressing"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VSBarthelDressing</b></p><a name="VSBarthelDressing"> </a><a name="hcVSBarthelDressing"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA31638-2/">LA31638-2</a></td><td>能自己穿脫衣服、鞋子，自己扣釦子、上拉鍊或綁鞋帶。</td></tr><tr><td><a href="https://loinc.org/LA31637-4/">LA31637-4</a></td><td>在別人協助下，可自己完成一半以上的動作。</td></tr><tr><td><a href="https://loinc.org/LA12304-4/">LA12304-4</a></td><td>不會自己做。</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/VSBarthelDressing"/>
+  <version value="0.1.0"/>
+  <name value="VSBarthelDressing"/>
+  <title value="穿脫衣服-選項"/>
+  <status value="draft"/>
+  <date value="2025-10-28T11:34:57+08:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA31638-2"/>
+        <display value="能自己穿脫衣服、鞋子，自己扣釦子、上拉鍊或綁鞋帶。"/>
+      </concept>
+      <concept>
+        <code value="LA31637-4"/>
+        <display value="在別人協助下，可自己完成一半以上的動作。"/>
+      </concept>
+      <concept>
+        <code value="LA12304-4"/>
+        <display value="不會自己做。"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

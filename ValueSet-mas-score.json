@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mas-score",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mas-score</b></p><a name=\"mas-score\"> </a><a name=\"hcmas-score\"> </a><ul><li>Include all codes defined in <code>https://your-org.example/fhir/ig/rehab/CodeSystem/mas-score</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/mas-score",
+  "version" : "0.1.0",
+  "name" : "VSMAScore",
+  "title" : "MAS 分數 (0,1,1+,2,3,4)",
+  "status" : "draft",
+  "date" : "2025-10-28T11:34:57+08:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://your-org.example/fhir/ig/rehab/CodeSystem/mas-score"
+    }]
+  }
+}

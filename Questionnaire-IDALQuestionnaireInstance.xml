@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="IDALQuestionnaireInstance"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/SPACQuestionnaire"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Questionnaire IDALQuestionnaireInstance</b></p><a name="IDALQuestionnaireInstance"> </a><a name="hcIDALQuestionnaireInstance"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SPACQuestionnaire.html">評估問卷</a></p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> IDALQuestionnaireInstance</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">IADL評估問卷</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org/Questionnaire/IDALQuestionnaireInstance#0.1.0</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.A-telephone" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> A-telephone</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A.使用電話</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-telephone">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.B-shopping" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> B-shopping</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">B.購物</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-shopping">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.C-food-preparation" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> C-food-preparation</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">C.備餐</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C-food-preparation">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.D-housekeeping" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> D-housekeeping</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">D.處理家務</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D-housekeeping">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.E-laundry" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> E-laundry</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">E.洗衣服</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.E-laundry">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.F-transportation" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> F-transportation</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">F.外出</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.F-transportation">5 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.G-medications" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> G-medications</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">G.服用藥物</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.G-medications">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.H-finances" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> H-finances</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">H.處理財務的能力</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.H-finances">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.I-total-score-IADL" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="integer" class="hierarchy"/> I-total-score-IADL</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">I.IADL總分計算</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.A-telephone"> </a><p><b>Answer options for A-telephone </b></p><ul><li style="font-size: 11px">4</li><li style="font-size: 11px">3</li><li style="font-size: 11px">2</li><li style="font-size: 11px">1</li></ul><a name="opt-item.B-shopping"> </a><p><b>Answer options for B-shopping </b></p><ul><li style="font-size: 11px">4</li><li style="font-size: 11px">3</li><li style="font-size: 11px">2</li><li style="font-size: 11px">1</li></ul><a name="opt-item.C-food-preparation"> </a><p><b>Answer options for C-food-preparation </b></p><ul><li style="font-size: 11px">4</li><li style="font-size: 11px">3</li><li style="font-size: 11px">2</li><li style="font-size: 11px">1</li></ul><a name="opt-item.D-housekeeping"> </a><p><b>Answer options for D-housekeeping </b></p><ul><li style="font-size: 11px">4</li><li style="font-size: 11px">3</li><li style="font-size: 11px">2</li><li style="font-size: 11px">1</li></ul><a name="opt-item.E-laundry"> </a><p><b>Answer options for E-laundry </b></p><ul><li style="font-size: 11px">3</li><li style="font-size: 11px">2</li><li style="font-size: 11px">1</li></ul><a name="opt-item.F-transportation"> </a><p><b>Answer options for F-transportation </b></p><ul><li style="font-size: 11px">5</li><li style="font-size: 11px">4</li><li style="font-size: 11px">3</li><li style="font-size: 11px">2</li><li style="font-size: 11px">1</li></ul><a name="opt-item.G-medications"> </a><p><b>Answer options for G-medications </b></p><ul><li style="font-size: 11px">3</li><li style="font-size: 11px">2</li><li style="font-size: 11px">1</li></ul><a name="opt-item.H-finances"> </a><p><b>Answer options for H-finances </b></p><ul><li style="font-size: 11px">3</li><li style="font-size: 11px">2</li><li style="font-size: 11px">1</li></ul></div>
+  </text>
+  <url value="http://example.org/Questionnaire/IDALQuestionnaireInstance"/>
+  <version value="0.1.0"/>
+  <name value="IDALQuestionnaireInstance"/>
+  <title value="IDAL評估問卷"/>
+  <status value="active"/>
+  <subjectType value="Patient"/>
+  <date value="2025-10-01"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="IADL評估問卷"/>
+  <purpose value="提供標準化的上肢感覺評估工具，用於中風復健評估"/>
+  <item>
+    <linkId value="A-telephone"/>
+    <text value="A.使用電話"/>
+    <type value="choice"/>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能獨立使用電話，含查電話簿、撥號等"/>
+      </extension>
+      <valueInteger value="4"/>
+      <initialSelected value="true"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="僅能撥熟悉的電話號碼"/>
+      </extension>
+      <valueInteger value="3"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="僅能接電話，但不能撥電話"/>
+      </extension>
+      <valueInteger value="2"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="完全不能使用電話"/>
+      </extension>
+      <valueInteger value="1"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="B-shopping"/>
+    <text value="B.購物"/>
+    <type value="choice"/>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能獨立完成所有購物需求"/>
+      </extension>
+      <valueInteger value="4"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="只能獨立購買日常生活用品"/>
+      </extension>
+      <valueInteger value="3"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="每一次購物都需要有人陪"/>
+      </extension>
+      <valueInteger value="2"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="完全不能獨自購物"/>
+      </extension>
+      <valueInteger value="1"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="C-food-preparation"/>
+    <text value="C.備餐"/>
+    <type value="choice"/>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能獨立計畫、準備食材及佐料、烹煮和擺設一頓飯菜"/>
+      </extension>
+      <valueInteger value="4"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="如果準備好一切食材及佐料，能做一頓飯菜"/>
+      </extension>
+      <valueInteger value="3"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能將已做好的飯菜加熱"/>
+      </extension>
+      <valueInteger value="2"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="需要別人把飯菜煮好、擺好"/>
+      </extension>
+      <valueInteger value="1"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="D-housekeeping"/>
+    <text value="D.處理家務"/>
+    <type value="choice"/>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能單獨處理家事，或偶爾需要協助較繁重的家事"/>
+      </extension>
+      <valueInteger value="4"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能做較簡單的家事，如洗碗、擦桌子"/>
+      </extension>
+      <valueInteger value="3"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能做較簡單的家事，但不能達到可接受的清潔程度"/>
+      </extension>
+      <valueInteger value="2"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="所有的家事都需要別人協助方能完成"/>
+      </extension>
+      <valueInteger value="1"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="E-laundry"/>
+    <text value="E.洗衣服"/>
+    <type value="choice"/>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="自己清洗所有衣物"/>
+      </extension>
+      <valueInteger value="3"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="需部份協助"/>
+      </extension>
+      <valueInteger value="2"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="需完全協助"/>
+      </extension>
+      <valueInteger value="1"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="F-transportation"/>
+    <text value="F.外出"/>
+    <type value="choice"/>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能夠自己開車、騎車或自己搭乘大眾運輸工具"/>
+      </extension>
+      <valueInteger value="5"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能夠自己搭乘計程車，但不能搭乘大眾運輸工具"/>
+      </extension>
+      <valueInteger value="4"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="當有人陪同時，可搭乘大眾運輸工具"/>
+      </extension>
+      <valueInteger value="3"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="只能在有人協助或陪同時，可搭乘計程車或自用車"/>
+      </extension>
+      <valueInteger value="2"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="完全不能出門"/>
+      </extension>
+      <valueInteger value="1"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="G-medications"/>
+    <text value="G.服用藥物"/>
+    <type value="choice"/>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="能自己負責在正確的時間用正確的藥物"/>
+      </extension>
+      <valueInteger value="3"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="如果事先準備好服用的藥物份量，可自行服用"/>
+      </extension>
+      <valueInteger value="2"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="完全不能自己服用藥物"/>
+      </extension>
+      <valueInteger value="1"/>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="H-finances"/>
+    <text value="H.處理財務的能力"/>
+    <type value="choice"/>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="可以獨立處理財務"/>
+      </extension>
+      <valueInteger value="3"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="可以處理日常的購買，但需別人協助與銀行往來或大宗買賣"/>
+      </extension>
+      <valueInteger value="2"/>
+    </answerOption>
+    <answerOption>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-style">
+        <valueString value="完全不能處理錢財"/>
+      </extension>
+      <valueInteger value="1"/>
+    </answerOption>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+      <valueExpression>
+        <language value="text/fhirpath"/>
+        <expression value="%resource.item.answer.valueInteger.sum()"/>
+      </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+      <valueBoolean value="true"/>
+    </extension>
+    <linkId value="I-total-score-IADL"/>
+    <text value="I.IADL總分計算"/>
+    <type value="integer"/>
+    <required value="true"/>
+  </item>
+</Questionnaire>

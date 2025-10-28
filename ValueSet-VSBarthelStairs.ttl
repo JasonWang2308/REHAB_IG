@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ValueSet/VSBarthelStairs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VSBarthelStairs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSBarthelStairs</b></p><a name=\"VSBarthelStairs\"> </a><a name=\"hcVSBarthelStairs\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA12302-8/\">LA12302-8</a></td><td>可自行上下樓梯，可使用扶手、柺杖等輔具。</td></tr><tr><td><a href=\"https://loinc.org/LA31629-1/\">LA31629-1</a></td><td>需他人協助或監督才能上下樓梯。</td></tr><tr><td><a href=\"https://loinc.org/LA24937-7/\">LA24937-7</a></td><td>無法上下樓梯。</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ValueSet/VSBarthelStairs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VSBarthelStairs"] ; # 
+  fhir:title [ fhir:v "上下樓梯-選項"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T11:34:57+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA12302-8" ] ;
+         fhir:display [ fhir:v "可自行上下樓梯，可使用扶手、柺杖等輔具。" ]
+       ] [
+         fhir:code [ fhir:v "LA31629-1" ] ;
+         fhir:display [ fhir:v "需他人協助或監督才能上下樓梯。" ]
+       ] [
+         fhir:code [ fhir:v "LA24937-7" ] ;
+         fhir:display [ fhir:v "無法上下樓梯。" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

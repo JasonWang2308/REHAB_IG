@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="arat-assessment-encounter-001"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/Encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter arat-assessment-encounter-001</b></p><a name="arat-assessment-encounter-001"> </a><a name="hcarat-assessment-encounter-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Encounter.html">Encounter</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode AMB</a>: 門診</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 410155007}">職能治療評估</span></p><p><b>subject</b>: <a href="Patient-stroke-patient-001.html">先生 張 (official) Male, DoB: 1965-03-15 ( http://example.org/mrn#12345)</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Individual</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-ot-therapist-001.html">Practitioner 小姐 李 (official)</a></td></tr></table><p><b>period</b>: 2025-10-11 14:00:00+0800 --&gt; 2025-10-11 15:00:00+0800</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 230690007}">中風後復健</span></p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+    <display value="門診"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="410155007"/>
+      <display value="職能治療評估"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/stroke-patient-001"/>
+  </subject>
+  <participant>
+    <individual>
+      <reference value="Practitioner/ot-therapist-001"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2025-10-11T14:00:00+08:00"/>
+    <end value="2025-10-11T15:00:00+08:00"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="230690007"/>
+      <display value="中風後復健"/>
+    </coding>
+  </reasonCode>
+</Encounter>

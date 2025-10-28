@@ -1,0 +1,26 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "PractitionerName",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter PractitionerName</b></p><a name=\"PractitionerName\"> </a><a name=\"hcPractitionerName\"> </a><h2>PractitionerName</h2><p>Parameter <code>name</code>:<code>string</code></p><div><p>搜尋Practitioner的name參數</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a></td></tr><tr><td>Expression</td><td><code>Practitioner.name</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/SearchParameter/Practitioner-name",
+  "version" : "0.1.0",
+  "name" : "PractitionerName",
+  "status" : "active",
+  "date" : "2025-10-28T11:34:57+08:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "搜尋Practitioner的name參數",
+  "code" : "name",
+  "base" : ["Practitioner"],
+  "type" : "string",
+  "expression" : "Practitioner.name"
+}

@@ -1,0 +1,19 @@
+{
+  "url" : "http://example.org/ImplementationGuide/fhir.example",
+  "name" : "ExampleIG",
+  "title" : null,
+  "description" : "",
+  "status" : "draft",
+  "package-id" : "fhir.example",
+  "ig-ver" : "0.1.0",
+  "date" : "Tue, 28 Oct, 2025 11:36:16 +0800",
+  "dateISO8601" : "2025-10-28T11:36:16+08:00",
+  "errs" : 821,
+  "warnings" : 279,
+  "hints" : 57,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 4773117952
+}

@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSBarthelBladder",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSBarthelBladder</b></p><a name=\"VSBarthelBladder\"> </a><a name=\"hcVSBarthelBladder\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA31625-9/\">LA31625-9</a></td><td>能自己控制不會有失禁，或能自行使用並清潔尿套、尿袋。</td></tr><tr><td><a href=\"https://loinc.org/LA31626-7/\">LA31626-7</a></td><td>偶爾會失禁(每週不超過一次)或尿急(無法等待放好便盆或及時趕到廁 所)或需要他人協助處理尿套。</td></tr><tr><td><a href=\"https://loinc.org/LA31628-3/\">LA31628-3</a></td><td>失禁，無法自己控制且需他人處理。</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/VSBarthelBladder",
+  "version" : "0.1.0",
+  "name" : "VSBarthelBladder",
+  "title" : "小便控制-選項",
+  "status" : "draft",
+  "date" : "2025-10-28T11:34:57+08:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA31625-9",
+        "display" : "能自己控制不會有失禁，或能自行使用並清潔尿套、尿袋。"
+      },
+      {
+        "code" : "LA31626-7",
+        "display" : "偶爾會失禁(每週不超過一次)或尿急(無法等待放好便盆或及時趕到廁 所)或需要他人協助處理尿套。"
+      },
+      {
+        "code" : "LA31628-3",
+        "display" : "失禁，無法自己控制且需他人處理。"
+      }]
+    }]
+  }
+}

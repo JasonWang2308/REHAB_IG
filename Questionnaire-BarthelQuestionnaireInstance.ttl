@@ -1,0 +1,501 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Questionnaire/BarthelQuestionnaireInstance> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BarthelQuestionnaireInstance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/SPACQuestionnaire"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/SPACQuestionnaire>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire BarthelQuestionnaireInstance</b></p><a name=\"BarthelQuestionnaireInstance\"> </a><a name=\"hcBarthelQuestionnaireInstance\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SPACQuestionnaire.html\">評估問卷</a></p></div><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other attributes of the item\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> </td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">巴氏量表 (Barthel Index)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">http://example.org/Questionnaire/BarthelQuestionnaireInstance#0.1.0</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.A-feeding\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> A-feeding</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">進食 (Feeding)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.A-feeding\">3 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.B-grooming\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> B-grooming</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">個人衛生 (Grooming)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.B-grooming\">2 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.C-toilet Use\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> C-toilet Use</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">上廁所 (Toilet Use)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.C-toilet Use\">3 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.D-bathing\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> D-bathing</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">洗澡 (Bathing)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.D-bathing\">2 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.E-dressing\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> E-dressing</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">穿脫衣服 (Dressing)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.E-dressing\">3 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.F-bowels\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> F-bowels</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">大便控制 (Bowels)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.F-bowels\">3 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.G-bladder\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> G-bladder</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">小便控制 (Bladder)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.G-bladder\">3 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.H-mobility\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> H-mobility</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">平地行走 (Mobility)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.H-mobility\">4 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.I-stairs\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> I-stairs</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">上下樓梯 (Stairs)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.I-stairs\">3 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.J-transfer\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> J-transfer</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">移位(Transfer)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Options: <a href=\"#opt-item.J-transfer\">4 options</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" id=\"item.K-total-score-Barthel\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> K-total-score-Barthel</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">巴氏量表總分</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly\" title=\"Is Read Only\"><img src=\"icon-qi-readonly.png\" alt=\"icon\"/></a><img src=\"icon-qi-readonly.png\" alt=\"icon\"/></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr><td colspan=\"6\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name=\"opt-item.A-feeding\"> </a><p><b>Answer options for A-feeding </b></p><ul><li style=\"font-size: 11px\">null#LA12302-8 (\"自己在合理時間(約 10 秒鐘吃一口)可用筷子取食眼前的食物。若需進食輔具時，應會自行穿脫。\")</li><li style=\"font-size: 11px\">null#LA31630-9 (\"需別人幫忙穿脫輔具或只會用湯匙進食。\")</li><li style=\"font-size: 11px\">http://loinc.org#LA24937-7 (\"無法自行取食或耗費時間過長。\")</li></ul><a name=\"opt-item.B-grooming\"> </a><p><b>Answer options for B-grooming </b></p><ul><li style=\"font-size: 11px\">null#LA31644-0 (\"可以自行洗手、刷牙、洗臉及梳頭。\")</li><li style=\"font-size: 11px\">null#LA31643-2 (\"需要他人部份或完全協助。\")</li></ul><a name=\"opt-item.C-toilet Use\"> </a><p><b>Answer options for C-toilet Use </b></p><ul><li style=\"font-size: 11px\">null#LA31632-5 (\"可自行上下馬桶、穿脫衣服、不弄髒衣服、會自行使用衛生紙擦拭。\")</li><li style=\"font-size: 11px\">null#LA31631-7 (\"需要協助保持姿勢的平衡、整理衣服或用衛生紙。\")</li><li style=\"font-size: 11px\">null#LA12304-4 (\"無法自己完成。\")</li></ul><a name=\"opt-item.D-bathing\"> </a><p><b>Answer options for D-bathing </b></p><ul><li style=\"font-size: 11px\">null#LA31636-6 (\"能獨立完成(不論是盆浴或沐浴)，不需別人在旁。\")</li><li style=\"font-size: 11px\">null#LA12304-4 (\"需別人協助。\")</li></ul><a name=\"opt-item.E-dressing\"> </a><p><b>Answer options for E-dressing </b></p><ul><li style=\"font-size: 11px\">null#LA31638-2 (\"能自己穿脫衣服、鞋子，自己扣釦子、上拉鍊或綁鞋帶。\")</li><li style=\"font-size: 11px\">null#LA31637-4 (\"在別人協助下，可自己完成一半以上的動作。\")</li><li style=\"font-size: 11px\">null#LA12304-4 (\"不會自己做。\")</li></ul><a name=\"opt-item.F-bowels\"> </a><p><b>Answer options for F-bowels </b></p><ul><li style=\"font-size: 11px\">null#LA31625-9 (\"不會失禁，能自行灌腸或使用塞劑。\")</li><li style=\"font-size: 11px\">null#LA31626-7 (\"偶爾會失禁(每週不超過一次)，需要他人協助使用灌腸或塞劑。\")</li><li style=\"font-size: 11px\">null#LA31627-5 (\"失禁，無法自己控制且需他人處理。\")</li></ul><a name=\"opt-item.G-bladder\"> </a><p><b>Answer options for G-bladder </b></p><ul><li style=\"font-size: 11px\">null#LA31625-9 (\"能自己控制不會有失禁，或能自行使用並清潔尿套、尿袋。\")</li><li style=\"font-size: 11px\">null#LA31626-7 (\"偶爾會失禁(每週不超過一次)或尿急(無法等待放好便盆或及時趕到廁 所)或需要他人協助處理尿套。\")</li><li style=\"font-size: 11px\">null#LA31628-3 (\"失禁，無法自己控制且需他人處理。\")</li></ul><a name=\"opt-item.H-mobility\"> </a><p><b>Answer options for H-mobility </b></p><ul><li style=\"font-size: 11px\">null#LA31642-4 (\"使用或不使用輔具，皆可獨立行走 50 公尺以上。\")</li><li style=\"font-size: 11px\">null#LA31641-6 (\"需他人稍微扶持或口頭指導才能行走 50 公尺以上。\")</li><li style=\"font-size: 11px\">null#LA31640-8 (\"雖無法行走，但可以操作輪椅(包括轉彎、進門及接近桌子、床沿)並可 推行輪椅 50 公尺以上。\")</li><li style=\"font-size: 11px\">null#LA31639-0 (\"完全無法自行行走，需別人幫忙推輪椅。\")</li></ul><a name=\"opt-item.I-stairs\"> </a><p><b>Answer options for I-stairs </b></p><ul><li style=\"font-size: 11px\">null#LA12302-8 (\"可自行上下樓梯，可使用扶手、柺杖等輔具。\")</li><li style=\"font-size: 11px\">null#LA31629-1 (\"需他人協助或監督才能上下樓梯。\")</li><li style=\"font-size: 11px\">null#LA24937-7 (\"無法上下樓梯。\")</li></ul><a name=\"opt-item.J-transfer\"> </a><p><b>Answer options for J-transfer </b></p><ul><li style=\"font-size: 11px\">null#LA12302-8 (\"整個過程可獨立完成。\")</li><li style=\"font-size: 11px\">null#LA31635-8 (\"移動身體時需要稍微協助、給予提醒、安全監督。\")</li><li style=\"font-size: 11px\">null#LA31634-1 (\"可以自行坐起，但從床上坐起時或移動身體時需要他人協助。\")</li><li style=\"font-size: 11px\">null#LA31633-3 (\"不會自己移動。\")</li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/Questionnaire/BarthelQuestionnaireInstance"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:title [ fhir:v "巴氏量表"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-28T11:34:57+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "巴氏量表 (Barthel Index)"] ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "A-feeding" ] ;
+     fhir:text [ fhir:v "進食 (Feeding)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 10
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA12302-8" ] ;
+         fhir:display [ fhir:v "自己在合理時間(約 10 秒鐘吃一口)可用筷子取食眼前的食物。若需進食輔具時，應會自行穿脫。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31630-9" ] ;
+         fhir:display [ fhir:v "需別人幫忙穿脫輔具或只會用湯匙進食。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding, loinc:LA24937-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA24937-7" ] ;
+         fhir:display [ fhir:v "無法自行取食或耗費時間過長。" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "B-grooming" ] ;
+     fhir:text [ fhir:v "個人衛生 (Grooming)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31644-0" ] ;
+         fhir:display [ fhir:v "可以自行洗手、刷牙、洗臉及梳頭。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31643-2" ] ;
+         fhir:display [ fhir:v "需要他人部份或完全協助。" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "C-toilet Use" ] ;
+     fhir:text [ fhir:v "上廁所 (Toilet Use)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 10
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31632-5" ] ;
+         fhir:display [ fhir:v "可自行上下馬桶、穿脫衣服、不弄髒衣服、會自行使用衛生紙擦拭。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31631-7" ] ;
+         fhir:display [ fhir:v "需要協助保持姿勢的平衡、整理衣服或用衛生紙。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA12304-4" ] ;
+         fhir:display [ fhir:v "無法自己完成。" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "D-bathing" ] ;
+     fhir:text [ fhir:v "洗澡 (Bathing)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31636-6" ] ;
+         fhir:display [ fhir:v "能獨立完成(不論是盆浴或沐浴)，不需別人在旁。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA12304-4" ] ;
+         fhir:display [ fhir:v "需別人協助。" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "E-dressing" ] ;
+     fhir:text [ fhir:v "穿脫衣服 (Dressing)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 10
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31638-2" ] ;
+         fhir:display [ fhir:v "能自己穿脫衣服、鞋子，自己扣釦子、上拉鍊或綁鞋帶。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31637-4" ] ;
+         fhir:display [ fhir:v "在別人協助下，可自己完成一半以上的動作。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA12304-4" ] ;
+         fhir:display [ fhir:v "不會自己做。" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "F-bowels" ] ;
+     fhir:text [ fhir:v "大便控制 (Bowels)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 10
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31625-9" ] ;
+         fhir:display [ fhir:v "不會失禁，能自行灌腸或使用塞劑。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31626-7" ] ;
+         fhir:display [ fhir:v "偶爾會失禁(每週不超過一次)，需要他人協助使用灌腸或塞劑。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31627-5" ] ;
+         fhir:display [ fhir:v "失禁，無法自己控制且需他人處理。" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "G-bladder" ] ;
+     fhir:text [ fhir:v "小便控制 (Bladder)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 10
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31625-9" ] ;
+         fhir:display [ fhir:v "能自己控制不會有失禁，或能自行使用並清潔尿套、尿袋。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31626-7" ] ;
+         fhir:display [ fhir:v "偶爾會失禁(每週不超過一次)或尿急(無法等待放好便盆或及時趕到廁 所)或需要他人協助處理尿套。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31628-3" ] ;
+         fhir:display [ fhir:v "失禁，無法自己控制且需他人處理。" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "H-mobility" ] ;
+     fhir:text [ fhir:v "平地行走 (Mobility)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 15
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31642-4" ] ;
+         fhir:display [ fhir:v "使用或不使用輔具，皆可獨立行走 50 公尺以上。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 10
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31641-6" ] ;
+         fhir:display [ fhir:v "需他人稍微扶持或口頭指導才能行走 50 公尺以上。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31640-8" ] ;
+         fhir:display [ fhir:v "雖無法行走，但可以操作輪椅(包括轉彎、進門及接近桌子、床沿)並可 推行輪椅 50 公尺以上。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31639-0" ] ;
+         fhir:display [ fhir:v "完全無法自行行走，需別人幫忙推輪椅。" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "I-stairs" ] ;
+     fhir:text [ fhir:v "上下樓梯 (Stairs)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 10
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA12302-8" ] ;
+         fhir:display [ fhir:v "可自行上下樓梯，可使用扶手、柺杖等輔具。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31629-1" ] ;
+         fhir:display [ fhir:v "需他人協助或監督才能上下樓梯。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA24937-7" ] ;
+         fhir:display [ fhir:v "無法上下樓梯。" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "J-transfer" ] ;
+     fhir:text [ fhir:v "移位(Transfer)" ] ;
+     fhir:type [ fhir:v "choice" ] ;
+     fhir:answerOption ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 15
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA12302-8" ] ;
+         fhir:display [ fhir:v "整個過程可獨立完成。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 10
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31635-8" ] ;
+         fhir:display [ fhir:v "移動身體時需要稍微協助、給予提醒、安全監督。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 5
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31634-1" ] ;
+         fhir:display [ fhir:v "可以自行坐起，但從床上坐起時或移動身體時需要他人協助。" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/ordinalValue"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:integer ;
+           fhir:v 0
+         ]
+       ] ) ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "LA31633-3" ] ;
+         fhir:display [ fhir:v "不會自己移動。" ]
+       ]
+     ] )
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Expression ;
+         fhir:language [ fhir:v "text/fhirpath" ] ;
+         fhir:expression [ fhir:v "%resource.item.where(linkId != 'K-total-score-Barthel').answer.value.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').value.sum()" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] ) ;
+     fhir:linkId [ fhir:v "K-total-score-Barthel" ] ;
+     fhir:text [ fhir:v "巴氏量表總分" ] ;
+     fhir:type [ fhir:v "integer" ] ;
+     fhir:required [ fhir:v false ] ;
+     fhir:readOnly [ fhir:v true ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

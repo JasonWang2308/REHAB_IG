@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Organization",
+  "id" : "OrganizationExample",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/Organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization OrganizationExample</b></p><a name=\"OrganizationExample\"> </a><a name=\"hcOrganizationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization.html\">Organization</a></p></div><p><b>identifier</b>: <code>http://hospital.mohw.gov.tw/orgID</code>/12345678</p><p><b>active</b>: true</p><p><b>name</b>: 台灣健康醫院</p><p><b>address</b>: 123 健康路 臺北市 中正區 100 </p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hospital.mohw.gov.tw/orgID",
+    "value" : "12345678"
+  }],
+  "active" : true,
+  "name" : "台灣健康醫院",
+  "address" : [{
+    "line" : ["123 健康路"],
+    "city" : "臺北市",
+    "state" : "中正區",
+    "postalCode" : "100"
+  }]
+}

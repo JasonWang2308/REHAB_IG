@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSBarthelBowels",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSBarthelBowels</b></p><a name=\"VSBarthelBowels\"> </a><a name=\"hcVSBarthelBowels\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA31625-9/\">LA31625-9</a></td><td>不會失禁，能自行灌腸或使用塞劑。</td></tr><tr><td><a href=\"https://loinc.org/LA31626-7/\">LA31626-7</a></td><td>偶爾會失禁(每週不超過一次)，需要他人協助使用灌腸或塞劑。</td></tr><tr><td><a href=\"https://loinc.org/LA31627-5/\">LA31627-5</a></td><td>失禁，無法自己控制且需他人處理。</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/VSBarthelBowels",
+  "version" : "0.1.0",
+  "name" : "VSBarthelBowels",
+  "title" : "大便控制-選項",
+  "status" : "draft",
+  "date" : "2025-10-28T11:34:57+08:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA31625-9",
+        "display" : "不會失禁，能自行灌腸或使用塞劑。"
+      },
+      {
+        "code" : "LA31626-7",
+        "display" : "偶爾會失禁(每週不超過一次)，需要他人協助使用灌腸或塞劑。"
+      },
+      {
+        "code" : "LA31627-5",
+        "display" : "失禁，無法自己控制且需他人處理。"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "ot-therapist-001",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/Practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ot-therapist-001</b></p><a name=\"ot-therapist-001\"> </a><a name=\"hcot-therapist-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Practitioner.html\">Practitioner</a></p></div><p><b>identifier</b>: <code>http://hospital.mohw.gov.tw/docID</code>/A123456789</p><p><b>active</b>: true</p><p><b>name</b>: 小姐 李 (Official)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 224609002}\">職能治療師</span></td><td>台灣職能治療師公會</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hospital.mohw.gov.tw/docID",
+    "value" : "A123456789"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "family" : "李",
+    "given" : ["小姐"]
+  }],
+  "qualification" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "224609002",
+        "display" : "職能治療師"
+      }]
+    },
+    "issuer" : {
+      "display" : "台灣職能治療師公會"
+    }
+  }]
+}

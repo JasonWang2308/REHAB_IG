@@ -1,0 +1,26 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "MedicationAdministrationIdentifier",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter MedicationAdministrationIdentifier</b></p><a name=\"MedicationAdministrationIdentifier\"> </a><a name=\"hcMedicationAdministrationIdentifier\"> </a><h2>MedicationAdministrationIdentifier</h2><p>Parameter <code>identifier</code>:<code>token</code></p><div><p>Return administrations with this external identifier</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/medicationadministration.html\">MedicationAdministration</a></td></tr><tr><td>Expression</td><td><code>MedicationAdministration.​identifier</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/SearchParameter/MedicationAdministration-identifier",
+  "version" : "0.1.0",
+  "name" : "MedicationAdministrationIdentifier",
+  "status" : "active",
+  "date" : "2025-10-28T11:34:57+08:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Return administrations with this external identifier",
+  "code" : "identifier",
+  "base" : ["MedicationAdministration"],
+  "type" : "token",
+  "expression" : "MedicationAdministration.​identifier"
+}

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSBarthelBathing",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSBarthelBathing</b></p><a name=\"VSBarthelBathing\"> </a><a name=\"hcVSBarthelBathing\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA31636-6/\">LA31636-6</a></td><td>能獨立完成(不論是盆浴或沐浴)，不需別人在旁。</td></tr><tr><td><a href=\"https://loinc.org/LA12304-4/\">LA12304-4</a></td><td>需別人協助。</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/VSBarthelBathing",
+  "version" : "0.1.0",
+  "name" : "VSBarthelBathing",
+  "title" : "洗澡-選項",
+  "status" : "draft",
+  "date" : "2025-10-28T11:34:57+08:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA31636-6",
+        "display" : "能獨立完成(不論是盆浴或沐浴)，不需別人在旁。"
+      },
+      {
+        "code" : "LA12304-4",
+        "display" : "需別人協助。"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VSBarthelToiletUse"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VSBarthelToiletUse</b></p><a name="VSBarthelToiletUse"> </a><a name="hcVSBarthelToiletUse"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA31632-5/">LA31632-5</a></td><td>可自行上下馬桶、穿脫衣服、不弄髒衣服、會自行使用衛生紙擦拭。</td></tr><tr><td><a href="https://loinc.org/LA31631-7/">LA31631-7</a></td><td>需要協助保持姿勢的平衡、整理衣服或用衛生紙。</td></tr><tr><td><a href="https://loinc.org/LA12304-4/">LA12304-4</a></td><td>無法自己完成。</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/VSBarthelToiletUse"/>
+  <version value="0.1.0"/>
+  <name value="VSBarthelToiletUse"/>
+  <title value="上廁所-選項"/>
+  <status value="draft"/>
+  <date value="2025-10-28T11:34:57+08:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA31632-5"/>
+        <display value="可自行上下馬桶、穿脫衣服、不弄髒衣服、會自行使用衛生紙擦拭。"/>
+      </concept>
+      <concept>
+        <code value="LA31631-7"/>
+        <display value="需要協助保持姿勢的平衡、整理衣服或用衛生紙。"/>
+      </concept>
+      <concept>
+        <code value="LA12304-4"/>
+        <display value="無法自己完成。"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

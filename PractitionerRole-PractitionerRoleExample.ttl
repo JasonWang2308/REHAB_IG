@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/PractitionerRole/PractitionerRoleExample> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PractitionerRoleExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/PractitionerRole>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole PractitionerRoleExample</b></p><a name=\"PractitionerRoleExample\"> </a><a name=\"hcPractitionerRoleExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRole.html\">PractitionerRole</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-ot-therapist-001.html\">Practitioner 小姐 李 (official)</a></p><p><b>organization</b>: <a href=\"Organization-OrganizationExample.html\">Organization 台灣健康醫院</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0286 DO}\">Doctor</span></p><p><b>specialty</b>: <span title=\"Codes:{http://snomed.info/sct 394802001}\">General medicine</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <http://example.org/Practitioner/ot-therapist-001> ;
+     fhir:reference [ fhir:v "Practitioner/ot-therapist-001" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://example.org/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0286"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DO" ] ;
+       fhir:display [ fhir:v "Doctor" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       a sct:394802001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "394802001" ] ;
+       fhir:display [ fhir:v "General medicine" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>WMFT上肢功能評估問卷回覆範例 - JSON Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"6.144"}
+    h3,h4,h5,h6{--heading-prefix:"6.144"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">應用說明</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">規範文件
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="capability.html">能力聲明</a>
+      </li>
+      <li>
+        <a href="parameter.html">查詢參數及操作定義</a>
+      </li>
+      <li>
+        <a href="logic.html">邏輯模型</a>
+      </li>
+      <li>
+        <a href="extension.html">FHIR Profiles及Extensions</a>
+      </li>
+      <li>
+        <a href="terminology.html">專門術語</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="example.html">範例</a>
+  </li>
+  <li>
+    <a href="download.html">結構定義與範例檔下載</a>
+  </li>
+  <li>
+    <a href="security.html">安全性</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>WMFT上肢功能評估問卷回覆範例</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">ExampleIG - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://example.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="QuestionnaireResponse-WMFTQuestionnaireResponseExample.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="QuestionnaireResponse-WMFTQuestionnaireResponseExample.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="QuestionnaireResponse-WMFTQuestionnaireResponseExample.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: WMFT上肢功能評估問卷回覆範例 - JSON Representation</h2>
+
+
+<p><a href="QuestionnaireResponse-WMFTQuestionnaireResponseExample.json" no-download="true">Raw json</a> | <a download="null" href="QuestionnaireResponse-WMFTQuestionnaireResponseExample.json">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="json" data-fhir="generated"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse">resourceType</a>" : "QuestionnaireResponse",
+  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.id">id</a>" : "WMFTQuestionnaireResponseExample",
+  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a style="color: Maroon" href="StructureDefinition-WMFTQuestionnaireResponse.html">&#x1F517;</a> "http://example.org/StructureDefinition/WMFTQuestionnaireResponse"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: QuestionnaireResponse WMFTQuestionnaireResponseExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\"WMFTQuestionnaireResponseExample\"&gt; &lt;/a&gt;&lt;a name=\"hcWMFTQuestionnaireResponseExample\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-WMFTQuestionnaireResponse.html\"&gt;WMFT上肢功能評估問卷回覆&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"&gt;&lt;tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\"&gt;LinkID&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\"&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\"&gt;Definition&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\"&gt;Answer&lt;/a&gt;&lt;span style=\"float: right\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"&gt;&lt;img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/&gt; WMFTQuestionnaireResponseExample&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Questionnaire:http://example.org/fhir/Questionnaire/WMFTQuestionnaireInstance&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; assessment-side-wmft&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;請選擇評估側&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span&gt;&lt;span&gt;[not stated] 24028007: 24028007&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/&gt; A-timed-joint-segment-movements&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;A.定時關節分段動作評估&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-forearm-to-table-side&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;透過外展肩膀將前臂放在桌子上&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;4&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-forearm-to-box-side&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;將前臂放在一個 25.4 公分高的箱子上，透過肩部外展&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-extended-elbow-side&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;將手肘伸向一側，越過一張 28 公分長的桌子&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;4&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-extended-elbow-to-the-side-with-1lb-weight&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;透過伸展手肘將重量推向桌子對面的外腕關節&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-hand-to-table-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;將手放在桌上&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;5&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-hand-to-box-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;將手放在桌面上的盒子上&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;5&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-timed-joint-segment-movements-subscore&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;A.定時關節段運動分量表分數&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;21&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/&gt; B-timed-integrative-functional-movements&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;B.定時整合功能動作評估&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-reach-and-retrieve-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;透過手肘和彎曲手腕將 1 磅重的物體拉過桌子&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-lift-can-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;舉起一個罐子，並用圓柱形的抓握方式將其靠近嘴唇&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-lift-pencil-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;使用三爪卡盤抓握來拿起鉛筆&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-pick-up-paper-clip-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;用鉗子抓取回形針&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-stack-checkers-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;將棋子堆疊到中心棋子上&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-flip-3-cards-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;用鉗子抓握，客戶嘗試翻轉每張卡片&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-turning-the-key-in-lock-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;使用鉗子抓握並保持接觸，將鑰匙向左和向右旋轉 180 度&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-fold-towel-front&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;抓住毛巾，縱向折疊，然後用被測試的手將毛巾再次對折&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-lift-basket-standing&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;提起一個椅子上 3 磅重的籃子，並將其放在床頭櫃上&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;4&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-timed-integrative-functional-movements-subscore&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;B.定時關節段運動分量表分數&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;21&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; C-total-score-WMFT&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;C.WMFT總分計算&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;39&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\"4\" class=\"hierarchy\"&gt;&lt;br/&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"&gt;&lt;img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.questionnaire">questionnaire</a>" : "http://example.org/fhir/Questionnaire/WMFTQuestionnaireInstance",
+  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.status">status</a>" : "completed",
+  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/PatientPACExample"
+  },
+  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.authored">authored</a>" : "2025-10-06T13:30:00+08:00",
+  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "assessment-side-wmft",
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "請選擇評估側",
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "24028007"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-timed-joint-segment-movements",
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "A.定時關節分段動作評估",
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 7.2
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-forearm-to-table-side",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "透過外展肩膀將前臂放在桌子上",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 4
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 12.5
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-forearm-to-box-side",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "將前臂放在一個 25.4 公分高的箱子上，透過肩部外展",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 3
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 5.7
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-extended-elbow-side",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "將手肘伸向一側，越過一張 28 公分長的桌子",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 4
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 17.3
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-extended-elbow-to-the-side-with-1lb-weight",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "透過伸展手肘將重量推向桌子對面的外腕關節",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 3.2
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-hand-to-table-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "將手放在桌上",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 5
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-hand-to-box-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "將手放在桌面上的盒子上",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 5
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-timed-joint-segment-movements-subscore",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "A.定時關節段運動分量表分數",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-timed-integrative-functional-movements",
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "B.定時整合功能動作評估",
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-reach-and-retrieve-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "透過手肘和彎曲手腕將 1 磅重的物體拉過桌子",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 3
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-lift-can-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "舉起一個罐子，並用圓柱形的抓握方式將其靠近嘴唇",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-lift-pencil-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "使用三爪卡盤抓握來拿起鉛筆",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-pick-up-paper-clip-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "用鉗子抓取回形針",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 1
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-stack-checkers-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "將棋子堆疊到中心棋子上",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-flip-3-cards-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "用鉗子抓握，客戶嘗試翻轉每張卡片",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-turning-the-key-in-lock-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "使用鉗子抓握並保持接觸，將鑰匙向左和向右旋轉 180 度",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 1
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-fold-towel-front",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "抓住毛巾，縱向折疊，然後用被測試的手將毛巾再次對折",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 3
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-lift-basket-standing",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "提起一個椅子上 3 磅重的籃子，並將其放在床頭櫃上",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 4
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-timed-integrative-functional-movements-subscore",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "B.定時關節段運動分量表分數",
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "C-total-score-WMFT",
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "C.WMFT總分計算",
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 39
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l785">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 28, 2025 11:36+0800">2025-10-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

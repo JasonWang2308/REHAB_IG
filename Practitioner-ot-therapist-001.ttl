@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Practitioner/ot-therapist-001> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ot-therapist-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/Practitioner"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/Practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ot-therapist-001</b></p><a name=\"ot-therapist-001\"> </a><a name=\"hcot-therapist-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Practitioner.html\">Practitioner</a></p></div><p><b>identifier</b>: <code>http://hospital.mohw.gov.tw/docID</code>/A123456789</p><p><b>active</b>: true</p><p><b>name</b>: 小姐 李 (Official)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 224609002}\">職能治療師</span></td><td>台灣職能治療師公會</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.mohw.gov.tw/docID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "A123456789" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "李" ] ;
+     fhir:given ( [ fhir:v "小姐" ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:224609002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "224609002" ] ;
+         fhir:display [ fhir:v "職能治療師" ]
+       ] )
+     ] ;
+     fhir:issuer [
+       fhir:display [ fhir:v "台灣職能治療師公會" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

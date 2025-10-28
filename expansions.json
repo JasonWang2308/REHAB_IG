@@ -1,0 +1,1003 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "d43b3918-780b-4cdb-9869-8c7a7de288b6",
+  "meta" : {
+    "lastUpdated" : "2025-10-28T11:36:16.166+08:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelBathing",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA31636-6\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31636-6/\">LA31636-6</a></td><td>Independent (or in shower)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31636-6&quot;, &quot;display&quot;: &quot;Independent (or in shower)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31636-6&quot;&gt;&lt;display value=&quot;Independent (or in shower)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA12304-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA12304-4/\">LA12304-4</a></td><td>Dependent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12304-4&quot;, &quot;display&quot;: &quot;Dependent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12304-4&quot;&gt;&lt;display value=&quot;Dependent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelBathing",
+      "version" : "0.1.0",
+      "name" : "VSBarthelBathing",
+      "title" : "洗澡-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:492411d6-590e-4424-8496-fc8918be4eb8",
+        "timestamp" : "2025-10-28T11:41:54+08:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA31636-6",
+          "display" : "Independent (or in shower)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA12304-4",
+          "display" : "Dependent"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelBladder",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA31625-9\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31625-9/\">LA31625-9</a></td><td>Continent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31625-9&quot;, &quot;display&quot;: &quot;Continent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31625-9&quot;&gt;&lt;display value=&quot;Continent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31626-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31626-7/\">LA31626-7</a></td><td>Occasional accident</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31626-7&quot;, &quot;display&quot;: &quot;Occasional accident&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31626-7&quot;&gt;&lt;display value=&quot;Occasional accident&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31628-3\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31628-3/\">LA31628-3</a></td><td>Incontinent, or catheterized and unable to manage alone</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31628-3&quot;, &quot;display&quot;: &quot;Incontinent, or catheterized and unable to manage alone&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31628-3&quot;&gt;&lt;display value=&quot;Incontinent, or catheterized and unable to manage alone&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelBladder",
+      "version" : "0.1.0",
+      "name" : "VSBarthelBladder",
+      "title" : "小便控制-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:1df93911-fcc2-42bd-aeff-0f6e07a27202",
+        "timestamp" : "2025-10-28T11:41:55+08:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA31625-9",
+          "display" : "Continent"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31626-7",
+          "display" : "Occasional accident"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31628-3",
+          "display" : "Incontinent, or catheterized and unable to manage alone"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelBowels",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA31625-9\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31625-9/\">LA31625-9</a></td><td>Continent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31625-9&quot;, &quot;display&quot;: &quot;Continent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31625-9&quot;&gt;&lt;display value=&quot;Continent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31626-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31626-7/\">LA31626-7</a></td><td>Occasional accident</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31626-7&quot;, &quot;display&quot;: &quot;Occasional accident&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31626-7&quot;&gt;&lt;display value=&quot;Occasional accident&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31627-5\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31627-5/\">LA31627-5</a></td><td>Incontinent (or needs to be given enemas)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31627-5&quot;, &quot;display&quot;: &quot;Incontinent (or needs to be given enemas)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31627-5&quot;&gt;&lt;display value=&quot;Incontinent (or needs to be given enemas)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelBowels",
+      "version" : "0.1.0",
+      "name" : "VSBarthelBowels",
+      "title" : "大便控制-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:88bf68b7-240e-4f0f-92d4-f67a3413d41c",
+        "timestamp" : "2025-10-28T11:41:57+08:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA31625-9",
+          "display" : "Continent"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31626-7",
+          "display" : "Occasional accident"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31627-5",
+          "display" : "Incontinent (or needs to be given enemas)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelDressing",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA31638-2\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31638-2/\">LA31638-2</a></td><td>Independent (including buttons, zips, laces, etc.)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31638-2&quot;, &quot;display&quot;: &quot;Independent (including buttons, zips, laces, etc.)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31638-2&quot;&gt;&lt;display value=&quot;Independent (including buttons, zips, laces, etc.)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31637-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31637-4/\">LA31637-4</a></td><td>Needs help but can do about half unaided</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31637-4&quot;, &quot;display&quot;: &quot;Needs help but can do about half unaided&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31637-4&quot;&gt;&lt;display value=&quot;Needs help but can do about half unaided&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA12304-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA12304-4/\">LA12304-4</a></td><td>Dependent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12304-4&quot;, &quot;display&quot;: &quot;Dependent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12304-4&quot;&gt;&lt;display value=&quot;Dependent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelDressing",
+      "version" : "0.1.0",
+      "name" : "VSBarthelDressing",
+      "title" : "穿脫衣服-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:ff4759b6-e344-4eb8-82ca-c43181d2e978",
+        "timestamp" : "2025-10-28T11:41:58+08:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA31638-2",
+          "display" : "Independent (including buttons, zips, laces, etc.)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31637-4",
+          "display" : "Needs help but can do about half unaided"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA12304-4",
+          "display" : "Dependent"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelFeeding",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA12302-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA12302-8/\">LA12302-8</a></td><td>Independent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12302-8&quot;, &quot;display&quot;: &quot;Independent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12302-8&quot;&gt;&lt;display value=&quot;Independent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31630-9\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31630-9/\">LA31630-9</a></td><td>Needs help cutting, spreading butter, etc., or requires modified diet</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31630-9&quot;, &quot;display&quot;: &quot;Needs help cutting, spreading butter, etc., or requires modified diet&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31630-9&quot;&gt;&lt;display value=&quot;Needs help cutting, spreading butter, etc., or requires modified diet&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA24937-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA24937-7/\">LA24937-7</a></td><td>Unable</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA24937-7&quot;, &quot;display&quot;: &quot;Unable&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA24937-7&quot;&gt;&lt;display value=&quot;Unable&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelFeeding",
+      "version" : "0.1.0",
+      "name" : "VSBarthelFeeding",
+      "title" : "進食-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:6d4aeb3a-56dd-44ee-9b3e-ddce11b4cacf",
+        "timestamp" : "2025-10-28T11:41:59+08:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA12302-8",
+          "display" : "Independent"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31630-9",
+          "display" : "Needs help cutting, spreading butter, etc., or requires modified diet"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA24937-7",
+          "display" : "Unable"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelGrooming",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA31644-0\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31644-0/\">LA31644-0</a></td><td>Independent face/hair/teeth/shaving (implements provided)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31644-0&quot;, &quot;display&quot;: &quot;Independent face/hair/teeth/shaving (implements provided)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31644-0&quot;&gt;&lt;display value=&quot;Independent face/hair/teeth/shaving (implements provided)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31643-2\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31643-2/\">LA31643-2</a></td><td>Needs help with personal care</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31643-2&quot;, &quot;display&quot;: &quot;Needs help with personal care&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31643-2&quot;&gt;&lt;display value=&quot;Needs help with personal care&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelGrooming",
+      "version" : "0.1.0",
+      "name" : "VSBarthelGrooming",
+      "title" : "個人衛生-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:122e574c-5ae1-4f4d-9c6d-6044e663cba8",
+        "timestamp" : "2025-10-28T11:42:00+08:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA31644-0",
+          "display" : "Independent face/hair/teeth/shaving (implements provided)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31643-2",
+          "display" : "Needs help with personal care"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelMobility",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA31642-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31642-4/\">LA31642-4</a></td><td>Independent (but may use any aid; for example, stick) &gt;50 yards</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31642-4&quot;, &quot;display&quot;: &quot;Independent (but may use any aid; for example, stick) &gt;50 yards&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31642-4&quot;&gt;&lt;display value=&quot;Independent (but may use any aid; for example, stick) &amp;gt;50 yards&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31641-6\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31641-6/\">LA31641-6</a></td><td>Walks with help of one person (verbal or physical) &gt;50 yards</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31641-6&quot;, &quot;display&quot;: &quot;Walks with help of one person (verbal or physical) &gt;50 yards&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31641-6&quot;&gt;&lt;display value=&quot;Walks with help of one person (verbal or physical) &amp;gt;50 yards&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31640-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31640-8/\">LA31640-8</a></td><td>Wheelchair independent, including corners, &gt;50 yards</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31640-8&quot;, &quot;display&quot;: &quot;Wheelchair independent, including corners, &gt;50 yards&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31640-8&quot;&gt;&lt;display value=&quot;Wheelchair independent, including corners, &amp;gt;50 yards&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31639-0\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31639-0/\">LA31639-0</a></td><td>Immobile or &lt;50 yards</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31639-0&quot;, &quot;display&quot;: &quot;Immobile or &lt;50 yards&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31639-0&quot;&gt;&lt;display value=&quot;Immobile or &amp;lt;50 yards&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelMobility",
+      "version" : "0.1.0",
+      "name" : "VSBarthelMobility",
+      "title" : "平地行走-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:2eaf0fb3-bff0-461c-a187-f390c7978de7",
+        "timestamp" : "2025-10-28T11:42:01+08:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA31642-4",
+          "display" : "Independent (but may use any aid; for example, stick) >50 yards"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31641-6",
+          "display" : "Walks with help of one person (verbal or physical) >50 yards"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31640-8",
+          "display" : "Wheelchair independent, including corners, >50 yards"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31639-0",
+          "display" : "Immobile or <50 yards"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelStairs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA12302-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA12302-8/\">LA12302-8</a></td><td>Independent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12302-8&quot;, &quot;display&quot;: &quot;Independent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12302-8&quot;&gt;&lt;display value=&quot;Independent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31629-1\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31629-1/\">LA31629-1</a></td><td>Needs help (verbal, physical, carrying aid)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31629-1&quot;, &quot;display&quot;: &quot;Needs help (verbal, physical, carrying aid)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31629-1&quot;&gt;&lt;display value=&quot;Needs help (verbal, physical, carrying aid)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA24937-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA24937-7/\">LA24937-7</a></td><td>Unable</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA24937-7&quot;, &quot;display&quot;: &quot;Unable&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA24937-7&quot;&gt;&lt;display value=&quot;Unable&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelStairs",
+      "version" : "0.1.0",
+      "name" : "VSBarthelStairs",
+      "title" : "上下樓梯-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:690b0697-c2b4-4b83-b246-38bdd0faedd1",
+        "timestamp" : "2025-10-28T11:42:03+08:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA12302-8",
+          "display" : "Independent"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31629-1",
+          "display" : "Needs help (verbal, physical, carrying aid)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA24937-7",
+          "display" : "Unable"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelToiletUse",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA31632-5\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31632-5/\">LA31632-5</a></td><td>Independent (on and off, dressing, wiping)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31632-5&quot;, &quot;display&quot;: &quot;Independent (on and off, dressing, wiping)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31632-5&quot;&gt;&lt;display value=&quot;Independent (on and off, dressing, wiping)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31631-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31631-7/\">LA31631-7</a></td><td>Needs some help, but can do something alone</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31631-7&quot;, &quot;display&quot;: &quot;Needs some help, but can do something alone&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31631-7&quot;&gt;&lt;display value=&quot;Needs some help, but can do something alone&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA12304-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA12304-4/\">LA12304-4</a></td><td>Dependent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12304-4&quot;, &quot;display&quot;: &quot;Dependent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12304-4&quot;&gt;&lt;display value=&quot;Dependent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelToiletUse",
+      "version" : "0.1.0",
+      "name" : "VSBarthelToiletUse",
+      "title" : "上廁所-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:4b59b878-9c58-433d-8543-febe1aa5d1da",
+        "timestamp" : "2025-10-28T11:42:04+08:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA31632-5",
+          "display" : "Independent (on and off, dressing, wiping)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31631-7",
+          "display" : "Needs some help, but can do something alone"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA12304-4",
+          "display" : "Dependent"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelTotal",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelBathing.html\">valueset 洗澡-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelBathing|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelBladder.html\">valueset 小便控制-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelBladder|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelBowels.html\">valueset 大便控制-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelBowels|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelDressing.html\">valueset 穿脫衣服-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelDressing|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelFeeding.html\">valueset 進食-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelFeeding|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelGrooming.html\">valueset 個人衛生-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelGrooming|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelMobility.html\">valueset 平地行走-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelMobility|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelStairs.html\">valueset 上下樓梯-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelStairs|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelToiletUse.html\">valueset 上廁所-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelToiletUse|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"ValueSet-VSBarthelTransfer.html\">valueset 移位-選項 v0.1.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/ValueSet/VSBarthelTransfer|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 23 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA12302-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA12302-8/\">LA12302-8</a></td><td>Independent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12302-8&quot;, &quot;display&quot;: &quot;Independent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12302-8&quot;&gt;&lt;display value=&quot;Independent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31630-9\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31630-9/\">LA31630-9</a></td><td>Needs help cutting, spreading butter, etc., or requires modified diet</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31630-9&quot;, &quot;display&quot;: &quot;Needs help cutting, spreading butter, etc., or requires modified diet&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31630-9&quot;&gt;&lt;display value=&quot;Needs help cutting, spreading butter, etc., or requires modified diet&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA24937-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA24937-7/\">LA24937-7</a></td><td>Unable</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA24937-7&quot;, &quot;display&quot;: &quot;Unable&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA24937-7&quot;&gt;&lt;display value=&quot;Unable&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31644-0\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31644-0/\">LA31644-0</a></td><td>Independent face/hair/teeth/shaving (implements provided)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31644-0&quot;, &quot;display&quot;: &quot;Independent face/hair/teeth/shaving (implements provided)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31644-0&quot;&gt;&lt;display value=&quot;Independent face/hair/teeth/shaving (implements provided)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31643-2\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31643-2/\">LA31643-2</a></td><td>Needs help with personal care</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31643-2&quot;, &quot;display&quot;: &quot;Needs help with personal care&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31643-2&quot;&gt;&lt;display value=&quot;Needs help with personal care&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31632-5\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31632-5/\">LA31632-5</a></td><td>Independent (on and off, dressing, wiping)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31632-5&quot;, &quot;display&quot;: &quot;Independent (on and off, dressing, wiping)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31632-5&quot;&gt;&lt;display value=&quot;Independent (on and off, dressing, wiping)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31631-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31631-7/\">LA31631-7</a></td><td>Needs some help, but can do something alone</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31631-7&quot;, &quot;display&quot;: &quot;Needs some help, but can do something alone&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31631-7&quot;&gt;&lt;display value=&quot;Needs some help, but can do something alone&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA12304-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA12304-4/\">LA12304-4</a></td><td>Dependent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12304-4&quot;, &quot;display&quot;: &quot;Dependent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12304-4&quot;&gt;&lt;display value=&quot;Dependent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31636-6\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31636-6/\">LA31636-6</a></td><td>Independent (or in shower)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31636-6&quot;, &quot;display&quot;: &quot;Independent (or in shower)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31636-6&quot;&gt;&lt;display value=&quot;Independent (or in shower)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31638-2\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31638-2/\">LA31638-2</a></td><td>Independent (including buttons, zips, laces, etc.)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31638-2&quot;, &quot;display&quot;: &quot;Independent (including buttons, zips, laces, etc.)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31638-2&quot;&gt;&lt;display value=&quot;Independent (including buttons, zips, laces, etc.)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31637-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31637-4/\">LA31637-4</a></td><td>Needs help but can do about half unaided</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31637-4&quot;, &quot;display&quot;: &quot;Needs help but can do about half unaided&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31637-4&quot;&gt;&lt;display value=&quot;Needs help but can do about half unaided&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31625-9\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31625-9/\">LA31625-9</a></td><td>Continent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31625-9&quot;, &quot;display&quot;: &quot;Continent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31625-9&quot;&gt;&lt;display value=&quot;Continent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31626-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31626-7/\">LA31626-7</a></td><td>Occasional accident</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31626-7&quot;, &quot;display&quot;: &quot;Occasional accident&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31626-7&quot;&gt;&lt;display value=&quot;Occasional accident&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31627-5\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31627-5/\">LA31627-5</a></td><td>Incontinent (or needs to be given enemas)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31627-5&quot;, &quot;display&quot;: &quot;Incontinent (or needs to be given enemas)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31627-5&quot;&gt;&lt;display value=&quot;Incontinent (or needs to be given enemas)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31628-3\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31628-3/\">LA31628-3</a></td><td>Incontinent, or catheterized and unable to manage alone</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31628-3&quot;, &quot;display&quot;: &quot;Incontinent, or catheterized and unable to manage alone&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31628-3&quot;&gt;&lt;display value=&quot;Incontinent, or catheterized and unable to manage alone&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31642-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31642-4/\">LA31642-4</a></td><td>Independent (but may use any aid; for example, stick) &gt;50 yards</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31642-4&quot;, &quot;display&quot;: &quot;Independent (but may use any aid; for example, stick) &gt;50 yards&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31642-4&quot;&gt;&lt;display value=&quot;Independent (but may use any aid; for example, stick) &amp;gt;50 yards&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31641-6\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31641-6/\">LA31641-6</a></td><td>Walks with help of one person (verbal or physical) &gt;50 yards</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31641-6&quot;, &quot;display&quot;: &quot;Walks with help of one person (verbal or physical) &gt;50 yards&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31641-6&quot;&gt;&lt;display value=&quot;Walks with help of one person (verbal or physical) &amp;gt;50 yards&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31640-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31640-8/\">LA31640-8</a></td><td>Wheelchair independent, including corners, &gt;50 yards</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31640-8&quot;, &quot;display&quot;: &quot;Wheelchair independent, including corners, &gt;50 yards&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31640-8&quot;&gt;&lt;display value=&quot;Wheelchair independent, including corners, &amp;gt;50 yards&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31639-0\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31639-0/\">LA31639-0</a></td><td>Immobile or &lt;50 yards</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31639-0&quot;, &quot;display&quot;: &quot;Immobile or &lt;50 yards&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31639-0&quot;&gt;&lt;display value=&quot;Immobile or &amp;lt;50 yards&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31629-1\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31629-1/\">LA31629-1</a></td><td>Needs help (verbal, physical, carrying aid)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31629-1&quot;, &quot;display&quot;: &quot;Needs help (verbal, physical, carrying aid)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31629-1&quot;&gt;&lt;display value=&quot;Needs help (verbal, physical, carrying aid)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31635-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31635-8/\">LA31635-8</a></td><td>Minor help (verbal or physical)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31635-8&quot;, &quot;display&quot;: &quot;Minor help (verbal or physical)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31635-8&quot;&gt;&lt;display value=&quot;Minor help (verbal or physical)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31634-1\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31634-1/\">LA31634-1</a></td><td>Major help (one or two people, physical), can sit</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31634-1&quot;, &quot;display&quot;: &quot;Major help (one or two people, physical), can sit&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31634-1&quot;&gt;&lt;display value=&quot;Major help (one or two people, physical), can sit&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31633-3\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31633-3/\">LA31633-3</a></td><td>Unable, no sitting balance</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31633-3&quot;, &quot;display&quot;: &quot;Unable, no sitting balance&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31633-3&quot;&gt;&lt;display value=&quot;Unable, no sitting balance&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelTotal",
+      "version" : "0.1.0",
+      "name" : "VSBarthelTotal",
+      "title" : "Barthel Index 總值集",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:dc5c643f-02cf-4a38-85eb-f7bb0edb485b",
+        "timestamp" : "2025-10-28T11:42:05+08:00",
+        "total" : 23,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelFeeding|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelGrooming|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelToiletUse|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelBathing|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelDressing|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelBowels|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelBladder|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelMobility|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelStairs|0.1.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://example.org/ValueSet/VSBarthelTransfer|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA12302-8",
+          "display" : "Independent"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31630-9",
+          "display" : "Needs help cutting, spreading butter, etc., or requires modified diet"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA24937-7",
+          "display" : "Unable"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31644-0",
+          "display" : "Independent face/hair/teeth/shaving (implements provided)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31643-2",
+          "display" : "Needs help with personal care"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31632-5",
+          "display" : "Independent (on and off, dressing, wiping)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31631-7",
+          "display" : "Needs some help, but can do something alone"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA12304-4",
+          "display" : "Dependent"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31636-6",
+          "display" : "Independent (or in shower)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31638-2",
+          "display" : "Independent (including buttons, zips, laces, etc.)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31637-4",
+          "display" : "Needs help but can do about half unaided"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31625-9",
+          "display" : "Continent"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31626-7",
+          "display" : "Occasional accident"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31627-5",
+          "display" : "Incontinent (or needs to be given enemas)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31628-3",
+          "display" : "Incontinent, or catheterized and unable to manage alone"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31642-4",
+          "display" : "Independent (but may use any aid; for example, stick) >50 yards"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31641-6",
+          "display" : "Walks with help of one person (verbal or physical) >50 yards"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31640-8",
+          "display" : "Wheelchair independent, including corners, >50 yards"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31639-0",
+          "display" : "Immobile or <50 yards"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31629-1",
+          "display" : "Needs help (verbal, physical, carrying aid)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31635-8",
+          "display" : "Minor help (verbal or physical)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31634-1",
+          "display" : "Major help (one or two people, physical), can sit"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31633-3",
+          "display" : "Unable, no sitting balance"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBarthelTransfer",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.81\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-LA12302-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA12302-8/\">LA12302-8</a></td><td>Independent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA12302-8&quot;, &quot;display&quot;: &quot;Independent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA12302-8&quot;&gt;&lt;display value=&quot;Independent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31635-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31635-8/\">LA31635-8</a></td><td>Minor help (verbal or physical)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31635-8&quot;, &quot;display&quot;: &quot;Minor help (verbal or physical)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31635-8&quot;&gt;&lt;display value=&quot;Minor help (verbal or physical)&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31634-1\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31634-1/\">LA31634-1</a></td><td>Major help (one or two people, physical), can sit</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31634-1&quot;, &quot;display&quot;: &quot;Major help (one or two people, physical), can sit&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31634-1&quot;&gt;&lt;display value=&quot;Major help (one or two people, physical), can sit&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-LA31633-3\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/LA31633-3/\">LA31633-3</a></td><td>Unable, no sitting balance</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.81&quot;, &quot;code&quot;: &quot;LA31633-3&quot;, &quot;display&quot;: &quot;Unable, no sitting balance&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.81&quot;&gt;&lt;code value=&quot;LA31633-3&quot;&gt;&lt;display value=&quot;Unable, no sitting balance&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBarthelTransfer",
+      "version" : "0.1.0",
+      "name" : "VSBarthelTransfer",
+      "title" : "移位-選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:64b5e138-38dd-4cf7-974a-85943ef13174",
+        "timestamp" : "2025-10-28T11:42:07+08:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA12302-8",
+          "display" : "Independent"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31635-8",
+          "display" : "Minor help (verbal or physical)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31634-1",
+          "display" : "Major help (one or two people, physical), can sit"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA31633-3",
+          "display" : "Unable, no sitting balance"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/VSBodyStructure",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 6 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-91775009\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/91775009\">91775009</a></td><td>Left shoulder</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;91775009&quot;, &quot;display&quot;: &quot;Left shoulder&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;91775009&quot;&gt;&lt;display value=&quot;Left shoulder&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-5951000\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/5951000\">5951000</a></td><td>Left wrist</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;5951000&quot;, &quot;display&quot;: &quot;Left wrist&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;5951000&quot;&gt;&lt;display value=&quot;Left wrist&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-85151006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/85151006\">85151006</a></td><td>Left hand</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;85151006&quot;, &quot;display&quot;: &quot;Left hand&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;85151006&quot;&gt;&lt;display value=&quot;Left hand&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-91774008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/91774008\">91774008</a></td><td>Right shoulder</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;91774008&quot;, &quot;display&quot;: &quot;Right shoulder&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;91774008&quot;&gt;&lt;display value=&quot;Right shoulder&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-9736006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/9736006\">9736006</a></td><td>Right wrist</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;9736006&quot;, &quot;display&quot;: &quot;Right wrist&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;9736006&quot;&gt;&lt;display value=&quot;Right wrist&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-78791008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/78791008\">78791008</a></td><td>Right hand</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;78791008&quot;, &quot;display&quot;: &quot;Right hand&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;78791008&quot;&gt;&lt;display value=&quot;Right hand&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/VSBodyStructure",
+      "version" : "0.1.0",
+      "name" : "VSBodyStructure",
+      "title" : "身體部位與結構對應之Snomed CT 代碼",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:661fdd39-e55b-439b-b456-cb80f80b91b9",
+        "timestamp" : "2025-10-28T11:42:07+08:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "91775009",
+          "display" : "Left shoulder"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "5951000",
+          "display" : "Left wrist"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "85151006",
+          "display" : "Left hand"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "91774008",
+          "display" : "Right shoulder"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "9736006",
+          "display" : "Right wrist"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "78791008",
+          "display" : "Right hand"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/assessment-side-valueset",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-2月 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-24028007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/24028007\">24028007</a></td><td>Right</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;24028007&quot;, &quot;display&quot;: &quot;Right&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;24028007&quot;&gt;&lt;display value=&quot;Right&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-7771000\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/7771000\">7771000</a></td><td>Left</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;7771000&quot;, &quot;display&quot;: &quot;Left&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;7771000&quot;&gt;&lt;display value=&quot;Left&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/assessment-side-valueset",
+      "version" : "0.1.0",
+      "name" : "AssessmentSideValueSet",
+      "title" : "評估側別選項",
+      "status" : "draft",
+      "date" : "2025-10-28T11:34:57+08:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:a4c43d33-647c-478a-b97b-d63bdc5fa4bd",
+        "timestamp" : "2025-10-28T11:42:08+08:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "24028007",
+          "display" : "Right"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Left"
+        }]
+      }
+    }
+  }]
+}

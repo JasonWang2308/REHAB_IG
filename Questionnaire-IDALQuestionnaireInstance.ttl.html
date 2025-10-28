@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>IDAL評估問卷 - TTL Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"6.84"}
+    h3,h4,h5,h6{--heading-prefix:"6.84"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">應用說明</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">規範文件
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="capability.html">能力聲明</a>
+      </li>
+      <li>
+        <a href="parameter.html">查詢參數及操作定義</a>
+      </li>
+      <li>
+        <a href="logic.html">邏輯模型</a>
+      </li>
+      <li>
+        <a href="extension.html">FHIR Profiles及Extensions</a>
+      </li>
+      <li>
+        <a href="terminology.html">專門術語</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="example.html">範例</a>
+  </li>
+  <li>
+    <a href="download.html">結構定義與範例檔下載</a>
+  </li>
+  <li>
+    <a href="security.html">安全性</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>IDAL評估問卷</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">ExampleIG - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://example.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Questionnaire-IDALQuestionnaireInstance.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Questionnaire-IDALQuestionnaireInstance.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-IDALQuestionnaireInstance.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: IDAL評估問卷 - TTL Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-10-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Questionnaire-IDALQuestionnaireInstance.ttl" no-download="true">Raw ttl</a> | <a download="null" href="Questionnaire-IDALQuestionnaireInstance.ttl">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; overflow: hidden" class="rdf" data-fhir="generated">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Questionnaire ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "IDALQuestionnaireInstance"] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> "http://example.org/StructureDefinition/SPACQuestionnaire"^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://example.org/StructureDefinition/SPACQuestionnaire&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "extensions" ] ;
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: Questionnaire IDALQuestionnaireInstance&lt;/b&gt;&lt;/p&gt;&lt;a name=\"IDALQuestionnaireInstance\"&gt; &lt;/a&gt;&lt;a name=\"hcIDALQuestionnaireInstance\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-SPACQuestionnaire.html\"&gt;評估問卷&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;b&gt;Structure&lt;/b&gt;&lt;table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"&gt;&lt;tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\"&gt;LinkID&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\"&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\"&gt;Cardinality&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\"&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\"&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\"float: right\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"&gt;&lt;img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/&gt; IDALQuestionnaireInstance&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;IADL評估問卷&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Questionnaire&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;http://example.org/Questionnaire/IDALQuestionnaireInstance#0.1.0&lt;/td&gt;&lt;/tr&gt;#xD;\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.A-telephone\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/&gt; A-telephone&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;A.使用電話&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;0..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Options: &lt;a href=\"#opt-item.A-telephone\"&gt;4 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;#xD;\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.B-shopping\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/&gt; B-shopping&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;B.購物&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;0..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Options: &lt;a href=\"#opt-item.B-shopping\"&gt;4 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;#xD;\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.C-food-preparation\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/&gt; C-food-preparation&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;C.備餐&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;0..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Options: &lt;a href=\"#opt-item.C-food-preparation\"&gt;4 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;#xD;\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.D-housekeeping\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/&gt; D-housekeeping&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;D.處理家務&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;0..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Options: &lt;a href=\"#opt-item.D-housekeeping\"&gt;4 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;#xD;\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.E-laundry\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/&gt; E-laundry&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;E.洗衣服&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;0..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Options: &lt;a href=\"#opt-item.E-laundry\"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;#xD;\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.F-transportation\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/&gt; F-transportation&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;F.外出&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;0..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Options: &lt;a href=\"#opt-item.F-transportation\"&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;#xD;\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.G-medications\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/&gt; G-medications&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;G.服用藥物&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;0..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Options: &lt;a href=\"#opt-item.G-medications\"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;#xD;\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" id=\"item.H-finances\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-coding.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/&gt; H-finances&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;H.處理財務的能力&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;0..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Options: &lt;a href=\"#opt-item.H-finances\"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;#xD;\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" id=\"item.I-total-score-IADL\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-integer.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/&gt; I-total-score-IADL&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;I.IADL總分計算&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1..1&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\"&gt;integer&lt;/a&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;#xD;\n&lt;tr&gt;&lt;td colspan=\"5\" class=\"hierarchy\"&gt;&lt;br/&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"&gt;&lt;img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Options Sets&lt;/b&gt;&lt;/p&gt;&lt;a name=\"opt-item.A-telephone\"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for A-telephone &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\"font-size: 11px\"&gt;4&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;3&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;2&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;a name=\"opt-item.B-shopping\"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for B-shopping &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\"font-size: 11px\"&gt;4&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;3&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;2&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;a name=\"opt-item.C-food-preparation\"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for C-food-preparation &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\"font-size: 11px\"&gt;4&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;3&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;2&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;a name=\"opt-item.D-housekeeping\"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for D-housekeeping &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\"font-size: 11px\"&gt;4&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;3&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;2&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;a name=\"opt-item.E-laundry\"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for E-laundry &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\"font-size: 11px\"&gt;3&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;2&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;a name=\"opt-item.F-transportation\"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for F-transportation &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\"font-size: 11px\"&gt;5&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;4&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;3&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;2&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;a name=\"opt-item.G-medications\"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for G-medications &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\"font-size: 11px\"&gt;3&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;2&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;a name=\"opt-item.H-finances\"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for H-finances &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\"font-size: 11px\"&gt;3&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;2&lt;/li&gt;&lt;li style=\"font-size: 11px\"&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://example.org/Questionnaire/IDALQuestionnaireInstance"^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "0.1.0"] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "IDALQuestionnaireInstance"] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "IDAL評估問卷"] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "active"] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.subjectType">fhir:subjectType</a> ( [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "Patient"] ) ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> "2025-10-01"^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Example Publisher"] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Example Publisher" ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "url" ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "http://example.org/example-publisher" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> "IADL評估問卷"] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.purpose">fhir:purpose</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> "提供標準化的上肢感覺評估工具，用於中風復健評估"] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">fhir:item</a> ( [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "A-telephone" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "A.使用電話" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "choice" ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">fhir:answerOption</a> [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能獨立使用電話，含查電話簿、撥號等"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 4       ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.initialSelected">fhir:initialSelected</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "僅能撥熟悉的電話號碼"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 3       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "僅能接電話，但不能撥電話"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 2       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "完全不能使用電話"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1       ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "B-shopping" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "B.購物" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "choice" ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">fhir:answerOption</a> [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能獨立完成所有購物需求"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 4       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "只能獨立購買日常生活用品"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 3       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "每一次購物都需要有人陪"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 2       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "完全不能獨自購物"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1       ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "C-food-preparation" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "C.備餐" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "choice" ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">fhir:answerOption</a> [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能獨立計畫、準備食材及佐料、烹煮和擺設一頓飯菜"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 4       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "如果準備好一切食材及佐料，能做一頓飯菜"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 3       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能將已做好的飯菜加熱"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 2       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "需要別人把飯菜煮好、擺好"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1       ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "D-housekeeping" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "D.處理家務" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "choice" ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">fhir:answerOption</a> [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能單獨處理家事，或偶爾需要協助較繁重的家事"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 4       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能做較簡單的家事，如洗碗、擦桌子"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 3       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能做較簡單的家事，但不能達到可接受的清潔程度"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 2       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "所有的家事都需要別人協助方能完成"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1       ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "E-laundry" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "E.洗衣服" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "choice" ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">fhir:answerOption</a> [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "自己清洗所有衣物"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 3       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "需部份協助"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 2       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "需完全協助"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1       ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "F-transportation" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "F.外出" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "choice" ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">fhir:answerOption</a> [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能夠自己開車、騎車或自己搭乘大眾運輸工具"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 5       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能夠自己搭乘計程車，但不能搭乘大眾運輸工具"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 4       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "當有人陪同時，可搭乘大眾運輸工具"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 3       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "只能在有人協助或陪同時，可搭乘計程車或自用車"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 2       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "完全不能出門"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1       ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "G-medications" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "G.服用藥物" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "choice" ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">fhir:answerOption</a> [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "能自己負責在正確的時間用正確的藥物"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 3       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "如果事先準備好服用的藥物份量，可自行服用"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 2       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "完全不能自己服用藥物"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1       ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "H-finances" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "H.處理財務的能力" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "choice" ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">fhir:answerOption</a> [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "可以獨立處理財務"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 3       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "可以處理日常的購買，但需別人協助與銀行往來或大宗買賣"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 2       ]     ] [
+      ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/rendering-style"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "完全不能處理錢財"         ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">a</a> fhir:integer ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1       ]     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Expression">a</a> fhir:Expression ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "text/fhirpath" ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "%resource.item.answer.valueInteger.sum()" ]       ]     ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">a</a> fhir:boolean ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true       ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "I-total-score-IADL" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "I.IADL總分計算" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "integer" ] ;
+<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">fhir:required</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ]
+  ] ) . # 
+
+</pre>
+
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l1534">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 28, 2025 11:36+0800">2025-10-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

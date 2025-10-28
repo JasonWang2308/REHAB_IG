@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Goal xmlns="http://hl7.org/fhir">
+  <id value="GoalExample"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/Goal"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Goal GoalExample</b></p><a name="GoalExample"> </a><a name="hcGoalExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Goal.html">Goal</a></p></div><p><b>lifecycleStatus</b>: Active</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/goal-category health-management}">health-management</span></p><p><b>description</b>: <span title="Codes:">控制血糖在目標範圍內</span></p><p><b>subject</b>: <a href="Patient/001">Patient/001</a></p></div>
+  </text>
+  <lifecycleStatus value="active"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/goal-category"/>
+      <code value="health-management"/>
+    </coding>
+  </category>
+  <description>
+    <text value="控制血糖在目標範圍內"/>
+  </description>
+  <subject>
+    <reference value="Patient/001"/>
+  </subject>
+</Goal>

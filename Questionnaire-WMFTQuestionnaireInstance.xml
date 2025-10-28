@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="WMFTQuestionnaireInstance"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/SPACQuestionnaire"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Questionnaire WMFTQuestionnaireInstance</b></p><a name="WMFTQuestionnaireInstance"> </a><a name="hcWMFTQuestionnaireInstance"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SPACQuestionnaire.html">評估問卷</a></p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> WMFTQuestionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">WMFT上肢功能評評估問卷(Wolf et al., 1995; Whitall, Savin, Harris-Love, &amp; Waller, 2006)，分左右邊各75分</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org/Questionnaire/WMFTQuestionnaireInstance#0.1.0</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.assessment-side-wmft" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> assessment-side-wmft</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">請選擇評估側</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.assessment-side-wmft">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.A-timed-joint-segment-movements" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> A-timed-joint-segment-movements</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A.定時關節分段動作評估</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-forearm-to-table-side" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> A-I-forearm-to-table-side</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">透過外展肩膀將前臂放在桌子上</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-forearm-to-table-side">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-forearm-to-box-side" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> A-I-forearm-to-box-side</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">將前臂放在一個 25.4 公分高的箱子上，透過肩部外展</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-forearm-to-box-side">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-extended-elbow-side" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> A-I-extended-elbow-side</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">將手肘伸向一側，越過一張 28 公分長的桌子</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-extended-elbow-side">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-extended-elbow-to-the-side-with-1lb-weight" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> A-I-extended-elbow-to-the-side-with-1lb-weight</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">透過伸展手肘將重量推向桌子對面的外腕關節</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-extended-elbow-to-the-side-with-1lb-weight">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-hand-to-table-front" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> A-I-hand-to-table-front</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">將手放在桌上</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-hand-to-table-front">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-hand-to-box-front" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> A-I-hand-to-box-front</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">將手放在桌面上的盒子上</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-hand-to-box-front">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.A-timed-joint-segment-movements-subscore" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="integer" class="hierarchy"/> A-timed-joint-segment-movements-subscore</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A.定時關節段運動分量表分數</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.B-timed-integrative-functional-movements" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> B-timed-integrative-functional-movements</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">B.定時整合功能動作評估</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-lift-can-front" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> B-I-lift-can-front</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">舉起一個罐子，並用圓柱形的抓握方式將其靠近嘴唇</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-lift-can-front">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-lift-pencil-front" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> B-I-lift-pencil-front</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">使用三爪卡盤抓握來拿起鉛筆</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-lift-pencil-front">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-pick-up-paper-clip-front" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> B-I-pick-up-paper-clip-front</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">用鉗子抓取回形針</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-pick-up-paper-clip-front">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-stack-checkers-front" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> B-I-stack-checkers-front</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">將棋子堆疊到中心棋子上</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-stack-checkers-front">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-flip-3-cards-front" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> B-I-flip-3-cards-front</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">用鉗子抓握，客戶嘗試翻轉每張卡片</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-flip-3-cards-front">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-turning-the-key-in-lock-front" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> B-I-turning-the-key-in-lock-front</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">使用鉗子抓握並保持接觸，將鑰匙向左和向右旋轉 180 度</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-turning-the-key-in-lock-front">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-fold-towel-front" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> B-I-fold-towel-front</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">抓住毛巾，縱向折疊，然後用被測試的手將毛巾再次對折</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-fold-towel-front">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-lift-basket-standing" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> B-I-lift-basket-standing</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">提起一個椅子上 3 磅重的籃子，並將其放在床頭櫃上</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-lift-basket-standing">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.B-timed-integrative-functional-movements-subscore" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="integer" class="hierarchy"/> B-timed-integrative-functional-movements-subscore</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">B.定時關節段運動分量表分數</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.C-total-score-WMFT" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: white; background-color: inherit" title="integer" class="hierarchy"/> C-total-score-WMFT</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">C.WMFT總分計算</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr><td colspan="6" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.assessment-side-wmft"> </a><p><b>Answer options for assessment-side-wmft </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#24028007 (&quot;患者左側&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#7771000 (&quot;患者右側&quot;)</li></ul><a name="opt-item.A-I-forearm-to-table-side"> </a><p><b>Answer options for A-I-forearm-to-table-side </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.A-I-forearm-to-box-side"> </a><p><b>Answer options for A-I-forearm-to-box-side </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.A-I-extended-elbow-side"> </a><p><b>Answer options for A-I-extended-elbow-side </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.A-I-extended-elbow-to-the-side-with-1lb-weight"> </a><p><b>Answer options for A-I-extended-elbow-to-the-side-with-1lb-weight </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.A-I-hand-to-table-front"> </a><p><b>Answer options for A-I-hand-to-table-front </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.A-I-hand-to-box-front"> </a><p><b>Answer options for A-I-hand-to-box-front </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.B-I-lift-can-front"> </a><p><b>Answer options for B-I-lift-can-front </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.B-I-lift-pencil-front"> </a><p><b>Answer options for B-I-lift-pencil-front </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.B-I-pick-up-paper-clip-front"> </a><p><b>Answer options for B-I-pick-up-paper-clip-front </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.B-I-stack-checkers-front"> </a><p><b>Answer options for B-I-stack-checkers-front </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.B-I-flip-3-cards-front"> </a><p><b>Answer options for B-I-flip-3-cards-front </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.B-I-turning-the-key-in-lock-front"> </a><p><b>Answer options for B-I-turning-the-key-in-lock-front </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.B-I-fold-towel-front"> </a><p><b>Answer options for B-I-fold-towel-front </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul><a name="opt-item.B-I-lift-basket-standing"> </a><p><b>Answer options for B-I-lift-basket-standing </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li><li style="font-size: 11px">4</li><li style="font-size: 11px">5</li></ul></div>
+  </text>
+  <url value="http://example.org/Questionnaire/WMFTQuestionnaireInstance"/>
+  <version value="0.1.0"/>
+  <name value="WMFTQuestionnaire"/>
+  <title value="WMFT上肢功能評評估問卷"/>
+  <status value="active"/>
+  <subjectType value="Patient"/>
+  <date value="2025-10-28T11:34:57+08:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="WMFT上肢功能評評估問卷(Wolf et al., 1995; Whitall, Savin, Harris-Love, &amp; Waller, 2006)，分左右邊各75分"/>
+  <purpose value="提供標準化的上肢感覺評估工具，用於中風復健評估"/>
+  <item>
+    <linkId value="assessment-side-wmft"/>
+    <text value="請選擇評估側"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="24028007"/>
+        <display value="患者左側"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="7771000"/>
+        <display value="患者右側"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="A-timed-joint-segment-movements"/>
+    <text value="A.定時關節分段動作評估"/>
+    <type value="group"/>
+    <required value="true"/>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-forearm-to-table-side"/>
+      <text value="透過外展肩膀將前臂放在桌子上"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-forearm-to-box-side"/>
+      <text value="將前臂放在一個 25.4 公分高的箱子上，透過肩部外展"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-extended-elbow-side"/>
+      <text value="將手肘伸向一側，越過一張 28 公分長的桌子"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-extended-elbow-to-the-side-with-1lb-weight"/>
+      <text value="透過伸展手肘將重量推向桌子對面的外腕關節"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-hand-to-table-front"/>
+      <text value="將手放在桌上"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-hand-to-box-front"/>
+      <text value="將手放在桌面上的盒子上"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+        <valueExpression>
+          <language value="text/fhirpath"/>
+          <expression value="%TimedJointSegmentMovementScore"/>
+        </valueExpression>
+      </extension>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+        <valueBoolean value="true"/>
+      </extension>
+      <linkId value="A-timed-joint-segment-movements-subscore"/>
+      <text value="A.定時關節段運動分量表分數"/>
+      <type value="integer"/>
+      <readOnly value="true"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="B-timed-integrative-functional-movements"/>
+    <text value="B.定時整合功能動作評估"/>
+    <type value="group"/>
+    <required value="true"/>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-lift-can-front"/>
+      <text value="舉起一個罐子，並用圓柱形的抓握方式將其靠近嘴唇"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-lift-pencil-front"/>
+      <text value="使用三爪卡盤抓握來拿起鉛筆"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-pick-up-paper-clip-front"/>
+      <text value="用鉗子抓取回形針"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-stack-checkers-front"/>
+      <text value="將棋子堆疊到中心棋子上"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-flip-3-cards-front"/>
+      <text value="用鉗子抓握，客戶嘗試翻轉每張卡片"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-turning-the-key-in-lock-front"/>
+      <text value="使用鉗子抓握並保持接觸，將鑰匙向左和向右旋轉 180 度"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-fold-towel-front"/>
+      <text value="抓住毛巾，縱向折疊，然後用被測試的手將毛巾再次對折"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-lift-basket-standing"/>
+      <text value="提起一個椅子上 3 磅重的籃子，並將其放在床頭櫃上"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="4"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="5"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+        <valueExpression>
+          <language value="text/fhirpath"/>
+          <expression value="%TimedIntegrativeFunctionalMovementScore"/>
+        </valueExpression>
+      </extension>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+        <valueBoolean value="true"/>
+      </extension>
+      <linkId value="B-timed-integrative-functional-movements-subscore"/>
+      <text value="B.定時關節段運動分量表分數"/>
+      <type value="integer"/>
+      <readOnly value="true"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+      <valueExpression>
+        <language value="text/fhirpath"/>
+        <expression value="%resource.item.descendants().where(type='choice').answer.valueInteger.sum()"/>
+      </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+      <valueBoolean value="true"/>
+    </extension>
+    <linkId value="C-total-score-WMFT"/>
+    <text value="C.WMFT總分計算"/>
+    <type value="integer"/>
+    <required value="true"/>
+  </item>
+</Questionnaire>

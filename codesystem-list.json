@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/CodeSystem/mas-score",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CSMAS",
+      "title" : null,
+      "description" : ""
+    }
+  ]
+}

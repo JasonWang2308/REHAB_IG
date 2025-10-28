@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mas-score"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mas-score</b></p><a name="mas-score"> </a><a name="hcmas-score"> </a><p>This  code system <code>http://example.org/CodeSystem/mas-score</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0<a name="mas-score-0"> </a></td><td>0: 肌張力沒有增加</td></tr><tr><td style="white-space:nowrap">1<a name="mas-score-1"> </a></td><td>1: 輕微增加肌張力，當受測的肢體在彎曲或伸展時，在活動範圍的最末段會呈現如卡住般 (catch)些微的張力</td></tr><tr><td style="white-space:nowrap">1+<a name="mas-score-1.43"> </a></td><td>1+: 輕微增加肌張力，當受測的肢體在彎曲或伸展時，會先呈現如卡住般些微的張力，並接 續著輕微的張力直到活動範圍結束，出現張力的比例小於50%的活動範圍</td></tr><tr><td style="white-space:nowrap">2<a name="mas-score-2"> </a></td><td>2: 大部分的活動範圍都呈現張力，但受影響的肢體是可以輕易活動的</td></tr><tr><td style="white-space:nowrap">3<a name="mas-score-3"> </a></td><td>3: 大部分的活動範圍都呈現大幅增加的張力，受影響的肢體的被動活動是困難的</td></tr><tr><td style="white-space:nowrap">4<a name="mas-score-4"> </a></td><td>4: 受影響的肢體在彎曲或伸展時是僵硬的</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/mas-score"/>
+  <version value="0.1.0"/>
+  <name value="CSMAS"/>
+  <status value="draft"/>
+  <date value="2025-10-28T11:34:57+08:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="0"/>
+    <display value="0: 肌張力沒有增加"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="1: 輕微增加肌張力，當受測的肢體在彎曲或伸展時，在活動範圍的最末段會呈現如卡住般 (catch)些微的張力"/>
+  </concept>
+  <concept>
+    <code value="1+"/>
+    <display value="1+: 輕微增加肌張力，當受測的肢體在彎曲或伸展時，會先呈現如卡住般些微的張力，並接 續著輕微的張力直到活動範圍結束，出現張力的比例小於50%的活動範圍"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="2: 大部分的活動範圍都呈現張力，但受影響的肢體是可以輕易活動的"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="3: 大部分的活動範圍都呈現大幅增加的張力，受影響的肢體的被動活動是困難的"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="4: 受影響的肢體在彎曲或伸展時是僵硬的"/>
+  </concept>
+</CodeSystem>

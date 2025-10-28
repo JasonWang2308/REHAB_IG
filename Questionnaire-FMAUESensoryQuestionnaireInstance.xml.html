@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Fugl-Meyer上肢感覺評估問卷 - XML Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"6.83"}
+    h3,h4,h5,h6{--heading-prefix:"6.83"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">應用說明</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">規範文件
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="capability.html">能力聲明</a>
+      </li>
+      <li>
+        <a href="parameter.html">查詢參數及操作定義</a>
+      </li>
+      <li>
+        <a href="logic.html">邏輯模型</a>
+      </li>
+      <li>
+        <a href="extension.html">FHIR Profiles及Extensions</a>
+      </li>
+      <li>
+        <a href="terminology.html">專門術語</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="example.html">範例</a>
+  </li>
+  <li>
+    <a href="download.html">結構定義與範例檔下載</a>
+  </li>
+  <li>
+    <a href="security.html">安全性</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Fugl-Meyer上肢感覺評估問卷</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">ExampleIG - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://example.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Questionnaire-FMAUESensoryQuestionnaireInstance.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-FMAUESensoryQuestionnaireInstance.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-FMAUESensoryQuestionnaireInstance.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Fugl-Meyer上肢感覺評估問卷 - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-10-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Questionnaire-FMAUESensoryQuestionnaireInstance.xml" no-download="true">Raw xml</a> | <a download="null" href="Questionnaire-FMAUESensoryQuestionnaireInstance.xml">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml" data-fhir="generated"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire">Questionnaire</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="FMAUESensoryQuestionnaireInstance"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="http://example.org/StructureDefinition/SPACQuestionnaire"/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="extensions"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Generated Narrative: Questionnaire FMAUESensoryQuestionnaireInstance&lt;/b&gt;&lt;/p&gt;&lt;a name="FMAUESensoryQuestionnaireInstance"&gt; &lt;/a&gt;&lt;a name="hcFMAUESensoryQuestionnaireInstance"&gt; &lt;/a&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"/&gt;&lt;p style="margin-bottom: 0px"&gt;Profile: &lt;a href="StructureDefinition-SPACQuestionnaire.html"&gt;評估問卷&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;b&gt;Structure&lt;/b&gt;&lt;table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"&gt;&lt;tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item"&gt;LinkID&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item"&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance"&gt;Cardinality&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item"&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item"&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item"&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style="float: right"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/&gt; FMAUESensoryQuestionnaire&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;衛福部Fugl-Meyer上肢感覺評估問卷，總分26分&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Questionnaire&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;http://example.org/Questionnaire/FMAUESensoryQuestionnaireInstance#0.1.0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.assessment-phase-fmaue-sensory" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/&gt; assessment-phase-fmaue-sensory&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;請選擇評估階段&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.assessment-phase-fmaue-sensory"&gt;4 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.assessment-side-fmaue-sensory" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/&gt; assessment-side-fmaue-sensory&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;請選擇評估階段&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.assessment-side-fmaue-sensory"&gt;2 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.A-light-touch" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/&gt; A-light-touch&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;A.輕觸覺檢測&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group"&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-upper-arm" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/&gt; A-I-upper-arm&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;上臂輕觸覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.A-I-upper-arm"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-forearm" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/&gt; A-I-forearm&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;前臂輕觸覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.A-I-forearm"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.A-I-hand" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/&gt; A-I-hand&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;手部輕觸覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.A-I-hand"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.B-temperature" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/&gt; B-temperature&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;B.溫度覺檢測&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group"&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-upper-arm" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/&gt; B-I-upper-arm&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;上臂溫度覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.B-I-upper-arm"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-forearm" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/&gt; B-I-forearm&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;前臂溫度覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.B-I-forearm"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.B-I-hand" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/&gt; B-I-hand&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;手部溫度覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.B-I-hand"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.C-tactile-localization" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/&gt; C-tactile-localization&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;C.觸覺定位檢測&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group"&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.C-I-upper-arm" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/&gt; C-I-upper-arm&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;上臂觸覺定位&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.C-I-upper-arm"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.C-I-forearm" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/&gt; C-I-forearm&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;前臂觸覺定位&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.C-I-forearm"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.C-I-hand" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/&gt; C-I-hand&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;手部觸覺定位&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.C-I-hand"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.D-position-sense" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="group" class="hierarchy"/&gt; D-position-sense&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;D.位置覺檢測&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group"&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.D-I-shoulder" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/&gt; D-I-shoulder&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;肩關節位置覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.D-I-shoulder"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.D-I-elbow" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/&gt; D-I-elbow&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;肘關節位置覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.D-I-elbow"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.D-I-wrist" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/&gt; D-I-wrist&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;腕關節位置覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.D-I-wrist"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.D-I-thumb" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/&gt; D-I-thumb&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;拇指位置覺&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice"&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Options: &lt;a href="#opt-item.D-I-thumb"&gt;3 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.E-total-score-FMAUESensory" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-integer.png" alt="." style="background-color: white; background-color: inherit" title="integer" class="hierarchy"/&gt; E-total-score-FMAUESensory&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;E.FMAUE感覺總分&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;0..1&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer"&gt;integer&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"&gt;&lt;img src="icon-qi-readonly.png" alt="icon"/&gt;&lt;/a&gt;&lt;img src="icon-qi-readonly.png" alt="icon"/&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="6" class="hierarchy"&gt;&lt;br/&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Options Sets&lt;/b&gt;&lt;/p&gt;&lt;a name="opt-item.assessment-phase-fmaue-sensory"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for assessment-phase-fmaue-sensory &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;初評&lt;/li&gt;&lt;li style="font-size: 11px"&gt;期中&lt;/li&gt;&lt;li style="font-size: 11px"&gt;延展&lt;/li&gt;&lt;li style="font-size: 11px"&gt;結案&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.assessment-side-fmaue-sensory"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for assessment-side-fmaue-sensory &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;http://snomed.info/sct#24028007 (&amp;quot;患者左側&amp;quot;)&lt;/li&gt;&lt;li style="font-size: 11px"&gt;http://snomed.info/sct#7771000 (&amp;quot;患者右側&amp;quot;)&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.A-I-upper-arm"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for A-I-upper-arm &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.A-I-forearm"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for A-I-forearm &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.A-I-hand"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for A-I-hand &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.B-I-upper-arm"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for B-I-upper-arm &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.B-I-forearm"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for B-I-forearm &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.B-I-hand"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for B-I-hand &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.C-I-upper-arm"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for C-I-upper-arm &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.C-I-forearm"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for C-I-forearm &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.C-I-hand"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for C-I-hand &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.D-I-shoulder"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for D-I-shoulder &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.D-I-elbow"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for D-I-elbow &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.D-I-wrist"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for D-I-wrist &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;a name="opt-item.D-I-thumb"&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for D-I-thumb &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style="font-size: 11px"&gt;0&lt;/li&gt;&lt;li style="font-size: 11px"&gt;1&lt;/li&gt;&lt;li style="font-size: 11px"&gt;2&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://example.org/Questionnaire/FMAUESensoryQuestionnaireInstance"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="0.1.0"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="FMAUESensoryQuestionnaire"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Fugl-Meyer上肢感覺評估問卷"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.subjectType">subjectType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="Patient"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2025-10-01"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Example Publisher"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Example Publisher"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="url"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="http://example.org/example-publisher"/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="衛福部Fugl-Meyer上肢感覺評估問卷，總分26分"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.purpose">purpose</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="提供標準化的上肢感覺評估工具，用於中風復健評估"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="assessment-phase-fmaue-sensory"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="請選擇評估階段"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="初評"/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="期中"/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="延展"/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="結案"/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="assessment-side-fmaue-sensory"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="請選擇評估階段"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="24028007"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="患者左側"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://snomed.info/sct"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="7771000"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="患者右側"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="A-light-touch"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="A.輕觸覺檢測"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="group"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="A-I-upper-arm"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="上臂輕觸覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="A-I-forearm"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="前臂輕觸覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="A-I-hand"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="手部輕觸覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="B-temperature"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="B.溫度覺檢測"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="group"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="B-I-upper-arm"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="上臂溫度覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="B-I-forearm"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="前臂溫度覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="B-I-hand"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="手部溫度覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="C-tactile-localization"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="C.觸覺定位檢測"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="group"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="C-I-upper-arm"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="上臂觸覺定位"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="C-I-forearm"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="前臂觸覺定位"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="C-I-hand"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="手部觸覺定位"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="D-position-sense"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="D.位置覺檢測"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="group"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="D-I-shoulder"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="肩關節位置覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="D-I-elbow"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="肘關節位置覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="D-I-wrist"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="腕關節位置覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="D-I-thumb"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="拇指位置覺"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="choice"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="0"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>="2"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueExpression</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="text/fhirpath"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">expression</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="%resource.item.descendants().where(type='choice').answer.valueInteger.sum()"/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueExpression</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.extension">extension</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="E-total-score-FMAUESensory"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="E.FMAUE感覺總分"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="integer"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item.readOnly">readOnly</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire.item">item</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/questionnaire.html#Questionnaire">Questionnaire</a>&gt;</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l1714">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 28, 2025 11:36+0800">2025-10-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VSBarthelGrooming",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSBarthelGrooming</b></p><a name=\"VSBarthelGrooming\"> </a><a name=\"hcVSBarthelGrooming\"> </a><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA31644-0/\">LA31644-0</a></td><td>可以自行洗手、刷牙、洗臉及梳頭。</td></tr><tr><td><a href=\"https://loinc.org/LA31643-2/\">LA31643-2</a></td><td>需要他人部分或完全協助。</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/VSBarthelGrooming",
+  "version" : "0.1.0",
+  "name" : "VSBarthelGrooming",
+  "title" : "個人衛生-選項",
+  "status" : "draft",
+  "date" : "2025-10-28T11:34:57+08:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA31644-0",
+        "display" : "可以自行洗手、刷牙、洗臉及梳頭。"
+      },
+      {
+        "code" : "LA31643-2",
+        "display" : "需要他人部分或完全協助。"
+      }]
+    }]
+  }
+}

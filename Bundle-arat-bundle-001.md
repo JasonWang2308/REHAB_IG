@@ -1,0 +1,736 @@
+# ARAT評估Bundle範例 - v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **ARAT評估Bundle範例**
+
+## Example Bundle: ARAT評估Bundle範例
+
+Bundle arat-bundle-001 of type collection
+
+-------
+
+Entry 1 - fullUrl = Patient/stroke-patient-001
+
+Resource Patient:
+
+> 
+
+Profile: [Patient](StructureDefinition-Patient.md)
+
+先生 張 (official) Male, DoB: 1965-03-15 ( http://example.org/mrn#12345)
+-------
+
+-------
+
+Entry 2 - fullUrl = Practitioner/ot-therapist-001
+
+Resource Practitioner:
+
+> 
+
+Profile: [Practitioner](StructureDefinition-Practitioner.md)
+
+**identifier**:`http://hospital.mohw.gov.tw/docID`/A123456789**active**: true**name**: 小姐 李 (Official)
+
+### Qualifications
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Code** | **Issuer** |
+| * | 職能治療師 | 台灣職能治療師公會 |
+
+
+-------
+
+Entry 3 - fullUrl = QuestionnaireResponse/arat-response-example-001
+
+Resource QuestionnaireResponse:
+
+> 
+
+Profile: [ARAT上肢功能評估問卷回覆](StructureDefinition-ARATQuestionnaireResponse.md)
+
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): arat-response-example-001
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): Questionnaire:http://example.org/fhir/Questionnaire/ARATQuestionnaireInstance
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)assessment-side-arat
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 請選擇評估側
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): [SNOMED CT 24028007](http://snomed.info/id/24028007): 患者左側
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-group.png)A-grasp-subscale
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): A.抓力分量表
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)A-I-block-10cm3
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 方塊積木, 10 立方公分
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 3
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)A-I-block-2.5cm3
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 方塊積木, 2.5 立方公分
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 2
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)A-I-block-5cm3
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 方塊積木, 5 立方公分
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 3
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)A-I-block-7.5cm3
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 方塊積木, 7.5 立方公分
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 2
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)A-I-cricket-ball
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 板球
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 1
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)A-I-sharpening-stone
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 磨刀石
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 1
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)A-grasp-subscale-subscore
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): A.抓力分數
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 12
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-group.png)B-grip-subscale
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): B.握力分量表
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)B-I-pour-water-from-one-glass-to-another
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 將水從一個杯子倒到另一個杯子
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 2
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)B-I-pour-water-from-one-glass-to-another
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 將 2.25 公分合金管從桌子的一側移到另一側
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 3
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 將 1 公分合金管從桌子的一側移到另一側
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 2
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)B-I-put-washer-over-bolt
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 將墊圈放在螺栓上
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 1
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)B-grip-subscale-subscore
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): B.握力分數
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 8
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-group.png)C-pinch-subscale
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): C.捏取分量表
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)C-I-ball-bearing-held-between-ring-finger-and-thumb
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 滾珠軸承，握在無名指與大拇指之間
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 1
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)C-I-marble-held-between-index-finger-and-thumb
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 大理石，握在食指與大拇指之間
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 2
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)C-I-ball-bearing-held-between-middle-finger-and-thumb
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 滾珠軸承，握在中指與拇指之間
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 2
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)C-I-ball-bearing-held-between-index-finger-and-thumb
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 滾珠軸承，握在食指與拇指之間
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 3
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)C-I-marble-held-between-ring-finger-and-thumb
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 大理石，握在無名指和大拇指之間
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 1
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)C-I-marble-held-between-middle-finger-and-thumb
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 大理石，握在中指與大拇指之間
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 2
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)C-pinch-subscale-subscore
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): C.捏取分數
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 11
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-group.png)D-gross-movement-subscale
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): D.粗大動作分量表
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)D-I-hand-to-behind-the-head
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 手放在腦後
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 2
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)D-I-hand-to-top-of-head
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 手放在頭頂
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 3
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)D-I-hand-to-mouth
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): 手到嘴
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 3
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)D-gross-movement-subscale-subscore
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): D.粗大動作分數
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 8
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): ![](icon-q-string.png)E-total-score-ARAT
+  * [Text](https://hl7.org/fhir/R4/formats.html#table): E.ARAT總分計算
+  * [Definition](https://hl7.org/fhir/R4/formats.html#table): 
+  * [Answer](https://hl7.org/fhir/R4/formats.html#table): 39
+* [LinkID](https://hl7.org/fhir/R4/formats.html#table): [Documentation for this format](https://hl7.org/fhir/R4/formats.html#table)
+
+
+-------
+
+Entry 4 - fullUrl = Encounter/arat-assessment-encounter-001
+
+Resource Encounter:
+
+> 
+
+Profile: [Encounter](StructureDefinition-Encounter.md)
+
+**status**: completed**class**:門診**type**:職能治療評估**subject**:[先生 張 (official) Male, DoB: 1965-03-15 ( http://example.org/mrn#12345)](Patient-stroke-patient-001.md)
+> **participant**
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "arat-bundle-001",
+  "type" : "collection",
+  "timestamp" : "2025-10-11T14:35:00+08:00",
+  "entry" : [
+    {
+      "fullUrl" : "Patient/stroke-patient-001",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "stroke-patient-001",
+        "meta" : {
+          "profile" : ["http://example.org/StructureDefinition/Patient"]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_stroke-patient-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient stroke-patient-001</b></p><a name=\"stroke-patient-001\"> </a><a name=\"hcstroke-patient-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient.html\">Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">先生 張 (official) Male, DoB: 1965-03-15 ( http://example.org/mrn#12345)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">台北市 台灣 </td></tr></table></div>"
+        },
+        "identifier" : [
+          {
+            "system" : "http://example.org/mrn",
+            "value" : "12345"
+          }
+        ],
+        "active" : true,
+        "name" : [
+          {
+            "use" : "official",
+            "family" : "張",
+            "given" : ["先生"]
+          }
+        ],
+        "gender" : "male",
+        "birthDate" : "1965-03-15",
+        "address" : [
+          {
+            "city" : "台北市",
+            "country" : "台灣"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "Practitioner/ot-therapist-001",
+      "resource" : {
+        "resourceType" : "Practitioner",
+        "id" : "ot-therapist-001",
+        "meta" : {
+          "profile" : ["http://example.org/StructureDefinition/Practitioner"]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_ot-therapist-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ot-therapist-001</b></p><a name=\"ot-therapist-001\"> </a><a name=\"hcot-therapist-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Practitioner.html\">Practitioner</a></p></div><p><b>identifier</b>: <code>http://hospital.mohw.gov.tw/docID</code>/A123456789</p><p><b>active</b>: true</p><p><b>name</b>: 小姐 李 (Official)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 224609002}\">職能治療師</span></td><td>台灣職能治療師公會</td></tr></table></div>"
+        },
+        "identifier" : [
+          {
+            "system" : "http://hospital.mohw.gov.tw/docID",
+            "value" : "A123456789"
+          }
+        ],
+        "active" : true,
+        "name" : [
+          {
+            "use" : "official",
+            "family" : "李",
+            "given" : ["小姐"]
+          }
+        ],
+        "qualification" : [
+          {
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://snomed.info/sct",
+                  "code" : "224609002",
+                  "display" : "職能治療師"
+                }
+              ]
+            },
+            "issuer" : {
+              "display" : "台灣職能治療師公會"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "QuestionnaireResponse/arat-response-example-001",
+      "resource" : {
+        "resourceType" : "QuestionnaireResponse",
+        "id" : "arat-response-example-001",
+        "meta" : {
+          "profile" : [
+            "http://example.org/StructureDefinition/ARATQuestionnaireResponse"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"QuestionnaireResponse_arat-response-example-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: QuestionnaireResponse arat-response-example-001</b></p><a name=\"arat-response-example-001\"> </a><a name=\"hcarat-response-example-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ARATQuestionnaireResponse.html\">ARAT上肢功能評估問卷回覆</a></p></div><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Definition</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Answer</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/> arat-response-example-001</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire:http://example.org/fhir/Questionnaire/ARATQuestionnaireInstance</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> assessment-side-arat</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">請選擇評估側</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"http://snomed.info/id/24028007\">SNOMED CT 24028007</a>: 患者左側</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> A-grasp-subscale</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">A.抓力分量表</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> A-I-block-10cm3</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">方塊積木, 10 立方公分</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">3</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> A-I-block-2.5cm3</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">方塊積木, 2.5 立方公分</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> A-I-block-5cm3</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">方塊積木, 5 立方公分</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">3</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> A-I-block-7.5cm3</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">方塊積木, 7.5 立方公分</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> A-I-cricket-ball</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">板球</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> A-I-sharpening-stone</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">磨刀石</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> A-grasp-subscale-subscore</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">A.抓力分數</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">12</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> B-grip-subscale</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">B.握力分量表</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> B-I-pour-water-from-one-glass-to-another</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">將水從一個杯子倒到另一個杯子</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> B-I-pour-water-from-one-glass-to-another</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">將 2.25 公分合金管從桌子的一側移到另一側</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">3</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">將 1 公分合金管從桌子的一側移到另一側</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> B-I-put-washer-over-bolt</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">將墊圈放在螺栓上</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> B-grip-subscale-subscore</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">B.握力分數</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">8</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> C-pinch-subscale</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">C.捏取分量表</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> C-I-ball-bearing-held-between-ring-finger-and-thumb</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">滾珠軸承，握在無名指與大拇指之間</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> C-I-marble-held-between-index-finger-and-thumb</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">大理石，握在食指與大拇指之間</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> C-I-ball-bearing-held-between-middle-finger-and-thumb</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">滾珠軸承，握在中指與拇指之間</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> C-I-ball-bearing-held-between-index-finger-and-thumb</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">滾珠軸承，握在食指與拇指之間</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">3</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> C-I-marble-held-between-ring-finger-and-thumb</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">大理石，握在無名指和大拇指之間</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> C-I-marble-held-between-middle-finger-and-thumb</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">大理石，握在中指與大拇指之間</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> C-pinch-subscale-subscore</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">C.捏取分數</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">11</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/> D-gross-movement-subscale</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">D.粗大動作分量表</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> D-I-hand-to-behind-the-head</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">手放在腦後</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> D-I-hand-to-top-of-head</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">手放在頭頂</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">3</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> D-I-hand-to-mouth</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">手到嘴</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">3</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> D-gross-movement-subscale-subscore</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">D.粗大動作分數</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">8</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> E-total-score-ARAT</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">E.ARAT總分計算</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">39</td></tr>\r\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+        },
+        "questionnaire" : "http://example.org/fhir/Questionnaire/ARATQuestionnaireInstance",
+        "status" : "completed",
+        "subject" : {
+          "reference" : "Patient/stroke-patient-001",
+          "display" : "張先生"
+        },
+        "authored" : "2025-10-11T14:30:00+08:00",
+        "author" : {
+          "reference" : "Practitioner/ot-therapist-001",
+          "display" : "復健治療師 - 李小姐"
+        },
+        "item" : [
+          {
+            "linkId" : "assessment-side-arat",
+            "text" : "請選擇評估側",
+            "answer" : [
+              {
+                "valueCoding" : {
+                  "system" : "http://snomed.info/sct",
+                  "code" : "24028007",
+                  "display" : "患者左側"
+                }
+              }
+            ]
+          },
+          {
+            "linkId" : "A-grasp-subscale",
+            "text" : "A.抓力分量表",
+            "item" : [
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 2.5
+                  }
+                ],
+                "linkId" : "A-I-block-10cm3",
+                "text" : "方塊積木, 10 立方公分",
+                "answer" : [
+                  {
+                    "valueInteger" : 3
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 4.2
+                  }
+                ],
+                "linkId" : "A-I-block-2.5cm3",
+                "text" : "方塊積木, 2.5 立方公分",
+                "answer" : [
+                  {
+                    "valueInteger" : 2
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 3.1
+                  }
+                ],
+                "linkId" : "A-I-block-5cm3",
+                "text" : "方塊積木, 5 立方公分",
+                "answer" : [
+                  {
+                    "valueInteger" : 3
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 5.3
+                  }
+                ],
+                "linkId" : "A-I-block-7.5cm3",
+                "text" : "方塊積木, 7.5 立方公分",
+                "answer" : [
+                  {
+                    "valueInteger" : 2
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 8.7
+                  }
+                ],
+                "linkId" : "A-I-cricket-ball",
+                "text" : "板球",
+                "answer" : [
+                  {
+                    "valueInteger" : 1
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 9.1
+                  }
+                ],
+                "linkId" : "A-I-sharpening-stone",
+                "text" : "磨刀石",
+                "answer" : [
+                  {
+                    "valueInteger" : 1
+                  }
+                ]
+              },
+              {
+                "linkId" : "A-grasp-subscale-subscore",
+                "text" : "A.抓力分數",
+                "answer" : [
+                  {
+                    "valueInteger" : 12
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId" : "B-grip-subscale",
+            "text" : "B.握力分量表",
+            "item" : [
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 6.5
+                  }
+                ],
+                "linkId" : "B-I-pour-water-from-one-glass-to-another",
+                "text" : "將水從一個杯子倒到另一個杯子",
+                "answer" : [
+                  {
+                    "valueInteger" : 2
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 4.8
+                  }
+                ],
+                "linkId" : "B-I-pour-water-from-one-glass-to-another",
+                "text" : "將 2.25 公分合金管從桌子的一側移到另一側",
+                "answer" : [
+                  {
+                    "valueInteger" : 3
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 7.2
+                  }
+                ],
+                "linkId" : "B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other",
+                "text" : "將 1 公分合金管從桌子的一側移到另一側",
+                "answer" : [
+                  {
+                    "valueInteger" : 2
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 12.3
+                  }
+                ],
+                "linkId" : "B-I-put-washer-over-bolt",
+                "text" : "將墊圈放在螺栓上",
+                "answer" : [
+                  {
+                    "valueInteger" : 1
+                  }
+                ]
+              },
+              {
+                "linkId" : "B-grip-subscale-subscore",
+                "text" : "B.握力分數",
+                "answer" : [
+                  {
+                    "valueInteger" : 8
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId" : "C-pinch-subscale",
+            "text" : "C.捏取分量表",
+            "item" : [
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 7.5
+                  }
+                ],
+                "linkId" : "C-I-ball-bearing-held-between-ring-finger-and-thumb",
+                "text" : "滾珠軸承，握在無名指與大拇指之間",
+                "answer" : [
+                  {
+                    "valueInteger" : 1
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 5.1
+                  }
+                ],
+                "linkId" : "C-I-marble-held-between-index-finger-and-thumb",
+                "text" : "大理石，握在食指與大拇指之間",
+                "answer" : [
+                  {
+                    "valueInteger" : 2
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 6.8
+                  }
+                ],
+                "linkId" : "C-I-ball-bearing-held-between-middle-finger-and-thumb",
+                "text" : "滾珠軸承，握在中指與拇指之間",
+                "answer" : [
+                  {
+                    "valueInteger" : 2
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 3.9
+                  }
+                ],
+                "linkId" : "C-I-ball-bearing-held-between-index-finger-and-thumb",
+                "text" : "滾珠軸承，握在食指與拇指之間",
+                "answer" : [
+                  {
+                    "valueInteger" : 3
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 9.2
+                  }
+                ],
+                "linkId" : "C-I-marble-held-between-ring-finger-and-thumb",
+                "text" : "大理石，握在無名指和大拇指之間",
+                "answer" : [
+                  {
+                    "valueInteger" : 1
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 6.5
+                  }
+                ],
+                "linkId" : "C-I-marble-held-between-middle-finger-and-thumb",
+                "text" : "大理石，握在中指與大拇指之間",
+                "answer" : [
+                  {
+                    "valueInteger" : 2
+                  }
+                ]
+              },
+              {
+                "linkId" : "C-pinch-subscale-subscore",
+                "text" : "C.捏取分數",
+                "answer" : [
+                  {
+                    "valueInteger" : 11
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId" : "D-gross-movement-subscale",
+            "text" : "D.粗大動作分量表",
+            "item" : [
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 4.2
+                  }
+                ],
+                "linkId" : "D-I-hand-to-behind-the-head",
+                "text" : "手放在腦後",
+                "answer" : [
+                  {
+                    "valueInteger" : 2
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 3.1
+                  }
+                ],
+                "linkId" : "D-I-hand-to-top-of-head",
+                "text" : "手放在頭頂",
+                "answer" : [
+                  {
+                    "valueInteger" : 3
+                  }
+                ]
+              },
+              {
+                "extension" : [
+                  {
+                    "url" : "http://example.org/StructureDefinition/test-time-extension",
+                    "valueDecimal" : 2.8
+                  }
+                ],
+                "linkId" : "D-I-hand-to-mouth",
+                "text" : "手到嘴",
+                "answer" : [
+                  {
+                    "valueInteger" : 3
+                  }
+                ]
+              },
+              {
+                "linkId" : "D-gross-movement-subscale-subscore",
+                "text" : "D.粗大動作分數",
+                "answer" : [
+                  {
+                    "valueInteger" : 8
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId" : "E-total-score-ARAT",
+            "text" : "E.ARAT總分計算",
+            "answer" : [
+              {
+                "valueInteger" : 39
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "Encounter/arat-assessment-encounter-001",
+      "resource" : {
+        "resourceType" : "Encounter",
+        "id" : "arat-assessment-encounter-001",
+        "meta" : {
+          "profile" : ["http://example.org/StructureDefinition/Encounter"]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_arat-assessment-encounter-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter arat-assessment-encounter-001</b></p><a name=\"arat-assessment-encounter-001\"> </a><a name=\"hcarat-assessment-encounter-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter.html\">Encounter</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: 門診</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 410155007}\">職能治療評估</span></p><p><b>subject</b>: <a href=\"Patient-stroke-patient-001.html\">先生 張 (official) Male, DoB: 1965-03-15 ( http://example.org/mrn#12345)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-ot-therapist-001.html\">Practitioner 小姐 李 (official)</a></td></tr></table><p><b>period</b>: 2025-10-11 14:00:00+0800 --&gt; 2025-10-11 15:00:00+0800</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 230690007}\">中風後復健</span></p></div>"
+        },
+        "status" : "finished",
+        "class" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "AMB",
+          "display" : "門診"
+        },
+        "type" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://snomed.info/sct",
+                "code" : "410155007",
+                "display" : "職能治療評估"
+              }
+            ]
+          }
+        ],
+        "subject" : {
+          "reference" : "Patient/stroke-patient-001"
+        },
+        "participant" : [
+          {
+            "individual" : {
+              "reference" : "Practitioner/ot-therapist-001"
+            }
+          }
+        ],
+        "period" : {
+          "start" : "2025-10-11T14:00:00+08:00",
+          "end" : "2025-10-11T15:00:00+08:00"
+        },
+        "reasonCode" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://snomed.info/sct",
+                "code" : "230690007",
+                "display" : "中風後復健"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+
+```

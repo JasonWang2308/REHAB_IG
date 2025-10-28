@@ -1,0 +1,132 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelBathing",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelBathing",
+      "title" : "洗澡-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelBladder",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelBladder",
+      "title" : "小便控制-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelBowels",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelBowels",
+      "title" : "大便控制-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelDressing",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelDressing",
+      "title" : "穿脫衣服-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelFeeding",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelFeeding",
+      "title" : "進食-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelGrooming",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelGrooming",
+      "title" : "個人衛生-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelMobility",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelMobility",
+      "title" : "平地行走-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelStairs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelStairs",
+      "title" : "上下樓梯-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelToiletUse",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelToiletUse",
+      "title" : "上廁所-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelTotal",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelTotal",
+      "title" : "Barthel Index 總值集",
+      "description" : "整合 Barthel Index 各題之所有選項值集",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBarthelTransfer",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBarthelTransfer",
+      "title" : "移位-選項",
+      "description" : "",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/VSBodyStructure",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSBodyStructure",
+      "title" : "身體部位與結構對應之Snomed CT 代碼",
+      "description" : "收錄復健可能會使用到的身體部位代碼",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/assessment-side-valueset",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AssessmentSideValueSet",
+      "title" : "評估側別選項",
+      "description" : "受試者評估側別選項",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/mas-score",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VSMAScore",
+      "title" : "MAS 分數 (0,1,1+,2,3,4)",
+      "description" : "",
+      "systems" : [
+        "https://your-org.example/fhir/ig/rehab/CodeSystem/mas-score"
+      ]
+    }
+  ]
+}

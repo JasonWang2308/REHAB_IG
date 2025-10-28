@@ -1,0 +1,15 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://example.org/ValueSet/VSBarthelBathing,0.1.0,draft,,VSBarthelBathing,洗澡-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBarthelBladder,0.1.0,draft,,VSBarthelBladder,小便控制-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBarthelBowels,0.1.0,draft,,VSBarthelBowels,大便控制-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBarthelDressing,0.1.0,draft,,VSBarthelDressing,穿脫衣服-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBarthelFeeding,0.1.0,draft,,VSBarthelFeeding,進食-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBarthelGrooming,0.1.0,draft,,VSBarthelGrooming,個人衛生-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBarthelMobility,0.1.0,draft,,VSBarthelMobility,平地行走-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBarthelStairs,0.1.0,draft,,VSBarthelStairs,上下樓梯-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBarthelToiletUse,0.1.0,draft,,VSBarthelToiletUse,上廁所-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBarthelTotal,0.1.0,draft,,VSBarthelTotal,Barthel Index 總值集,"整合 Barthel Index 各題之所有選項值集",,
+http://example.org/ValueSet/VSBarthelTransfer,0.1.0,draft,,VSBarthelTransfer,移位-選項,"",,"LOINC"
+http://example.org/ValueSet/VSBodyStructure,0.1.0,draft,,VSBodyStructure,身體部位與結構對應之Snomed CT 代碼,"收錄復健可能會使用到的身體部位代碼",,"SCT"
+http://example.org/ValueSet/assessment-side-valueset,0.1.0,draft,,AssessmentSideValueSet,評估側別選項,"受試者評估側別選項",,"SCT"
+http://example.org/ValueSet/mas-score,0.1.0,draft,,VSMAScore,MAS 分數 (0,1,1+,2,3,4),"",,"Other"

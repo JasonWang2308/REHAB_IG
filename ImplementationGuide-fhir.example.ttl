@@ -1,0 +1,3802 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ImplementationGuide/fhir.example> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir.example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.example</b></p><a name=\"fhir.example\"> </a><a name=\"hcfhir.example\"> </a><h2>ExampleIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.example</pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ImplementationGuide/fhir.example"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ExampleIG"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T11:34:57+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "fhir.example"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "6.5.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.2.0" ]
+  ] [
+     fhir:id [ fhir:v "tw_gov_mohw_twcore" ] ;
+     fhir:uri [
+       fhir:v "https://twcore.mohw.gov.tw/ig/twcore/ImplementationGuide/tw.gov.mohw.twcore"^^xsd:anyURI ;
+       fhir:link <https://twcore.mohw.gov.tw/ig/twcore/ImplementationGuide/tw.gov.mohw.twcore>
+     ] ;
+     fhir:packageId [ fhir:v "tw.gov.mohw.twcore" ] ;
+     fhir:version [ fhir:v "0.3.2" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.sdc" ] ;
+     fhir:version [ fhir:v "3.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "copyrightyear"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "2025+"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "releaselabel"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "autoload-resources"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-qa"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/qa"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-temp"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/pages"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-output"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "output"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-suppressed-warnings"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/ignoreWarnings.txt"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-history"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://example.org/history.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-html"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-md"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page-md.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-contact"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-context"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-copyright"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-jurisdiction"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-license"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-publisher"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-version"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-wg"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "active-tables"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "fmm-definition"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://hl7.org/fhir/versions.html#maturity"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "propagate-status"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "excludelogbinaryformat"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "tabbed-snapshots"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "copyrightyear"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "2025+"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "releaselabel"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "autoload-resources"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-qa"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/qa"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-temp"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/pages"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-output"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "output"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-suppressed-warnings"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/ignoreWarnings.txt"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-history"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://example.org/history.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "template-html"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "template-md"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page-md.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-contact"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-context"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-copyright"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-jurisdiction"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-license"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-publisher"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-version"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-wg"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "active-tables"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "fmm-definition"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://hl7.org/fhir/versions.html#maturity"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "propagate-status"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "excludelogbinaryformat"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "tabbed-snapshots"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/ARATQuestionnaireInstance> ;
+         fhir:reference [ fhir:v "Questionnaire/ARATQuestionnaireInstance" ]
+       ] ;
+       fhir:name [ fhir:v "ARAT上肢功能評估問卷" ] ;
+       fhir:description [ fhir:v "ARAT上肢功能評估問卷的完整實例，根據Yozbatiran, Der-Yeghiaian, and Cramer(2008)建立，可提供實際使用 。亦可依據Profile: QuestionnaireProfile內容做為範本進行擴充" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/ARATQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/ARATQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "ARAT上肢功能評估問卷回覆" ] ;
+       fhir:description [ fhir:v "針對ARAT上肢功能評估問卷的QuestionnaireResponse Profile，強制回傳格式符合問卷結構" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/arat-response-example-001> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/arat-response-example-001" ]
+       ] ;
+       fhir:name [ fhir:v "ARAT問卷回覆範例" ] ;
+       fhir:description [ fhir:v "一位中風患者進行ARAT上肢功能評估的完整問卷回覆範例，包含所有測試項目分數、完成時間及自動計算總分" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/ARATQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/ARATQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Bundle/arat-bundle-001> ;
+         fhir:reference [ fhir:v "Bundle/arat-bundle-001" ]
+       ] ;
+       fhir:name [ fhir:v "ARAT評估Bundle範例" ] ;
+       fhir:description [ fhir:v "包含患者、治療師及問卷回覆的完整評估資料包" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Encounter/arat-assessment-encounter-001> ;
+         fhir:reference [ fhir:v "Encounter/arat-assessment-encounter-001" ]
+       ] ;
+       fhir:name [ fhir:v "ARAT評估會期" ] ;
+       fhir:description [ fhir:v "進行ARAT評估的門診會期" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/Encounter"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/Encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelTotal> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelTotal" ]
+       ] ;
+       fhir:name [ fhir:v "Barthel Index 總值集" ] ;
+       fhir:description [ fhir:v "整合 Barthel Index 各題之所有選項值集" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/BarthelIndexExample> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/BarthelIndexExample" ]
+       ] ;
+       fhir:name [ fhir:v "BarthelIndexExample" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/BarthelQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/BarthelQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/BBTExample> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/BBTExample" ]
+       ] ;
+       fhir:name [ fhir:v "BBTExample" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/bbt-questionnaire-response"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/bbt-questionnaire-response>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/bbt-questionnaire-response> ;
+         fhir:reference [ fhir:v "StructureDefinition/bbt-questionnaire-response" ]
+       ] ;
+       fhir:name [ fhir:v "BBTQR" ] ;
+       fhir:description [ fhir:v "Box and Block Test (BBT) 評估量表問卷回覆" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/BBTQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/BBTQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "BBT評估量表" ] ;
+       fhir:description [ fhir:v "評估手部功能" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/ReponseBundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/ReponseBundle" ]
+       ] ;
+       fhir:name [ fhir:v "Bundle-評估資料回傳" ] ;
+       fhir:description [ fhir:v "此 Profile 定義了上肢功能評估資料須包含的資訊。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/BundleId> ;
+         fhir:reference [ fhir:v "SearchParameter/BundleId" ]
+       ] ;
+       fhir:name [ fhir:v "BundleId" ] ;
+       fhir:description [ fhir:v "搜尋Bundle的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/BundleIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/BundleIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "BundleIdentifier" ] ;
+       fhir:description [ fhir:v "搜尋Bundle的identifier參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/CarePlan> ;
+         fhir:reference [ fhir:v "StructureDefinition/CarePlan" ]
+       ] ;
+       fhir:name [ fhir:v "Care Plan" ] ;
+       fhir:description [ fhir:v "照護計畫" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/CarePlanCategory> ;
+         fhir:reference [ fhir:v "SearchParameter/CarePlanCategory" ]
+       ] ;
+       fhir:name [ fhir:v "CarePlanCategory" ] ;
+       fhir:description [ fhir:v "搜尋CarePlan的category參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/CarePlanDate> ;
+         fhir:reference [ fhir:v "SearchParameter/CarePlanDate" ]
+       ] ;
+       fhir:name [ fhir:v "CarePlanDate" ] ;
+       fhir:description [ fhir:v "搜尋CarePlan的date參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/CarePlanPatient> ;
+         fhir:reference [ fhir:v "SearchParameter/CarePlanPatient" ]
+       ] ;
+       fhir:name [ fhir:v "CarePlanPatient" ] ;
+       fhir:description [ fhir:v "搜尋CarePlan的patient參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/CarePlanStatus> ;
+         fhir:reference [ fhir:v "SearchParameter/CarePlanStatus" ]
+       ] ;
+       fhir:name [ fhir:v "CarePlanStatus" ] ;
+       fhir:description [ fhir:v "搜尋CarePlan的status參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ConditionAbatementdate> ;
+         fhir:reference [ fhir:v "SearchParameter/ConditionAbatementdate" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionAbatementdate" ] ;
+       fhir:description [ fhir:v "搜尋Condition的abatement-date參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ConditionClinicalstatus> ;
+         fhir:reference [ fhir:v "SearchParameter/ConditionClinicalstatus" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionClinicalstatus" ] ;
+       fhir:description [ fhir:v "搜尋Condition的clinical-status參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ConditionCode> ;
+         fhir:reference [ fhir:v "SearchParameter/ConditionCode" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionCode" ] ;
+       fhir:description [ fhir:v "搜尋Condition的code參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ConditionId> ;
+         fhir:reference [ fhir:v "SearchParameter/ConditionId" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionId" ] ;
+       fhir:description [ fhir:v "搜尋Condition的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ConditionOnsetdate> ;
+         fhir:reference [ fhir:v "SearchParameter/ConditionOnsetdate" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionOnsetdate" ] ;
+       fhir:description [ fhir:v "搜尋Condition的onset-date參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ConditionSeverity> ;
+         fhir:reference [ fhir:v "SearchParameter/ConditionSeverity" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionSeverity" ] ;
+       fhir:description [ fhir:v "搜尋Condition的severity參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ConditionSubject> ;
+         fhir:reference [ fhir:v "SearchParameter/ConditionSubject" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionSubject" ] ;
+       fhir:description [ fhir:v "搜尋Condition的subject參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/CodeSystem/mas-score> ;
+         fhir:reference [ fhir:v "CodeSystem/mas-score" ]
+       ] ;
+       fhir:name [ fhir:v "CSMAS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/Encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/Encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter" ] ;
+       fhir:description [ fhir:v "就醫事件的標準化定義。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/EncounterClass> ;
+         fhir:reference [ fhir:v "SearchParameter/EncounterClass" ]
+       ] ;
+       fhir:name [ fhir:v "EncounterClass" ] ;
+       fhir:description [ fhir:v "搜尋Encounter的class參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/EncounterDate> ;
+         fhir:reference [ fhir:v "SearchParameter/EncounterDate" ]
+       ] ;
+       fhir:name [ fhir:v "EncounterDate" ] ;
+       fhir:description [ fhir:v "搜尋Encounter的date參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/EncounterId> ;
+         fhir:reference [ fhir:v "SearchParameter/EncounterId" ]
+       ] ;
+       fhir:name [ fhir:v "EncounterId" ] ;
+       fhir:description [ fhir:v "搜尋Encounter的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/EncounterIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/EncounterIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "EncounterIdentifier" ] ;
+       fhir:description [ fhir:v "搜尋Encounter的identifier參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/EncounterLocation> ;
+         fhir:reference [ fhir:v "SearchParameter/EncounterLocation" ]
+       ] ;
+       fhir:name [ fhir:v "EncounterLocation" ] ;
+       fhir:description [ fhir:v "搜尋Encounter的location參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/EncounterStatus> ;
+         fhir:reference [ fhir:v "SearchParameter/EncounterStatus" ]
+       ] ;
+       fhir:name [ fhir:v "EncounterStatus" ] ;
+       fhir:description [ fhir:v "搜尋Encounter的status參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/EncounterSubject> ;
+         fhir:reference [ fhir:v "SearchParameter/EncounterSubject" ]
+       ] ;
+       fhir:name [ fhir:v "EncounterSubject" ] ;
+       fhir:description [ fhir:v "搜尋Encounter的subject參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/FMAUEMotionQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/FMAUEMotionQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "FMAUE動作評估問卷回覆" ] ;
+       fhir:description [ fhir:v "針對FMAUE上肢動作評估問卷的QuestionnaireResponse Profile，強制回傳格式符合問卷結構" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/FMAUESensoryQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/FMAUESensoryQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "FMAUE感覺評估問卷回覆" ] ;
+       fhir:description [ fhir:v "針對FMAUE上肢感覺評估問卷的QuestionnaireResponse Profile，強制回傳格式符合問卷結構" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/FMAUEMotorQuestionnaireInstance> ;
+         fhir:reference [ fhir:v "Questionnaire/FMAUEMotorQuestionnaireInstance" ]
+       ] ;
+       fhir:name [ fhir:v "Fugl-Meyer上肢動作評估問卷" ] ;
+       fhir:description [ fhir:v "衛福部Fugl-Meyer上肢動作評估問卷的完整實例，可提供實際使用。亦可依據Profile: QuestionnaireProfile內容做為範本進行擴充" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/FMAUEMotorQuestionnaireResponseExample> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/FMAUEMotorQuestionnaireResponseExample" ]
+       ] ;
+       fhir:name [ fhir:v "Fugl-Meyer上肢動作評估問卷回覆範例" ] ;
+       fhir:description [ fhir:v "針對 Fugl-Meyer 上肢動作評估問卷的完整回覆範例，展示左側上肢動作功能評估結果" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/SPACQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/SPACQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/FMAUESensoryQuestionnaireInstance> ;
+         fhir:reference [ fhir:v "Questionnaire/FMAUESensoryQuestionnaireInstance" ]
+       ] ;
+       fhir:name [ fhir:v "Fugl-Meyer上肢感覺評估問卷" ] ;
+       fhir:description [ fhir:v "衛福部Fugl-Meyer上肢感覺評估問卷的完整實例，可提供實際使用。亦可依據Profile: QuestionnaireProfile內容做為範本進行擴充" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/FMAUESensoryQuestionnaireResponseExample> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/FMAUESensoryQuestionnaireResponseExample" ]
+       ] ;
+       fhir:name [ fhir:v "Fugl-Meyer上肢感覺評估問卷回覆範例" ] ;
+       fhir:description [ fhir:v "針對Fugl-Meyer上肢感覺評估問卷的完整回覆範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/FMAUESensoryQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/FMAUESensoryQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/Goal> ;
+         fhir:reference [ fhir:v "StructureDefinition/Goal" ]
+       ] ;
+       fhir:name [ fhir:v "Goal" ] ;
+       fhir:description [ fhir:v "目標的標準化定義。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/GoalDescription> ;
+         fhir:reference [ fhir:v "SearchParameter/GoalDescription" ]
+       ] ;
+       fhir:name [ fhir:v "GoalDescription" ] ;
+       fhir:description [ fhir:v "搜尋Goal的description參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/GoalLifecyclestatus> ;
+         fhir:reference [ fhir:v "SearchParameter/GoalLifecyclestatus" ]
+       ] ;
+       fhir:name [ fhir:v "GoalLifecyclestatus" ] ;
+       fhir:description [ fhir:v "搜尋Goal的lifecycle-status參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/GoalPatient> ;
+         fhir:reference [ fhir:v "SearchParameter/GoalPatient" ]
+       ] ;
+       fhir:name [ fhir:v "GoalPatient" ] ;
+       fhir:description [ fhir:v "搜尋Goal的patient參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/GoalTargetdate> ;
+         fhir:reference [ fhir:v "SearchParameter/GoalTargetdate" ]
+       ] ;
+       fhir:name [ fhir:v "GoalTargetdate" ] ;
+       fhir:description [ fhir:v "搜尋Goal的target-date參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/IADLQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/IADLQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "IADL評估問卷回覆" ] ;
+       fhir:description [ fhir:v "針對IADL評估問卷的QuestionnaireResponse Profile，強制回傳格式符合問卷結構" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/IDALQuestionnaireResponseInstance> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/IDALQuestionnaireResponseInstance" ]
+       ] ;
+       fhir:name [ fhir:v "IDALQuestionnaireResponseInstance" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/SPACQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/SPACQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/IDALQuestionnaireInstance> ;
+         fhir:reference [ fhir:v "Questionnaire/IDALQuestionnaireInstance" ]
+       ] ;
+       fhir:name [ fhir:v "IDAL評估問卷" ] ;
+       fhir:description [ fhir:v "IADL評估問卷" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/mas-score> ;
+         fhir:reference [ fhir:v "ValueSet/mas-score" ]
+       ] ;
+       fhir:name [ fhir:v "MAS 分數 (0,1,1+,2,3,4)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/MASQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/MASQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "MAS 量表問卷回覆" ] ;
+       fhir:description [ fhir:v "Modified Ashworth Scale (MAS) 評估量表問卷回覆" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/MASQuestionnaireResponseExample> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/MASQuestionnaireResponseExample" ]
+       ] ;
+       fhir:name [ fhir:v "MASQuestionnaireResponseExample" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/MASQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/MASQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/MASQuestionnaireInstance> ;
+         fhir:reference [ fhir:v "Questionnaire/MASQuestionnaireInstance" ]
+       ] ;
+       fhir:name [ fhir:v "MAS評估量表" ] ;
+       fhir:description [ fhir:v "評估肌肉張力" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/MyMedicationAdministration> ;
+         fhir:reference [ fhir:v "StructureDefinition/MyMedicationAdministration" ]
+       ] ;
+       fhir:name [ fhir:v "Medication Administration" ] ;
+       fhir:description [ fhir:v "用藥資料" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationCode> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationCode" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationCode" ] ;
+       fhir:description [ fhir:v "Return administrations of this medication code" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationContext> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationContext" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationContext" ] ;
+       fhir:description [ fhir:v "Return administrations that share this encounter or episode of care" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationDevice> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationDevice" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationDevice" ] ;
+       fhir:description [ fhir:v "Return administrations with this administration device identity" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationEffectivetime> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationEffectivetime" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationEffectivetime" ] ;
+       fhir:description [ fhir:v "Date administration happened (or did not happen)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationIdentifier" ] ;
+       fhir:description [ fhir:v "Return administrations with this external identifier" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationMedication> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationMedication" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationMedication" ] ;
+       fhir:description [ fhir:v "Return administrations of this medication resource" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationPatient> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationPatient" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationPatient" ] ;
+       fhir:description [ fhir:v "The identity of a patient to list administrations for" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationPerformer> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationPerformer" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationPerformer" ] ;
+       fhir:description [ fhir:v "The identity of the individual who administered the medication" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationReasongiven> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationReasongiven" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationReasongiven" ] ;
+       fhir:description [ fhir:v "Reasons for administering the medication" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationReasonnotgiven> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationReasonnotgiven" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationReasonnotgiven" ] ;
+       fhir:description [ fhir:v "Reasons for not administering the medication" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationRequest> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationRequest" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationRequest" ] ;
+       fhir:description [ fhir:v "The identity of a request to list administrations from" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationStatus> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationStatus" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationStatus" ] ;
+       fhir:description [ fhir:v "MedicationAdministration event status (for example one of active/paused/completed/nullified)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/MedicationAdministrationSubject> ;
+         fhir:reference [ fhir:v "SearchParameter/MedicationAdministrationSubject" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministrationSubject" ] ;
+       fhir:description [ fhir:v "The identity of the individual or group to list administrations for" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/MMSEQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/MMSEQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "MMSE QuestionnaireResponse (scored)" ] ;
+       fhir:description [ fhir:v "MMSE 回覆：分數題逐題填答，總分需等於所有分數項目加總。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/MMSEQuestionnaireResponseExample> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/MMSEQuestionnaireResponseExample" ]
+       ] ;
+       fhir:name [ fhir:v "MMSEQuestionnaireResponseExample" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/MMSEQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/MMSEQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/MMSEQuestionnaireInstance> ;
+         fhir:reference [ fhir:v "Questionnaire/MMSEQuestionnaireInstance" ]
+       ] ;
+       fhir:name [ fhir:v "MMSE評估量表" ] ;
+       fhir:description [ fhir:v "簡易心智狀況檢查表 (Mini-Mental State Examination, MMSE)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/MRCQuestionnaireInstance> ;
+         fhir:reference [ fhir:v "Questionnaire/MRCQuestionnaireInstance" ]
+       ] ;
+       fhir:name [ fhir:v "MRC 評估量表" ] ;
+       fhir:description [ fhir:v "MRC肌力測試 (Medical Research Council Scale)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/MRCQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/MRCQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "MRCQuestionnaireResponse" ] ;
+       fhir:description [ fhir:v "MRC問卷回覆" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/MRCQuestionnaireResponseExample> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/MRCQuestionnaireResponseExample" ]
+       ] ;
+       fhir:name [ fhir:v "MRCQuestionnaireResponseExample" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/SPACQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/SPACQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CapabilityStatement"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/CapabilityStatement/MyFHIRClientCapabilityStatement> ;
+         fhir:reference [ fhir:v "CapabilityStatement/MyFHIRClientCapabilityStatement" ]
+       ] ;
+       fhir:name [ fhir:v "My FHIR Client Capability Statement" ] ;
+       fhir:description [ fhir:v "此 CapabilityStatement 定義了用戶端（Client）應支援的 FHIR RESTful API 功能。用戶端建議應該（SHOULD）使用伺服端能力聲明中的查詢參數，支援讀取和查詢一個或多個 FHIR Profile。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CapabilityStatement"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/CapabilityStatement/MyFHIRServerCapabilityStatement> ;
+         fhir:reference [ fhir:v "CapabilityStatement/MyFHIRServerCapabilityStatement" ]
+       ] ;
+       fhir:name [ fhir:v "My FHIR Server Capability Statement" ] ;
+       fhir:description [ fhir:v "此 CapabilityStatement 定義了伺服端必須支援的 FHIR RESTful API 功能" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/ObservationScreeningAssessment> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationScreeningAssessment" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Screening Assessment" ] ;
+       fhir:description [ fhir:v "健康狀態篩檢與評估" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ObservationCategory> ;
+         fhir:reference [ fhir:v "SearchParameter/ObservationCategory" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationCategory" ] ;
+       fhir:description [ fhir:v "搜尋Observation的category參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ObservationCode> ;
+         fhir:reference [ fhir:v "SearchParameter/ObservationCode" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationCode" ] ;
+       fhir:description [ fhir:v "搜尋Observation的code參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ObservationDate> ;
+         fhir:reference [ fhir:v "SearchParameter/ObservationDate" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationDate" ] ;
+       fhir:description [ fhir:v "搜尋Observation的date參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ObservationId> ;
+         fhir:reference [ fhir:v "SearchParameter/ObservationId" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationId" ] ;
+       fhir:description [ fhir:v "搜尋Observation的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ObservationLastupdated> ;
+         fhir:reference [ fhir:v "SearchParameter/ObservationLastupdated" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationLastupdated" ] ;
+       fhir:description [ fhir:v "搜尋Observation的_lastUpdated參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ObservationPatient> ;
+         fhir:reference [ fhir:v "SearchParameter/ObservationPatient" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationPatient" ] ;
+       fhir:description [ fhir:v "搜尋Observation的patient參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ObservationPerformer> ;
+         fhir:reference [ fhir:v "SearchParameter/ObservationPerformer" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationPerformer" ] ;
+       fhir:description [ fhir:v "搜尋Observation的performer參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ObservationStatus> ;
+         fhir:reference [ fhir:v "SearchParameter/ObservationStatus" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationStatus" ] ;
+       fhir:description [ fhir:v "搜尋Observation的status參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ObservationSubject> ;
+         fhir:reference [ fhir:v "SearchParameter/ObservationSubject" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationSubject" ] ;
+       fhir:description [ fhir:v "搜尋Observation的subject參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/Organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/Organization" ]
+       ] ;
+       fhir:name [ fhir:v "Organization" ] ;
+       fhir:description [ fhir:v "機構的標準化定義。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/OrganizationId> ;
+         fhir:reference [ fhir:v "SearchParameter/OrganizationId" ]
+       ] ;
+       fhir:name [ fhir:v "OrganizationId" ] ;
+       fhir:description [ fhir:v "搜尋Organization的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/OrganizationIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/OrganizationIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "OrganizationIdentifier" ] ;
+       fhir:description [ fhir:v "搜尋Organization的identifier參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/OrganizationName> ;
+         fhir:reference [ fhir:v "SearchParameter/OrganizationName" ]
+       ] ;
+       fhir:name [ fhir:v "OrganizationName" ] ;
+       fhir:description [ fhir:v "搜尋Organization的name參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/OrganizationType> ;
+         fhir:reference [ fhir:v "SearchParameter/OrganizationType" ]
+       ] ;
+       fhir:name [ fhir:v "OrganizationType" ] ;
+       fhir:description [ fhir:v "搜尋Organization的type參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/PACCarePlan> ;
+         fhir:reference [ fhir:v "StructureDefinition/PACCarePlan" ]
+       ] ;
+       fhir:name [ fhir:v "PACCarePlan" ] ;
+       fhir:description [ fhir:v "PAC照護計畫的標準化定義的內容" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/PACCondition> ;
+         fhir:reference [ fhir:v "StructureDefinition/PACCondition" ]
+       ] ;
+       fhir:name [ fhir:v "PACCondition" ] ;
+       fhir:description [ fhir:v "進行患者上肢功能評估時的狀況資訊，應包含待評估身體部位或病徵。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/Procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/Procedure" ]
+       ] ;
+       fhir:name [ fhir:v "PACProcedure" ] ;
+       fhir:description [ fhir:v "PAC介入的標準化定義。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CarePlan"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/CarePlan/PACCarePlanExample> ;
+         fhir:reference [ fhir:v "CarePlan/PACCarePlanExample" ]
+       ] ;
+       fhir:name [ fhir:v "PAC照護計畫資料範例" ] ;
+       fhir:description [ fhir:v "一個照護計畫的範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/PACCarePlan"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/PACCarePlan>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicationAdministration"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/MedicationAdministration/PACMedicationAdministrationExample> ;
+         fhir:reference [ fhir:v "MedicationAdministration/PACMedicationAdministrationExample" ]
+       ] ;
+       fhir:name [ fhir:v "PAC用藥資料範例" ] ;
+       fhir:description [ fhir:v "一個用藥資料的範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/MyMedicationAdministration"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/MyMedicationAdministration>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/Patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/Patient" ]
+       ] ;
+       fhir:name [ fhir:v "Patient" ] ;
+       fhir:description [ fhir:v "病人的資料定義範例，包含姓名、識別碼等基本資訊" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "OperationDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/OperationDefinition/PatientEverythingOperation> ;
+         fhir:reference [ fhir:v "OperationDefinition/PatientEverythingOperation" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Everything Operation" ] ;
+       fhir:description [ fhir:v "取得該病人完整相關資源快照，回傳一個包含所有相關資源的Bundle" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PatientBirthdate> ;
+         fhir:reference [ fhir:v "SearchParameter/PatientBirthdate" ]
+       ] ;
+       fhir:name [ fhir:v "PatientBirthdate" ] ;
+       fhir:description [ fhir:v "搜尋Patient的birthdate參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PatientGender> ;
+         fhir:reference [ fhir:v "SearchParameter/PatientGender" ]
+       ] ;
+       fhir:name [ fhir:v "PatientGender" ] ;
+       fhir:description [ fhir:v "搜尋Patient的gender參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PatientId> ;
+         fhir:reference [ fhir:v "SearchParameter/PatientId" ]
+       ] ;
+       fhir:name [ fhir:v "PatientId" ] ;
+       fhir:description [ fhir:v "搜尋Patient的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PatientIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/PatientIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "PatientIdentifier" ] ;
+       fhir:description [ fhir:v "搜尋Patient的identifier參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PatientName> ;
+         fhir:reference [ fhir:v "SearchParameter/PatientName" ]
+       ] ;
+       fhir:name [ fhir:v "PatientName" ] ;
+       fhir:description [ fhir:v "搜尋Patient的name參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/Practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/Practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner" ] ;
+       fhir:description [ fhir:v "健康照護服務提供者的標準化定義。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PractitionerId> ;
+         fhir:reference [ fhir:v "SearchParameter/PractitionerId" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerId" ] ;
+       fhir:description [ fhir:v "搜尋Practitioner的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PractitionerIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/PractitionerIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerIdentifier" ] ;
+       fhir:description [ fhir:v "搜尋Practitioner的identifier參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PractitionerName> ;
+         fhir:reference [ fhir:v "SearchParameter/PractitionerName" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerName" ] ;
+       fhir:description [ fhir:v "搜尋Practitioner的name參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/PractitionerRole> ;
+         fhir:reference [ fhir:v "StructureDefinition/PractitionerRole" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerRole" ] ;
+       fhir:description [ fhir:v "健康照護服務提供者角色的標準化定義。" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PractitionerRoleId> ;
+         fhir:reference [ fhir:v "SearchParameter/PractitionerRoleId" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerRoleId" ] ;
+       fhir:description [ fhir:v "搜尋PractitionerRole的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PractitionerRoleIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/PractitionerRoleIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerRoleIdentifier" ] ;
+       fhir:description [ fhir:v "搜尋PractitionerRole的identifier參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/PractitionerRoleSpecialty> ;
+         fhir:reference [ fhir:v "SearchParameter/PractitionerRoleSpecialty" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerRoleSpecialty" ] ;
+       fhir:description [ fhir:v "搜尋PractitionerRole的specialty參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ProcedureCode> ;
+         fhir:reference [ fhir:v "SearchParameter/ProcedureCode" ]
+       ] ;
+       fhir:name [ fhir:v "ProcedureCode" ] ;
+       fhir:description [ fhir:v "搜尋Procedure的code參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ProcedureDate> ;
+         fhir:reference [ fhir:v "SearchParameter/ProcedureDate" ]
+       ] ;
+       fhir:name [ fhir:v "ProcedureDate" ] ;
+       fhir:description [ fhir:v "搜尋Procedure的date參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ProcedureId> ;
+         fhir:reference [ fhir:v "SearchParameter/ProcedureId" ]
+       ] ;
+       fhir:name [ fhir:v "ProcedureId" ] ;
+       fhir:description [ fhir:v "搜尋Procedure的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ProcedureStatus> ;
+         fhir:reference [ fhir:v "SearchParameter/ProcedureStatus" ]
+       ] ;
+       fhir:name [ fhir:v "ProcedureStatus" ] ;
+       fhir:description [ fhir:v "搜尋Procedure的status參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/ProcedureSubject> ;
+         fhir:reference [ fhir:v "SearchParameter/ProcedureSubject" ]
+       ] ;
+       fhir:name [ fhir:v "ProcedureSubject" ] ;
+       fhir:description [ fhir:v "搜尋Procedure的subject參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireIdentifier> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireIdentifier" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireIdentifier" ] ;
+       fhir:description [ fhir:v "問卷識別碼" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireLinkID> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireLinkID" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireLinkID" ] ;
+       fhir:description [ fhir:v "問卷項目" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireResponseAuthored> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireResponseAuthored" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireResponseAuthored" ] ;
+       fhir:description [ fhir:v "搜尋QuestionnaireResponse的authored參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireResponseId> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireResponseId" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireResponseId" ] ;
+       fhir:description [ fhir:v "搜尋QuestionnaireResponse的_id參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireResponseLinkID> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireResponseLinkID" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireResponseLinkID" ] ;
+       fhir:description [ fhir:v "問卷標題" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireResponsePatient> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireResponsePatient" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireResponsePatient" ] ;
+       fhir:description [ fhir:v "搜尋QuestionnaireResponse的patient參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireResponseQuestionnaire> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireResponseQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireResponseQuestionnaire" ] ;
+       fhir:description [ fhir:v "搜尋QuestionnaireResponse的questionnaire參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireResponseStatus> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireResponseStatus" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireResponseStatus" ] ;
+       fhir:description [ fhir:v "搜尋QuestionnaireResponse的status參數" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireResponseSubject> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireResponseSubject" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireResponseSubject" ] ;
+       fhir:description [ fhir:v "問卷回應主體" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/QuestionnaireTitle> ;
+         fhir:reference [ fhir:v "SearchParameter/QuestionnaireTitle" ]
+       ] ;
+       fhir:name [ fhir:v "QuestionnaireTitle" ] ;
+       fhir:description [ fhir:v "問卷標題" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/WMFTQuestionnaireInstance> ;
+         fhir:reference [ fhir:v "Questionnaire/WMFTQuestionnaireInstance" ]
+       ] ;
+       fhir:name [ fhir:v "WMFT上肢功能評估問卷" ] ;
+       fhir:description [ fhir:v "WMFT上肢功能評估問卷的完整實例，根據Wolf et al., 1995; Whitall, Savin, Harris-Love, & Waller, 2006建立，可提供實際使用 。亦可依據Profile: QuestionnaireProfile內容做為範本進行擴充" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/WMFTQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/WMFTQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "WMFT上肢功能評估問卷回覆" ] ;
+       fhir:description [ fhir:v "針對WMFT上肢功能評估問卷的QuestionnaireResponse Profile，強制回傳格式符合問卷結構" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/WMFTQuestionnaireResponseExample> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/WMFTQuestionnaireResponseExample" ]
+       ] ;
+       fhir:name [ fhir:v "WMFT上肢功能評估問卷回覆範例" ] ;
+       fhir:description [ fhir:v "針對 WMFT 上肢功能評估問卷的完整回覆範例，展示右側上肢功能評估結果，包含功能評分與完成時間記錄" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/WMFTQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/WMFTQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelStairs> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelStairs" ]
+       ] ;
+       fhir:name [ fhir:v "上下樓梯-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelToiletUse> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelToiletUse" ]
+       ] ;
+       fhir:name [ fhir:v "上廁所-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Patient/stroke-patient-001> ;
+         fhir:reference [ fhir:v "Patient/stroke-patient-001" ]
+       ] ;
+       fhir:name [ fhir:v "中風患者範例" ] ;
+       fhir:description [ fhir:v "右側中風患者，接受左側上肢功能評估" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/Patient"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/Patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/ProcedureExample> ;
+         fhir:reference [ fhir:v "Procedure/ProcedureExample" ]
+       ] ;
+       fhir:name [ fhir:v "介入資料範例" ] ;
+       fhir:description [ fhir:v "一個介入的範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/Procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/Procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelGrooming> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelGrooming" ]
+       ] ;
+       fhir:name [ fhir:v "個人衛生-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PractitionerRole"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/PractitionerRole/PractitionerRoleExample> ;
+         fhir:reference [ fhir:v "PractitionerRole/PractitionerRoleExample" ]
+       ] ;
+       fhir:name [ fhir:v "健康照護服務提供者角色資料範例" ] ;
+       fhir:description [ fhir:v "一名健康照護服務提供者角色的範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/PractitionerRole>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Observation/ObservationScreeningAssessmentExample> ;
+         fhir:reference [ fhir:v "Observation/ObservationScreeningAssessmentExample" ]
+       ] ;
+       fhir:name [ fhir:v "健康狀態篩檢與評估範例" ] ;
+       fhir:description [ fhir:v "一個健康狀態篩檢與評估的範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/ObservationScreeningAssessment"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/ObservationScreeningAssessment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelBowels> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelBowels" ]
+       ] ;
+       fhir:name [ fhir:v "大便控制-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelBladder> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelBladder" ]
+       ] ;
+       fhir:name [ fhir:v "小便控制-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/BarthelQuestionnaireInstance> ;
+         fhir:reference [ fhir:v "Questionnaire/BarthelQuestionnaireInstance" ]
+       ] ;
+       fhir:name [ fhir:v "巴氏量表" ] ;
+       fhir:description [ fhir:v "巴氏量表 (Barthel Index)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/BarthelQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/BarthelQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "巴氏量表問卷回覆" ] ;
+       fhir:description [ fhir:v "針對巴氏量表問卷的QuestionnaireResponse Profile，強制回傳格式符合問卷結構" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelMobility> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelMobility" ]
+       ] ;
+       fhir:name [ fhir:v "平地行走-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Practitioner/ot-therapist-001> ;
+         fhir:reference [ fhir:v "Practitioner/ot-therapist-001" ]
+       ] ;
+       fhir:name [ fhir:v "復健治療師範例" ] ;
+       fhir:description [ fhir:v "執行ARAT評估的職能治療師" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/Practitioner"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/Practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Organization/OrganizationExample> ;
+         fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+       ] ;
+       fhir:name [ fhir:v "機構資料範例" ] ;
+       fhir:description [ fhir:v "一個機構的範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/Organization"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/Organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelBathing> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelBathing" ]
+       ] ;
+       fhir:name [ fhir:v "洗澡-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CarePlan"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/CarePlan/CarePlanExample> ;
+         fhir:reference [ fhir:v "CarePlan/CarePlanExample" ]
+       ] ;
+       fhir:name [ fhir:v "照護計畫資料範例" ] ;
+       fhir:description [ fhir:v "一個照護計畫的範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/CarePlan"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/CarePlan>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicationAdministration"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/MedicationAdministration/MyMedicationAdministrationExample> ;
+         fhir:reference [ fhir:v "MedicationAdministration/MyMedicationAdministrationExample" ]
+       ] ;
+       fhir:name [ fhir:v "用藥資料範例" ] ;
+       fhir:description [ fhir:v "一個用藥資料的範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/MyMedicationAdministration"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/MyMedicationAdministration>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Goal"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Goal/GoalExample> ;
+         fhir:reference [ fhir:v "Goal/GoalExample" ]
+       ] ;
+       fhir:name [ fhir:v "目標資料範例" ] ;
+       fhir:description [ fhir:v "一個目標的範例" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/Goal"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/Goal>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelTransfer> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelTransfer" ]
+       ] ;
+       fhir:name [ fhir:v "移位-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelDressing> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelDressing" ]
+       ] ;
+       fhir:name [ fhir:v "穿脫衣服-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/assessment-side-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/assessment-side-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "評估側別選項" ] ;
+       fhir:description [ fhir:v "受試者評估側別選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/SPACQuestionnaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/SPACQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "評估問卷" ] ;
+       fhir:description [ fhir:v "評估問卷的結構化定義，實際問卷內容請參考Structure: Questionnaire，可依據前者內容做為範本進行擴充" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/SPACQuestionnaireResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/SPACQuestionnaireResponse" ]
+       ] ;
+       fhir:name [ fhir:v "評估問卷回覆" ] ;
+       fhir:description [ fhir:v "問卷回覆的結構化定義，實際問回覆內容可參考Examples，可依據前者內容做為範本進行擴充" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBodyStructure> ;
+         fhir:reference [ fhir:v "ValueSet/VSBodyStructure" ]
+       ] ;
+       fhir:name [ fhir:v "身體部位與結構對應之Snomed CT 代碼" ] ;
+       fhir:description [ fhir:v "收錄復健可能會使用到的身體部位代碼" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/VSBarthelFeeding> ;
+         fhir:reference [ fhir:v "ValueSet/VSBarthelFeeding" ]
+       ] ;
+       fhir:name [ fhir:v "進食-選項" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/test-time-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/test-time-extension" ]
+       ] ;
+       fhir:name [ fhir:v "項目測試時間" ] ;
+       fhir:description [ fhir:v "記錄單一測試項目的完成時間" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:url ;
+           fhir:v "toc.html"^^xsd:anyURI
+         ]
+       ] ) ;
+       fhir:name [
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
+       ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "index.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "應用說明" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "regulation.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "regulation.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "規範文件" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "example.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "example.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "範例" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "capability.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "capability.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "能力聲明" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "parameter.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "parameter.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "查詢參數及操作定義" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "logic.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "logic.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "邏輯模型" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "extension.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "extension.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "FHIR Profiles及Extensions" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "terminology.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "terminology.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "專門術語" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "download.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "download.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "結構定義與範例檔下載" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "security.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "security.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "安全性" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

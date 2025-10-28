@@ -1,0 +1,1066 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "MyFHIRClientCapabilityStatement",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement MyFHIRClientCapabilityStatement</b></p><a name=\"MyFHIRClientCapabilityStatement\"> </a><a name=\"hcMyFHIRClientCapabilityStatement\"> </a><h2 id=\"title\">My FHIR Client Capability Statement</h2><ul><li>Implementation Guide Version: 0.1.0 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>json</code>, <code>xml</code></li><li>Supported Patch Formats: <code>application/json-patch+json</code></li><li>Published on: 2025-10-25 </li><li>Published by: Example Publisher </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id=\"rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>client</code></h3></div><div class=\"panel-body\"><div><p>用戶端建議應該（SHOULD）使用伺服端能力聲明中的查詢參數，支援讀取和查詢一個或多個 Profile。系統互動能力：可能可以（MAY）支援交易（transaction）、批次（batch）與查詢系統（search-system）。</p>\n</div></div></div><h3 id=\"resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#Bundle1-1\">Bundle</a></td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">http://hl7.org/fhir/StructureDefinition/Bundle</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, identifier</td><td/><td/><td/></tr><tr><td><a href=\"#CarePlan1-2\">CarePlan</a></td><td><a href=\"http://hl7.org/fhir/R4/careplan.html\">http://hl7.org/fhir/StructureDefinition/CarePlan</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>patient, category, date, status</td><td/><td/><td/></tr><tr><td><a href=\"#Condition1-3\">Condition</a></td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">http://hl7.org/fhir/StructureDefinition/Condition</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, clinical-status, code, subject, onset-date, abatement-date, severity</td><td/><td/><td/></tr><tr><td><a href=\"#Encounter1-4\">Encounter</a></td><td><a href=\"http://hl7.org/fhir/R4/encounter.html\">http://hl7.org/fhir/StructureDefinition/Encounter</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, class, date, identifier, location, subject, status</td><td/><td/><td/></tr><tr><td><a href=\"#Goal1-5\">Goal</a></td><td><a href=\"http://hl7.org/fhir/R4/goal.html\">http://hl7.org/fhir/StructureDefinition/Goal</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>patient, lifecycle-status, target-date, description</td><td/><td/><td/></tr><tr><td><a href=\"#MedicationAdministration1-6\">MedicationAdministration</a></td><td><a href=\"http://hl7.org/fhir/R4/medicationadministration.html\">http://hl7.org/fhir/StructureDefinition/MedicationAdministration</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>code, identifier, medication, patient, status, context, device, effective-time, performer, reason-given, reason-not-given, request, subject</td><td/><td/><td/></tr><tr><td><a href=\"#Observation1-7\">Observation</a></td><td><a href=\"http://hl7.org/fhir/R4/observation.html\">http://hl7.org/fhir/StructureDefinition/Observation</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, category, code, date, performer, status, subject, patient, _lastUpdated</td><td/><td/><td/></tr><tr><td><a href=\"#Organization1-8\">Organization</a></td><td><a href=\"http://hl7.org/fhir/R4/organization.html\">http://hl7.org/fhir/StructureDefinition/Organization</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, identifier, name, type</td><td/><td/><td/></tr><tr><td><a href=\"#Patient1-9\">Patient</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">http://hl7.org/fhir/StructureDefinition/Patient</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, birthdate, gender, identifier, name</td><td/><td/><td><code>$everything</code></td></tr><tr><td><a href=\"#Practitioner1-10\">Practitioner</a></td><td><a href=\"http://hl7.org/fhir/R4/practitioner.html\">http://hl7.org/fhir/StructureDefinition/Practitioner</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, identifier, name</td><td/><td/><td/></tr><tr><td><a href=\"#PractitionerRole1-11\">PractitionerRole</a></td><td><a href=\"http://hl7.org/fhir/R4/practitionerrole.html\">http://hl7.org/fhir/StructureDefinition/PractitionerRole</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, identifier, specialty</td><td/><td/><td/></tr><tr><td><a href=\"#Procedure1-12\">Procedure</a></td><td><a href=\"http://hl7.org/fhir/R4/procedure.html\">http://hl7.org/fhir/StructureDefinition/Procedure</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, code, status, subject, date</td><td/><td/><td/></tr><tr><td><a href=\"#Questionnaire1-13\">Questionnaire</a></td><td><a href=\"http://hl7.org/fhir/R4/questionnaire.html\">http://hl7.org/fhir/StructureDefinition/Questionnaire</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"/><td class=\"text-center\"/><td>identifier, title</td><td/><td/><td/></tr><tr><td><a href=\"#QuestionnaireResponse1-14\">QuestionnaireResponse</a></td><td><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td class=\"text-center\"><span title=\"SHOULD\">Y</span></td><td>_id, patient, status, authored, questionnaire, subject</td><td/><td/><td><code>$extract</code></td></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Bundle1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Bundle</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-BundleId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-BundleIdentifier.html\">identifier</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"CarePlan1-2\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>CarePlan</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/careplan.html\">CarePlan</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-CarePlanPatient.html\">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-CarePlanCategory.html\">category</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-CarePlanDate.html\">date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-CarePlanStatus.html\">status</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Condition1-3\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Condition</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ConditionId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ConditionClinicalstatus.html\">clinical-status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ConditionCode.html\">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ConditionSubject.html\">subject</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ConditionOnsetdate.html\">onset-date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ConditionAbatementdate.html\">abatement-date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ConditionSeverity.html\">severity</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Encounter1-4\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Encounter</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-EncounterId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-EncounterClass.html\">class</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-EncounterDate.html\">date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-EncounterIdentifier.html\">identifier</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-EncounterLocation.html\">location</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-EncounterSubject.html\">subject</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-EncounterStatus.html\">status</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Goal1-5\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Goal</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/goal.html\">Goal</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-GoalPatient.html\">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-GoalLifecyclestatus.html\">lifecycle-status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-GoalTargetdate.html\">target-date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-GoalDescription.html\">description</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"MedicationAdministration1-6\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>MedicationAdministration</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/medicationadministration.html\">MedicationAdministration</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationCode.html\">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationIdentifier.html\">identifier</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationMedication.html\">medication</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationPatient.html\">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationStatus.html\">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationContext.html\">context</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationDevice.html\">device</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationEffectivetime.html\">effective-time</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationPerformer.html\">performer</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationReasongiven.html\">reason-given</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationReasonnotgiven.html\">reason-not-given</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationRequest.html\">request</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-MedicationAdministrationSubject.html\">subject</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Observation1-7\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Observation</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ObservationId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ObservationCategory.html\">category</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ObservationCode.html\">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ObservationDate.html\">date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ObservationPerformer.html\">performer</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ObservationStatus.html\">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ObservationSubject.html\">subject</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ObservationPatient.html\">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ObservationLastupdated.html\">_lastUpdated</a></td><td><code>date</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Organization1-8\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Organization</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-OrganizationId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-OrganizationIdentifier.html\">identifier</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-OrganizationName.html\">name</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-OrganizationType.html\">type</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Patient1-9\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Patient</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PatientId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PatientBirthdate.html\">birthdate</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PatientGender.html\">gender</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PatientIdentifier.html\">identifier</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PatientName.html\">name</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Extended Operations</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Operation</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td>$everything</td><td><div/></td></tr></tbody></table></div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Practitioner1-10\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Practitioner</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PractitionerId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PractitionerIdentifier.html\">identifier</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PractitionerName.html\">name</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"PractitionerRole1-11\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>PractitionerRole</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PractitionerRoleId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PractitionerRoleIdentifier.html\">identifier</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-PractitionerRoleSpecialty.html\">specialty</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Procedure1-12\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Procedure</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ProcedureId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ProcedureCode.html\">code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ProcedureStatus.html\">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ProcedureSubject.html\">subject</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-ProcedureDate.html\">date</a></td><td><code>date</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Questionnaire1-13\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>Questionnaire</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/questionnaire.html\">Questionnaire</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-QuestionnaireIdentifier.html\">identifier</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-QuestionnaireTitle.html\">title</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"QuestionnaireResponse1-14\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHOULD </span>QuestionnaireResponse</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\">QuestionnaireResponse</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHOULD</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>, <code>create</code>, <code>update</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-QuestionnaireResponseId.html\">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-QuestionnaireResponsePatient.html\">patient</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-QuestionnaireResponseStatus.html\">status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-QuestionnaireResponseAuthored.html\">authored</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-QuestionnaireResponseQuestionnaire.html\">questionnaire</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href=\"SearchParameter-QuestionnaireResponseSubject.html\">subject</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Extended Operations</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Operation</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href=\"http://hl7.org/fhir/uv/sdc/STU3/OperationDefinition-QuestionnaireResponse-extract.html\">$extract</a></td><td><div><p>用戶端應支援 $extract 操作以：\n• 將已完成的問卷回應轉換為結構化 FHIR 資源\n• 支援 Observation 提取（計分、測量）\n• 支援資源 Bundle 提取（複雜資料模型）\n• 自動計算衍生欄位（如得分）</p>\n<p>調用例：\nPOST /QuestionnaireResponse/qr123/$extract\n返回值：\n{\n&quot;resourceType&quot;: &quot;Bundle&quot;,\n&quot;type&quot;: &quot;transaction&quot;,\n&quot;entry&quot;: [\n{\n&quot;resource&quot;: {\n&quot;resourceType&quot;: &quot;Observation&quot;,\n&quot;code&quot;: { &quot;coding&quot;: [{ &quot;code&quot;: &quot;depression-score&quot; }] },\n&quot;value&quot;: { &quot;integer&quot;: 15 }\n}\n}\n]\n}</p>\n<p>這是 SDC 工作流的關鍵步驟</p>\n</div></td></tr></tbody></table></div></div></div></div></div></div>"
+  },
+  "url" : "http://example.org/fhir/CapabilityStatement/MyFHIRClient",
+  "version" : "0.1.0",
+  "name" : "MyFHIRClientCapabilityStatement",
+  "title" : "My FHIR Client Capability Statement",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-25",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "此 CapabilityStatement 定義了用戶端（Client）應支援的 FHIR RESTful API 功能。用戶端建議應該（SHOULD）使用伺服端能力聲明中的查詢參數，支援讀取和查詢一個或多個 FHIR Profile。",
+  "kind" : "requirements",
+  "fhirVersion" : "4.0.1",
+  "format" : ["json",
+  "xml"],
+  "patchFormat" : ["application/json-patch+json"],
+  "rest" : [{
+    "mode" : "client",
+    "documentation" : "用戶端建議應該（SHOULD）使用伺服端能力聲明中的查詢參數，支援讀取和查詢一個或多個 Profile。系統互動能力：可能可以（MAY）支援交易（transaction）、批次（batch）與查詢系統（search-system）。",
+    "resource" : [{
+      "type" : "Bundle",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Bundle",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/Bundle-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "identifier",
+        "definition" : "http://example.org/fhir/SearchParameter/Bundle-identifier",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "CarePlan",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/CarePlan",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "patient",
+        "definition" : "http://example.org/fhir/SearchParameter/CarePlan-patient",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "category",
+        "definition" : "http://example.org/fhir/SearchParameter/CarePlan-category",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "date",
+        "definition" : "http://example.org/fhir/SearchParameter/CarePlan-date",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "status",
+        "definition" : "http://example.org/fhir/SearchParameter/CarePlan-status",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "Condition",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Condition",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/Condition-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "clinical-status",
+        "definition" : "http://example.org/fhir/SearchParameter/Condition-clinical-status",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "code",
+        "definition" : "http://example.org/fhir/SearchParameter/Condition-code",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "subject",
+        "definition" : "http://example.org/fhir/SearchParameter/Condition-subject",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "onset-date",
+        "definition" : "http://example.org/fhir/SearchParameter/Condition-onset-date",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "abatement-date",
+        "definition" : "http://example.org/fhir/SearchParameter/Condition-abatement-date",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "severity",
+        "definition" : "http://example.org/fhir/SearchParameter/Condition-severity",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "Encounter",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/Encounter-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "class",
+        "definition" : "http://example.org/fhir/SearchParameter/Encounter-class",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "date",
+        "definition" : "http://example.org/fhir/SearchParameter/Encounter-date",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "identifier",
+        "definition" : "http://example.org/fhir/SearchParameter/Encounter-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "location",
+        "definition" : "http://example.org/fhir/SearchParameter/Encounter-location",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "subject",
+        "definition" : "http://example.org/fhir/SearchParameter/Encounter-subject",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "status",
+        "definition" : "http://example.org/fhir/SearchParameter/Encounter-status",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "Goal",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Goal",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "patient",
+        "definition" : "http://example.org/fhir/SearchParameter/Goal-patient",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "lifecycle-status",
+        "definition" : "http://example.org/fhir/SearchParameter/Goal-lifecycle-status",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "target-date",
+        "definition" : "http://example.org/fhir/SearchParameter/Goal-target-date",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "description",
+        "definition" : "http://example.org/fhir/SearchParameter/Goal-description",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "MedicationAdministration",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "code",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-code",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "identifier",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "medication",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-medication",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "patient",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-patient",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "status",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-status",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "context",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-context",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "device",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-device",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "effective-time",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-effective-time",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "performer",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-performer",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "reason-given",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-reason-given",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "reason-not-given",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-reason-not-given",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "request",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-request",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "subject",
+        "definition" : "http://example.org/fhir/SearchParameter/MedicationAdministration-subject",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "Observation",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Observation",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/Observation-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "category",
+        "definition" : "http://example.org/fhir/SearchParameter/Observation-category",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "code",
+        "definition" : "http://example.org/fhir/SearchParameter/Observation-code",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "date",
+        "definition" : "http://example.org/fhir/SearchParameter/Observation-date",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "performer",
+        "definition" : "http://example.org/fhir/SearchParameter/Observation-performer",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "status",
+        "definition" : "http://example.org/fhir/SearchParameter/Observation-status",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "subject",
+        "definition" : "http://example.org/fhir/SearchParameter/Observation-subject",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "patient",
+        "definition" : "http://example.org/fhir/SearchParameter/Observation-patient",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_lastUpdated",
+        "definition" : "http://example.org/fhir/SearchParameter/Observation-_lastUpdated",
+        "type" : "date"
+      }]
+    },
+    {
+      "type" : "Organization",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Organization",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/Organization-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "identifier",
+        "definition" : "http://example.org/fhir/SearchParameter/Organization-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "name",
+        "definition" : "http://example.org/fhir/SearchParameter/Organization-name",
+        "type" : "string"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "type",
+        "definition" : "http://example.org/fhir/SearchParameter/Organization-type",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "Patient",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Patient",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/Patient-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "birthdate",
+        "definition" : "http://example.org/fhir/SearchParameter/Patient-birthdate",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "gender",
+        "definition" : "http://example.org/fhir/SearchParameter/Patient-gender",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "identifier",
+        "definition" : "http://example.org/fhir/SearchParameter/Patient-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "name",
+        "definition" : "http://example.org/fhir/SearchParameter/Patient-name",
+        "type" : "string"
+      }],
+      "operation" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "everything",
+        "definition" : "http://hl7.org/fhir/OperationDefinition/Patient-everything"
+      }]
+    },
+    {
+      "type" : "Practitioner",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Practitioner",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/Practitioner-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "identifier",
+        "definition" : "http://example.org/fhir/SearchParameter/Practitioner-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "name",
+        "definition" : "http://example.org/fhir/SearchParameter/Practitioner-name",
+        "type" : "string"
+      }]
+    },
+    {
+      "type" : "PractitionerRole",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/PractitionerRole-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "identifier",
+        "definition" : "http://example.org/fhir/SearchParameter/PractitionerRole-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "specialty",
+        "definition" : "http://example.org/fhir/SearchParameter/PractitionerRole-specialty",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "Procedure",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/Procedure-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "code",
+        "definition" : "http://example.org/fhir/SearchParameter/Procedure-code",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "status",
+        "definition" : "http://example.org/fhir/SearchParameter/Procedure-status",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "subject",
+        "definition" : "http://example.org/fhir/SearchParameter/Procedure-subject",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "date",
+        "definition" : "http://example.org/fhir/SearchParameter/Procedure-date",
+        "type" : "date"
+      }]
+    },
+    {
+      "type" : "Questionnaire",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "identifier",
+        "definition" : "http://example.org/fhir/SearchParameter/Questionnaire-identifier",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "title",
+        "definition" : "http://example.org/fhir/SearchParameter/Questionnaire-title",
+        "type" : "string"
+      }]
+    },
+    {
+      "type" : "QuestionnaireResponse",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+      "_profile" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "search-type"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "create"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "code" : "update"
+      }],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "_id",
+        "definition" : "http://example.org/fhir/SearchParameter/QuestionnaireResponse-_id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "patient",
+        "definition" : "http://example.org/fhir/SearchParameter/QuestionnaireResponse-patient",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "status",
+        "definition" : "http://example.org/fhir/SearchParameter/QuestionnaireResponse-status",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "authored",
+        "definition" : "http://example.org/fhir/SearchParameter/QuestionnaireResponse-authored",
+        "type" : "date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "questionnaire",
+        "definition" : "http://example.org/fhir/SearchParameter/QuestionnaireResponse-questionnaire",
+        "type" : "reference"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "subject",
+        "definition" : "http://example.org/fhir/SearchParameter/QuestionnaireResponse-subject",
+        "type" : "reference"
+      }],
+      "operation" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "extract",
+        "definition" : "http://hl7.org/fhir/uv/sdc/OperationDefinition/QuestionnaireResponse-extract",
+        "documentation" : "用戶端應支援 $extract 操作以：\n• 將已完成的問卷回應轉換為結構化 FHIR 資源\n• 支援 Observation 提取（計分、測量）\n• 支援資源 Bundle 提取（複雜資料模型）\n• 自動計算衍生欄位（如得分）\n\n調用例：\nPOST /QuestionnaireResponse/qr123/$extract\n返回值：\n{\n  \"resourceType\": \"Bundle\",\n  \"type\": \"transaction\",\n  \"entry\": [\n    {\n      \"resource\": {\n        \"resourceType\": \"Observation\",\n        \"code\": { \"coding\": [{ \"code\": \"depression-score\" }] },\n        \"value\": { \"integer\": 15 }\n      }\n    }\n  ]\n}\n\n這是 SDC 工作流的關鍵步驟"
+      }]
+    }]
+  }]
+}

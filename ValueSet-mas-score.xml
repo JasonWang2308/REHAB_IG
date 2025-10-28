@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mas-score"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet mas-score</b></p><a name="mas-score"> </a><a name="hcmas-score"> </a><ul><li>Include all codes defined in <code>https://your-org.example/fhir/ig/rehab/CodeSystem/mas-score</code><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/mas-score"/>
+  <version value="0.1.0"/>
+  <name value="VSMAScore"/>
+  <title value="MAS 分數 (0,1,1+,2,3,4)"/>
+  <status value="draft"/>
+  <date value="2025-10-28T11:34:57+08:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="https://your-org.example/fhir/ig/rehab/CodeSystem/mas-score"/>
+    </include>
+  </compose>
+</ValueSet>

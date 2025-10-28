@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/CodeSystem/mas-score> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mas-score"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mas-score</b></p><a name=\"mas-score\"> </a><a name=\"hcmas-score\"> </a><p>This  code system <code>http://example.org/CodeSystem/mas-score</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"mas-score-0\"> </a></td><td>0: 肌張力沒有增加</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"mas-score-1\"> </a></td><td>1: 輕微增加肌張力，當受測的肢體在彎曲或伸展時，在活動範圍的最末段會呈現如卡住般 (catch)些微的張力</td></tr><tr><td style=\"white-space:nowrap\">1+<a name=\"mas-score-1.43\"> </a></td><td>1+: 輕微增加肌張力，當受測的肢體在彎曲或伸展時，會先呈現如卡住般些微的張力，並接 續著輕微的張力直到活動範圍結束，出現張力的比例小於50%的活動範圍</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"mas-score-2\"> </a></td><td>2: 大部分的活動範圍都呈現張力，但受影響的肢體是可以輕易活動的</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"mas-score-3\"> </a></td><td>3: 大部分的活動範圍都呈現大幅增加的張力，受影響的肢體的被動活動是困難的</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"mas-score-4\"> </a></td><td>4: 受影響的肢體在彎曲或伸展時是僵硬的</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/CodeSystem/mas-score"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CSMAS"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T11:34:57+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "0: 肌張力沒有增加" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "1: 輕微增加肌張力，當受測的肢體在彎曲或伸展時，在活動範圍的最末段會呈現如卡住般 (catch)些微的張力" ]
+  ] [
+     fhir:code [ fhir:v "1+" ] ;
+     fhir:display [ fhir:v "1+: 輕微增加肌張力，當受測的肢體在彎曲或伸展時，會先呈現如卡住般些微的張力，並接 續著輕微的張力直到活動範圍結束，出現張力的比例小於50%的活動範圍" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "2: 大部分的活動範圍都呈現張力，但受影響的肢體是可以輕易活動的" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "3: 大部分的活動範圍都呈現大幅增加的張力，受影響的肢體的被動活動是困難的" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "4: 受影響的肢體在彎曲或伸展時是僵硬的" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

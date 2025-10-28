@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="ARATQuestionnaireInstance"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/SPACQuestionnaire"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Questionnaire ARATQuestionnaireInstance</b></p><a name="ARATQuestionnaireInstance"> </a><a name="hcARATQuestionnaireInstance"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-SPACQuestionnaire.html">評估問卷</a></p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Other attributes of the item">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> ARATQuestionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ARAT上肢功能評評估問卷(Yozbatiran, Der-Yeghiaian, and Cramer, 2008)，分左右邊各57分</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org/Questionnaire/ARATQuestionnaireInstance#0.1.0</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.assessment-side-arat" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> assessment-side-arat</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">請選擇評估側</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.assessment-side-arat">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.A-grasp-subscale" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> A-grasp-subscale</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A.抓力分量表</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-block-10cm3" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> A-I-block-10cm3</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">方塊積木, 10 立方公分</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-block-10cm3">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-block-2.5cm3" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> A-I-block-2.5cm3</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">方塊積木, 2.5 立方公分</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-block-2.5cm3">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-block-5cm3" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> A-I-block-5cm3</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">方塊積木, 5 立方公分</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-block-5cm3">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-block-7.5cm3" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> A-I-block-7.5cm3</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">方塊積木, 7.5 立方公分</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-block-7.5cm3">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-cricket-ball" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> A-I-cricket-ball</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">板球</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-cricket-ball">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.A-I-sharpening-stone" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> A-I-sharpening-stone</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">磨刀石</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.A-I-sharpening-stone">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.A-grasp-subscale-subscore" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="integer" class="hierarchy"/> A-grasp-subscale-subscore</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A.抓力分數</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.B-grip-subscale" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> B-grip-subscale</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">B.握力分量表</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-pour-water-from-one-glass-to-another" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> B-I-pour-water-from-one-glass-to-another</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">將水從一個杯子倒到另一個杯子</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-pour-water-from-one-glass-to-another">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-displace-2.25-cm-alloy-tube-from-one-side-oftable-to-the-other" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> B-I-displace-2.25-cm-alloy-tube-from-one-side-oftable-to-the-other</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">將 2.25 公分合金管從桌子的一側移到另一側</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-displace-2.25-cm-alloy-tube-from-one-side-oftable-to-the-other">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">將 1 公分合金管從桌子的一側移到另一側</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.B-I-put-washer-over-bolt" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> B-I-put-washer-over-bolt</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">將墊圈放在螺栓上</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.B-I-put-washer-over-bolt">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.B-grip-subscale-subscore" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="integer" class="hierarchy"/> B-grip-subscale-subscore</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">B.握力分數</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.C-pinch-subscale" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> C-pinch-subscale</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">C.捏取分量表</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.C-I-ball-bearing-held-between-ring-finger-and-thumb" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> C-I-ball-bearing-held-between-ring-finger-and-thumb</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">滾珠軸承，握在無名指與大拇指之間</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C-I-ball-bearing-held-between-ring-finger-and-thumb">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.C-I-marble-held-between-index-finger-and-thumb" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> C-I-marble-held-between-index-finger-and-thumb</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">大理石，握在食指與大拇指之間</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C-I-marble-held-between-index-finger-and-thumb">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.C-I-ball-bearing-held-between-middle-finger-and-thumb" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> C-I-ball-bearing-held-between-middle-finger-and-thumb</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">滾珠軸承，握在中指與拇指之間</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C-I-ball-bearing-held-between-middle-finger-and-thumb">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.C-I-ball-bearing-held-between-index-finger-and-thumb" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> C-I-ball-bearing-held-between-index-finger-and-thumb</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">滾珠軸承，握在食指與拇指之間</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C-I-ball-bearing-held-between-index-finger-and-thumb">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.C-I-marble-held-between-ring-finger-and-thumb" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> C-I-marble-held-between-ring-finger-and-thumb</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">大理石，握在無名指和大拇指之間</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C-I-marble-held-between-ring-finger-and-thumb">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.C-I-marble-held-between-middle-finger-and-thumb" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> C-I-marble-held-between-middle-finger-and-thumb</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">大理石，握在中指與大拇指之間</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.C-I-marble-held-between-middle-finger-and-thumb">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.C-pinch-subscale-subscore" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="integer" class="hierarchy"/> C-pinch-subscale-subscore</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">C.捏取分數</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.D-gross-movement-subscale" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="group" class="hierarchy"/> D-gross-movement-subscale</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">D.粗大動作分量表</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.D-I-hand-to-behind-the-head" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> D-I-hand-to-behind-the-head</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">手放在腦後</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D-I-hand-to-behind-the-head">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.D-I-hand-to-top-of-head" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> D-I-hand-to-top-of-head</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">手放在頭頂</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D-I-hand-to-top-of-head">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.D-I-hand-to-mouth" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> D-I-hand-to-mouth</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">手到嘴</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.D-I-hand-to-mouth">4 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.D-gross-movement-subscale-subscore" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: white; background-color: inherit" title="integer" class="hierarchy"/> D-gross-movement-subscale-subscore</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">D.粗大動作分數</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.E-total-score-ARAT" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-integer.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="integer" class="hierarchy"/> E-total-score-ARAT</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">E.ARAT總分計算</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer">integer</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly" title="Is Read Only"><img src="icon-qi-readonly.png" alt="icon"/></a><img src="icon-qi-readonly.png" alt="icon"/></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr><td colspan="6" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.assessment-side-arat"> </a><p><b>Answer options for assessment-side-arat </b></p><ul><li style="font-size: 11px">http://snomed.info/sct#24028007 (&quot;患者左側&quot;)</li><li style="font-size: 11px">http://snomed.info/sct#7771000 (&quot;患者右側&quot;)</li></ul><a name="opt-item.A-I-block-10cm3"> </a><p><b>Answer options for A-I-block-10cm3 </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.A-I-block-2.5cm3"> </a><p><b>Answer options for A-I-block-2.5cm3 </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.A-I-block-5cm3"> </a><p><b>Answer options for A-I-block-5cm3 </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.A-I-block-7.5cm3"> </a><p><b>Answer options for A-I-block-7.5cm3 </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.A-I-cricket-ball"> </a><p><b>Answer options for A-I-cricket-ball </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.A-I-sharpening-stone"> </a><p><b>Answer options for A-I-sharpening-stone </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.B-I-pour-water-from-one-glass-to-another"> </a><p><b>Answer options for B-I-pour-water-from-one-glass-to-another </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.B-I-displace-2.25-cm-alloy-tube-from-one-side-oftable-to-the-other"> </a><p><b>Answer options for B-I-displace-2.25-cm-alloy-tube-from-one-side-oftable-to-the-other </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other"> </a><p><b>Answer options for B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.B-I-put-washer-over-bolt"> </a><p><b>Answer options for B-I-put-washer-over-bolt </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.C-I-ball-bearing-held-between-ring-finger-and-thumb"> </a><p><b>Answer options for C-I-ball-bearing-held-between-ring-finger-and-thumb </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.C-I-marble-held-between-index-finger-and-thumb"> </a><p><b>Answer options for C-I-marble-held-between-index-finger-and-thumb </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.C-I-ball-bearing-held-between-middle-finger-and-thumb"> </a><p><b>Answer options for C-I-ball-bearing-held-between-middle-finger-and-thumb </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.C-I-ball-bearing-held-between-index-finger-and-thumb"> </a><p><b>Answer options for C-I-ball-bearing-held-between-index-finger-and-thumb </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.C-I-marble-held-between-ring-finger-and-thumb"> </a><p><b>Answer options for C-I-marble-held-between-ring-finger-and-thumb </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.C-I-marble-held-between-middle-finger-and-thumb"> </a><p><b>Answer options for C-I-marble-held-between-middle-finger-and-thumb </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.D-I-hand-to-behind-the-head"> </a><p><b>Answer options for D-I-hand-to-behind-the-head </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.D-I-hand-to-top-of-head"> </a><p><b>Answer options for D-I-hand-to-top-of-head </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul><a name="opt-item.D-I-hand-to-mouth"> </a><p><b>Answer options for D-I-hand-to-mouth </b></p><ul><li style="font-size: 11px">0</li><li style="font-size: 11px">1</li><li style="font-size: 11px">2</li><li style="font-size: 11px">3</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/variable">
+    <valueExpression>
+      <name value="graspScore"/>
+      <language value="text/fhirpath"/>
+      <expression value="%resource.descendants().where(linkId in ('a-block-10cm3' | 'a-block-2.5cm3' | 'a-block-5cm3' | 'a-block-7.5cm3' | 'a-cricket-ball' | 'a-sharpening-stone')).answer.value.sum()"/>
+    </valueExpression>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/variable">
+    <valueExpression>
+      <name value="gripScore"/>
+      <language value="text/fhirpath"/>
+      <expression value="%resource.descendants().where(linkId in ('b-pour-water-from-one-glass-to-another' | 'b-displace-2.25-cm-alloy-tube-from-one-side-oftable-to-the-other' | 'b-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other' | 'b-put-washer-over-bolt')).answer.value.sum()"/>
+    </valueExpression>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/variable">
+    <valueExpression>
+      <name value="pinchScore"/>
+      <language value="text/fhirpath"/>
+      <expression value="%resource.descendants().where(linkId in ('c-ball-bearing-held-between-ring-finger-and-thumb' | 'c-marble-held-between-index-finger-and-thumb' | 'c-ball-bearing-held-between-middle-finger-and-thumb' | 'c-ball-bearing-held-between-index-finger-and-thumb' | 'c-marble-held-between-ring-finger-and-thumb' | 'c-marble-held-between-middle-finger-and-thumb')).answer.value.sum()"/>
+    </valueExpression>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/variable">
+    <valueExpression>
+      <name value="movementScore"/>
+      <language value="text/fhirpath"/>
+      <expression value="%resource.descendants().where(linkId in ('d-hand-to-behind-the-head' | 'd-hand-to-top-ofhead' | 'd-hand-to-mouth')).answer.value.sum()"/>
+    </valueExpression>
+  </extension>
+  <url value="http://example.org/Questionnaire/ARATQuestionnaireInstance"/>
+  <version value="0.1.0"/>
+  <name value="ARATQuestionnaire"/>
+  <title value="ARAT上肢功能評評估問卷"/>
+  <status value="active"/>
+  <subjectType value="Patient"/>
+  <date value="2025-10-28T11:34:57+08:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="ARAT上肢功能評評估問卷(Yozbatiran, Der-Yeghiaian, and Cramer, 2008)，分左右邊各57分"/>
+  <purpose value="提供標準化的上肢感覺評估工具，用於中風復健評估"/>
+  <item>
+    <linkId value="assessment-side-arat"/>
+    <text value="請選擇評估側"/>
+    <type value="choice"/>
+    <required value="true"/>
+    <answerOption>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="24028007"/>
+        <display value="患者左側"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="7771000"/>
+        <display value="患者右側"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="A-grasp-subscale"/>
+    <text value="A.抓力分量表"/>
+    <type value="group"/>
+    <required value="true"/>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-block-10cm3"/>
+      <text value="方塊積木, 10 立方公分"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-block-2.5cm3"/>
+      <text value="方塊積木, 2.5 立方公分"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-block-5cm3"/>
+      <text value="方塊積木, 5 立方公分"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-block-7.5cm3"/>
+      <text value="方塊積木, 7.5 立方公分"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-cricket-ball"/>
+      <text value="板球"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="A-I-sharpening-stone"/>
+      <text value="磨刀石"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+        <valueExpression>
+          <language value="text/fhirpath"/>
+          <expression value="%graspScore"/>
+        </valueExpression>
+      </extension>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+        <valueBoolean value="true"/>
+      </extension>
+      <linkId value="A-grasp-subscale-subscore"/>
+      <text value="A.抓力分數"/>
+      <type value="integer"/>
+      <readOnly value="true"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="B-grip-subscale"/>
+    <text value="B.握力分量表"/>
+    <type value="group"/>
+    <required value="true"/>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-pour-water-from-one-glass-to-another"/>
+      <text value="將水從一個杯子倒到另一個杯子"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-displace-2.25-cm-alloy-tube-from-one-side-oftable-to-the-other"/>
+      <text value="將 2.25 公分合金管從桌子的一側移到另一側"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other"/>
+      <text value="將 1 公分合金管從桌子的一側移到另一側"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="B-I-put-washer-over-bolt"/>
+      <text value="將墊圈放在螺栓上"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+        <valueExpression>
+          <language value="text/fhirpath"/>
+          <expression value="%gripScore"/>
+        </valueExpression>
+      </extension>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+        <valueBoolean value="true"/>
+      </extension>
+      <linkId value="B-grip-subscale-subscore"/>
+      <text value="B.握力分數"/>
+      <type value="integer"/>
+      <readOnly value="true"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="C-pinch-subscale"/>
+    <text value="C.捏取分量表"/>
+    <type value="group"/>
+    <required value="true"/>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="C-I-ball-bearing-held-between-ring-finger-and-thumb"/>
+      <text value="滾珠軸承，握在無名指與大拇指之間"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="C-I-marble-held-between-index-finger-and-thumb"/>
+      <text value="大理石，握在食指與大拇指之間"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="C-I-ball-bearing-held-between-middle-finger-and-thumb"/>
+      <text value="滾珠軸承，握在中指與拇指之間"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="C-I-ball-bearing-held-between-index-finger-and-thumb"/>
+      <text value="滾珠軸承，握在食指與拇指之間"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="C-I-marble-held-between-ring-finger-and-thumb"/>
+      <text value="大理石，握在無名指和大拇指之間"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="C-I-marble-held-between-middle-finger-and-thumb"/>
+      <text value="大理石，握在中指與大拇指之間"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+        <valueExpression>
+          <language value="text/fhirpath"/>
+          <expression value="%pinchScore"/>
+        </valueExpression>
+      </extension>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+        <valueBoolean value="true"/>
+      </extension>
+      <linkId value="C-pinch-subscale-subscore"/>
+      <text value="C.捏取分數"/>
+      <type value="integer"/>
+      <readOnly value="true"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="D-gross-movement-subscale"/>
+    <text value="D.粗大動作分量表"/>
+    <type value="group"/>
+    <required value="true"/>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="D-I-hand-to-behind-the-head"/>
+      <text value="手放在腦後"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="D-I-hand-to-top-of-head"/>
+      <text value="手放在頭頂"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://example.org/fhir/TestTimeExtension"/>
+      <linkId value="D-I-hand-to-mouth"/>
+      <text value="手到嘴"/>
+      <type value="choice"/>
+      <required value="true"/>
+      <answerOption>
+        <valueInteger value="0"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="1"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="2"/>
+      </answerOption>
+      <answerOption>
+        <valueInteger value="3"/>
+      </answerOption>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+        <valueExpression>
+          <language value="text/fhirpath"/>
+          <expression value="%movementScore"/>
+        </valueExpression>
+      </extension>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+        <valueBoolean value="true"/>
+      </extension>
+      <linkId value="D-gross-movement-subscale-subscore"/>
+      <text value="D.粗大動作分數"/>
+      <type value="integer"/>
+      <readOnly value="true"/>
+    </item>
+  </item>
+  <item>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression">
+      <valueExpression>
+        <language value="text/fhirpath"/>
+        <expression value="%graspScore + %gripScore + %pinchScore + %movementScore"/>
+      </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract">
+      <valueBoolean value="true"/>
+    </extension>
+    <linkId value="E-total-score-ARAT"/>
+    <text value="E.ARAT總分計算"/>
+    <type value="integer"/>
+    <required value="false"/>
+    <readOnly value="true"/>
+  </item>
+</Questionnaire>

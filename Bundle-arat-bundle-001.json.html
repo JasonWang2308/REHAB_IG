@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>ARAT評估Bundle範例 - JSON Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"6.132"}
+    h3,h4,h5,h6{--heading-prefix:"6.132"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">應用說明</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">規範文件
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="capability.html">能力聲明</a>
+      </li>
+      <li>
+        <a href="parameter.html">查詢參數及操作定義</a>
+      </li>
+      <li>
+        <a href="logic.html">邏輯模型</a>
+      </li>
+      <li>
+        <a href="extension.html">FHIR Profiles及Extensions</a>
+      </li>
+      <li>
+        <a href="terminology.html">專門術語</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="example.html">範例</a>
+  </li>
+  <li>
+    <a href="download.html">結構定義與範例檔下載</a>
+  </li>
+  <li>
+    <a href="security.html">安全性</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>ARAT評估Bundle範例</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">ExampleIG - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://example.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-arat-bundle-001.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-arat-bundle-001.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-arat-bundle-001.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: ARAT評估Bundle範例 - JSON Representation</h2>
+
+
+<p><a href="Bundle-arat-bundle-001.json" no-download="true">Raw json</a> | <a download="null" href="Bundle-arat-bundle-001.json">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="json" data-fhir="generated"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "arat-bundle-001",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "collection",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a>" : "2025-10-11T14:35:00+08:00",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Patient/stroke-patient-001",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "stroke-patient-001",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a style="color: Maroon" href="StructureDefinition-Patient.html">&#x1F517;</a> "http://example.org/StructureDefinition/Patient"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;a name=\"Patient_stroke-patient-001\"&gt; &lt;/a&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: Patient stroke-patient-001&lt;/b&gt;&lt;/p&gt;&lt;a name=\"stroke-patient-001\"&gt; &lt;/a&gt;&lt;a name=\"hcstroke-patient-001\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-Patient.html\"&gt;Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"&gt;先生 張 (official) Male, DoB: 1965-03-15 ( http://example.org/mrn#12345)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td style=\"background-color: #f3f5da\" title=\"Record is active\"&gt;Active:&lt;/td&gt;&lt;td colspan=\"3\"&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\"&gt;Contact Detail&lt;/td&gt;&lt;td colspan=\"3\"&gt;台北市 台灣 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://example.org/mrn",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "12345"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a>" : true,
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "official",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "張",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+              "先生"
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "male",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1965-03-15",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "台北市",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a>" : "台灣"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Practitioner/ot-therapist-001",
+      "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/practitioner.html">resourceType</a>" : "Practitioner",
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">id</a>" : "ot-therapist-001",
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a style="color: Maroon" href="StructureDefinition-Practitioner.html">&#x1F517;</a> "http://example.org/StructureDefinition/Practitioner"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;a name=\"Practitioner_ot-therapist-001\"&gt; &lt;/a&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: Practitioner ot-therapist-001&lt;/b&gt;&lt;/p&gt;&lt;a name=\"ot-therapist-001\"&gt; &lt;/a&gt;&lt;a name=\"hcot-therapist-001\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-Practitioner.html\"&gt;Practitioner&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://hospital.mohw.gov.tw/docID&lt;/code&gt;/A123456789&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: 小姐 李 (Official)&lt;/p&gt;&lt;h3&gt;Qualifications&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td style=\"display: none\"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Issuer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"display: none\"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\"Codes:{http://snomed.info/sct 224609002}\"&gt;職能治療師&lt;/span&gt;&lt;/td&gt;&lt;td&gt;台灣職能治療師公會&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://hospital.mohw.gov.tw/docID",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "A123456789"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.active">active</a>" : true,
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">name</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "official",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "李",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+              "小姐"
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification">qualification</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.code">code</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "224609002",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "職能治療師"
+                }
+              ]
+            },
+            "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.issuer">issuer</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "台灣職能治療師公會"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "QuestionnaireResponse/arat-response-example-001",
+      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">resourceType</a>" : "QuestionnaireResponse",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.id">id</a>" : "arat-response-example-001",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a style="color: Maroon" href="StructureDefinition-ARATQuestionnaireResponse.html">&#x1F517;</a> "http://example.org/StructureDefinition/ARATQuestionnaireResponse"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;a name=\"QuestionnaireResponse_arat-response-example-001\"&gt; &lt;/a&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: QuestionnaireResponse arat-response-example-001&lt;/b&gt;&lt;/p&gt;&lt;a name=\"arat-response-example-001\"&gt; &lt;/a&gt;&lt;a name=\"hcarat-response-example-001\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-ARATQuestionnaireResponse.html\"&gt;ARAT上肢功能評估問卷回覆&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"&gt;&lt;tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\"&gt;LinkID&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\"&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\"&gt;Definition&lt;/a&gt;&lt;/th&gt;&lt;th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\"&gt;Answer&lt;/a&gt;&lt;span style=\"float: right\"&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"&gt;&lt;img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/&gt; arat-response-example-001&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;Questionnaire:http://example.org/fhir/Questionnaire/ARATQuestionnaireInstance&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; assessment-side-arat&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;請選擇評估側&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;&lt;span&gt;&lt;span&gt;&lt;a href=\"http://snomed.info/id/24028007\"&gt;SNOMED CT 24028007&lt;/a&gt;: 患者左側&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/&gt; A-grasp-subscale&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;A.抓力分量表&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-block-10cm3&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;方塊積木, 10 立方公分&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-block-2.5cm3&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;方塊積木, 2.5 立方公分&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-block-5cm3&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;方塊積木, 5 立方公分&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-block-7.5cm3&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;方塊積木, 7.5 立方公分&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-cricket-ball&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;板球&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-I-sharpening-stone&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;磨刀石&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; A-grasp-subscale-subscore&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;A.抓力分數&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;12&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/&gt; B-grip-subscale&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;B.握力分量表&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-pour-water-from-one-glass-to-another&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;將水從一個杯子倒到另一個杯子&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-pour-water-from-one-glass-to-another&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;將 2.25 公分合金管從桌子的一側移到另一側&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;將 1 公分合金管從桌子的一側移到另一側&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-I-put-washer-over-bolt&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;將墊圈放在螺栓上&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; B-grip-subscale-subscore&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;B.握力分數&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;8&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/&gt; C-pinch-subscale&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;C.捏取分量表&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; C-I-ball-bearing-held-between-ring-finger-and-thumb&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;滾珠軸承，握在無名指與大拇指之間&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; C-I-marble-held-between-index-finger-and-thumb&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;大理石，握在食指與大拇指之間&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; C-I-ball-bearing-held-between-middle-finger-and-thumb&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;滾珠軸承，握在中指與拇指之間&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; C-I-ball-bearing-held-between-index-finger-and-thumb&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;滾珠軸承，握在食指與拇指之間&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; C-I-marble-held-between-ring-finger-and-thumb&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;大理石，握在無名指和大拇指之間&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;1&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; C-I-marble-held-between-middle-finger-and-thumb&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;大理石，握在中指與大拇指之間&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; C-pinch-subscale-subscore&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;C.捏取分數&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;11&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Group\" class=\"hierarchy\"/&gt; D-gross-movement-subscale&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;D.粗大動作分量表&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; D-I-hand-to-behind-the-head&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;手放在腦後&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;2&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; D-I-hand-to-top-of-head&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;手放在頭頂&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; D-I-hand-to-mouth&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;手到嘴&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;3&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; D-gross-movement-subscale-subscore&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;D.粗大動作分數&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;8&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"&gt;&lt;img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/&gt;&lt;img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/&gt; E-total-score-ARAT&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;E.ARAT總分計算&lt;/td&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/&gt;&lt;td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"&gt;39&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\"4\" class=\"hierarchy\"&gt;&lt;br/&gt;&lt;a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"&gt;&lt;img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.questionnaire">questionnaire</a>" : "http://example.org/fhir/Questionnaire/ARATQuestionnaireInstance",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.subject">subject</a>" : {
+          <a style="color: Maroon" href="Patient-stroke-patient-001.html">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/stroke-patient-001",
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "張先生"
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.authored">authored</a>" : "2025-10-11T14:30:00+08:00",
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.author">author</a>" : {
+          <a style="color: Maroon" href="Practitioner-ot-therapist-001.html">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/ot-therapist-001",
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "復健治療師 - 李小姐"
+        },
+        "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "assessment-side-arat",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "請選擇評估側",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueCoding</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "24028007",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "患者左側"
+                }
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-grasp-subscale",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "A.抓力分量表",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 2.5
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-block-10cm3",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "方塊積木, 10 立方公分",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 3
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4.2
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-block-2.5cm3",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "方塊積木, 2.5 立方公分",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 3.1
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-block-5cm3",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "方塊積木, 5 立方公分",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 3
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 5.3
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-block-7.5cm3",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "方塊積木, 7.5 立方公分",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 8.7
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-cricket-ball",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "板球",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 1
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 9.1
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-I-sharpening-stone",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "磨刀石",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 1
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "A-grasp-subscale-subscore",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "A.抓力分數",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 12
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-grip-subscale",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "B.握力分量表",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 6.5
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-pour-water-from-one-glass-to-another",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "將水從一個杯子倒到另一個杯子",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4.8
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-pour-water-from-one-glass-to-another",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "將 2.25 公分合金管從桌子的一側移到另一側",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 3
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 7.2
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-displace-1-cm-alloy-tube-from-one-side-of-table-to-the-other",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "將 1 公分合金管從桌子的一側移到另一側",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 12.3
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-I-put-washer-over-bolt",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "將墊圈放在螺栓上",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 1
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "B-grip-subscale-subscore",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "B.握力分數",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 8
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "C-pinch-subscale",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "C.捏取分量表",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 7.5
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "C-I-ball-bearing-held-between-ring-finger-and-thumb",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "滾珠軸承，握在無名指與大拇指之間",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 1
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 5.1
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "C-I-marble-held-between-index-finger-and-thumb",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "大理石，握在食指與大拇指之間",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 6.8
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "C-I-ball-bearing-held-between-middle-finger-and-thumb",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "滾珠軸承，握在中指與拇指之間",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 3.9
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "C-I-ball-bearing-held-between-index-finger-and-thumb",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "滾珠軸承，握在食指與拇指之間",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 3
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 9.2
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "C-I-marble-held-between-ring-finger-and-thumb",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "大理石，握在無名指和大拇指之間",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 1
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 6.5
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "C-I-marble-held-between-middle-finger-and-thumb",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "大理石，握在中指與大拇指之間",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "C-pinch-subscale-subscore",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "C.捏取分數",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 11
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "D-gross-movement-subscale",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "D.粗大動作分量表",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 4.2
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "D-I-hand-to-behind-the-head",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "手放在腦後",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 2
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 3.1
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "D-I-hand-to-top-of-head",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "手放在頭頂",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 3
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.extension">extension</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://example.org/StructureDefinition/test-time-extension",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 2.8
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "D-I-hand-to-mouth",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "手到嘴",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 3
+                  }
+                ]
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "D-gross-movement-subscale-subscore",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "D.粗大動作分數",
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 8
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "E-total-score-ARAT",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "E.ARAT總分計算",
+            "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">valueInteger</a>" : 39
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Encounter/arat-assessment-encounter-001",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "arat-assessment-encounter-001",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a style="color: Maroon" href="StructureDefinition-Encounter.html">&#x1F517;</a> "http://example.org/StructureDefinition/Encounter"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;a name=\"Encounter_arat-assessment-encounter-001\"&gt; &lt;/a&gt;&lt;p class=\"res-header-id\"&gt;&lt;b&gt;Generated Narrative: Encounter arat-assessment-encounter-001&lt;/b&gt;&lt;/p&gt;&lt;a name=\"arat-assessment-encounter-001\"&gt; &lt;/a&gt;&lt;a name=\"hcarat-assessment-encounter-001\"&gt; &lt;/a&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"/&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-Encounter.html\"&gt;Encounter&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\"&gt;ActCode AMB&lt;/a&gt;: 門診&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Codes:{http://snomed.info/sct 410155007}\"&gt;職能治療評估&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient-stroke-patient-001.html\"&gt;先生 張 (official) Male, DoB: 1965-03-15 ( http://example.org/mrn#12345)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td style=\"display: none\"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"display: none\"&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"Practitioner-ot-therapist-001.html\"&gt;Practitioner 小姐 李 (official)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2025-10-11 14:00:00+0800 --&amp;gt; 2025-10-11 15:00:00+0800&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: &lt;span title=\"Codes:{http://snomed.info/sct 230690007}\"&gt;中風後復健&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "finished",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "AMB",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "門診"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.type">type</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "410155007",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "職能治療評估"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>" : {
+          <a style="color: Maroon" href="Patient-stroke-patient-001.html">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/stroke-patient-001"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant">participant</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>" : {
+              <a style="color: Maroon" href="Practitioner-ot-therapist-001.html">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/ot-therapist-001"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2025-10-11T14:00:00+08:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2025-10-11T15:00:00+08:00"
+        },
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonCode">reasonCode</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "230690007",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "中風後復健"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l1208">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package fhir.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 28, 2025 11:36+0800">2025-10-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

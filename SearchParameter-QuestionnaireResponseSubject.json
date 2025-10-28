@@ -1,0 +1,25 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "QuestionnaireResponseSubject",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter QuestionnaireResponseSubject</b></p><a name=\"QuestionnaireResponseSubject\"> </a><a name=\"hcQuestionnaireResponseSubject\"> </a><h2>QuestionnaireResponseSubject</h2><p>Parameter <code>subject</code>:<code>reference</code></p><div><p>問卷回應主體</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\">QuestionnaireResponse</a></td></tr><tr><td>Expression</td><td>(none)</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/SearchParameter/QuestionnaireResponse-subject",
+  "version" : "0.1.0",
+  "name" : "QuestionnaireResponseSubject",
+  "status" : "active",
+  "date" : "2025-10-28T11:34:57+08:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "問卷回應主體",
+  "code" : "subject",
+  "base" : ["QuestionnaireResponse"],
+  "type" : "reference"
+}

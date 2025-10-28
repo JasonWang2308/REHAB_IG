@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ValueSet/VSBodyStructure> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VSBodyStructure"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSBodyStructure</b></p><a name=\"VSBodyStructure\"> </a><a name=\"hcVSBodyStructure\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/91775009\">91775009</a></td><td>左側肩</td></tr><tr><td><a href=\"http://snomed.info/id/5951000\">5951000</a></td><td>左側手腕</td></tr><tr><td><a href=\"http://snomed.info/id/85151006\">85151006</a></td><td>左手</td></tr><tr><td><a href=\"http://snomed.info/id/91774008\">91774008</a></td><td>右側肩</td></tr><tr><td><a href=\"http://snomed.info/id/9736006\">9736006</a></td><td>右側手腕</td></tr><tr><td><a href=\"http://snomed.info/id/78791008\">78791008</a></td><td>右手</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ValueSet/VSBodyStructure"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VSBodyStructure"] ; # 
+  fhir:title [ fhir:v "身體部位與結構對應之Snomed CT 代碼"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-28T11:34:57+08:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "收錄復健可能會使用到的身體部位代碼"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "91775009" ] ;
+         fhir:display [ fhir:v "左側肩" ]
+       ] [
+         fhir:code [ fhir:v "5951000" ] ;
+         fhir:display [ fhir:v "左側手腕" ]
+       ] [
+         fhir:code [ fhir:v "85151006" ] ;
+         fhir:display [ fhir:v "左手" ]
+       ] [
+         fhir:code [ fhir:v "91774008" ] ;
+         fhir:display [ fhir:v "右側肩" ]
+       ] [
+         fhir:code [ fhir:v "9736006" ] ;
+         fhir:display [ fhir:v "右側手腕" ]
+       ] [
+         fhir:code [ fhir:v "78791008" ] ;
+         fhir:display [ fhir:v "右手" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
